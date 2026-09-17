@@ -1,0 +1,50 @@
+[
+  {
+    "id": "passe-compose",
+    "order": 1,
+    "name": "Passé composé",
+    "masteryThreshold": 3,
+    "exercises": [
+      { "id": "pc-01", "type": "mcq", "prompt": "Elle ___ partie hier soir. (choisis l'auxiliaire correct)", "options": ["a", "est", "avait"], "correctAnswer": "est", "explanation": "'Partir' est un verbe de mouvement qui se conjugue avec l'auxiliaire être au passé composé, avec accord du participe passé au féminin ('partie')." },
+      { "id": "pc-02", "type": "fill-blank", "prompt": "Nous ___ (manger) au restaurant hier soir.", "correctAnswer": "avons mangé", "explanation": "'Manger' se conjugue avec avoir; 1ère personne du pluriel: avons + participe passé mangé." },
+      { "id": "pc-03", "type": "mcq", "prompt": "Ils sont ___ (arriver) en retard.", "options": ["arrivé", "arrivés", "arrivées"], "correctAnswer": "arrivés", "explanation": "Avec l'auxiliaire être, le participe passé s'accorde en genre et en nombre avec le sujet; 'ils' (masculin pluriel) → arrivés." },
+      { "id": "pc-04", "type": "error-spot", "prompt": "Corrige cette phrase : « Elle a resté à la maison. »", "correctAnswer": "Elle est restée à la maison.", "explanation": "'Rester' se conjugue avec être, pas avoir; accord au féminin: restée." },
+      { "id": "pc-05", "type": "fill-blank", "prompt": "J'ai ___ (finir) mes devoirs avant le dîner.", "correctAnswer": "fini", "explanation": "'Finir' (2e groupe) forme son participe passé en -i: fini." },
+      { "id": "pc-06", "type": "mcq", "prompt": "Vous ___ (voir) ce film la semaine dernière ?", "options": ["avez vu", "avez vue", "êtes vu"], "correctAnswer": "avez vu", "explanation": "'Voir' est irrégulier et se conjugue avec avoir; participe passé: vu." },
+      { "id": "pc-07", "type": "production", "prompt": "Écris une phrase au passé composé pour dire que tu as visité Paris la semaine dernière.", "correctAnswer": "J'ai visité Paris la semaine dernière.", "explanation": "Respuesta modelo - autoevalúa si tu frase usa correctamente avoir + participe passé de 'visiter' (visité)." },
+      { "id": "pc-08", "type": "error-spot", "prompt": "Corrige cette phrase : « Nous avons allé au cinéma. »", "correctAnswer": "Nous sommes allé(e)s au cinéma.", "explanation": "'Aller' se conjugue toujours avec être au passé composé, jamais avec avoir." }
+    ]
+  },
+  {
+    "id": "imparfait",
+    "order": 2,
+    "name": "Imparfait",
+    "masteryThreshold": 3,
+    "exercises": [
+      { "id": "imp-01", "type": "fill-blank", "prompt": "Quand j'étais petit, je ___ (jouer) tous les jours dans le jardin.", "correctAnswer": "jouais", "explanation": "Imparfait, 1ère personne du singulier: radical jou- + terminaison -ais." },
+      { "id": "imp-02", "type": "mcq", "prompt": "Nous ___ (être) très jeunes à cette époque.", "options": ["étions", "étiont", "étaient"], "correctAnswer": "étions", "explanation": "Imparfait de 'être', 1ère personne du pluriel: nous étions." },
+      { "id": "imp-03", "type": "fill-blank", "prompt": "Il ___ (faire) beau tous les jours cet été-là.", "correctAnswer": "faisait", "explanation": "Imparfait de 'faire': radical fais- + terminaison -ait." },
+      { "id": "imp-04", "type": "mcq", "prompt": "Je ___ (manger) une pomme quand le téléphone a sonné. (quel temps pour l'action de fond ?)", "options": ["mangeais", "ai mangé", "mangerai"], "correctAnswer": "mangeais", "explanation": "L'action de fond (manger) se met à l'imparfait; l'action ponctuelle qui l'interrompt se met au passé composé." },
+      { "id": "imp-05", "type": "fill-blank", "prompt": "Nous ___ (habiter) à Paris avant de déménager à Genève.", "correctAnswer": "habitions", "explanation": "Imparfait de 'habiter', 1ère pers. pluriel: habitions." },
+      { "id": "imp-06", "type": "mcq", "prompt": "Enfant, tu ___ (aller) à l'école à pied tous les jours. (habitude passée)", "options": ["allais", "es allé", "iras"], "correctAnswer": "allais", "explanation": "Une habitude répétée dans le passé se décrit à l'imparfait, pas au passé composé." },
+      { "id": "imp-07", "type": "production", "prompt": "Décris une habitude de ton enfance en utilisant l'imparfait.", "correctAnswer": "Quand j'étais enfant, je regardais des dessins animés tous les samedis matin.", "explanation": "Respuesta modelo - vérifie que tu as bien utilisé l'imparfait pour décrire une habitude répétée." },
+      { "id": "imp-08", "type": "error-spot", "prompt": "Corrige cette phrase : « J'ai été fatigué tous les jours cette année-là. »", "correctAnswer": "J'étais fatigué tous les jours cette année-là.", "explanation": "Un état répété/continu dans le passé se décrit à l'imparfait, pas au passé composé." }
+    ]
+  },
+  {
+    "id": "futur-simple",
+    "order": 3,
+    "name": "Futur simple",
+    "masteryThreshold": 3,
+    "exercises": [
+      { "id": "fut-01", "type": "mcq", "prompt": "Je ___ (aller) à Genève demain.", "options": ["irai", "allerai", "vais"], "correctAnswer": "irai", "explanation": "'Aller' a un radical irrégulier au futur simple: ir- + terminaisons." },
+      { "id": "fut-02", "type": "fill-blank", "prompt": "Demain, nous ___ (finir) le projet.", "correctAnswer": "finirons", "explanation": "Futur simple régulier: infinitif finir + terminaison -ons." },
+      { "id": "fut-03", "type": "mcq", "prompt": "Elle ___ (être) contente du résultat.", "options": ["sera", "serai", "est"], "correctAnswer": "sera", "explanation": "'Être' a un radical irrégulier au futur simple: ser-; 3e pers. sing.: sera." },
+      { "id": "fut-04", "type": "error-spot", "prompt": "Corrige cette phrase : « Je vais partirai demain. »", "correctAnswer": "Je partirai demain.", "explanation": "On ne mélange pas le futur proche (aller + infinitif) et le futur simple dans la même construction." },
+      { "id": "fut-05", "type": "fill-blank", "prompt": "Ils ___ (avoir) une réunion vendredi prochain.", "correctAnswer": "auront", "explanation": "'Avoir' a un radical irrégulier au futur simple: aur-; 3e pers. pluriel: auront." },
+      { "id": "fut-06", "type": "mcq", "prompt": "Quand il ___ (arriver), nous commencerons la réunion.", "options": ["arrivera", "arrive", "arriverait"], "correctAnswer": "arrivera", "explanation": "En français, après 'quand' pour un événement futur, on utilise le futur simple (contrairement à l'anglais 'when he arrives')." },
+      { "id": "fut-07", "type": "production", "prompt": "Écris une phrase au futur simple pour parler d'un projet professionnel futur.", "correctAnswer": "L'année prochaine, je terminerai ma formation d'expert-comptable.", "explanation": "Respuesta modelo - vérifie que ton verbe est bien conjugué au futur simple." },
+      { "id": "fut-08", "type": "error-spot", "prompt": "Corrige cette phrase : « Quand je serai grand, je deviens médecin. »", "correctAnswer": "Quand je serai grand, je deviendrai médecin.", "explanation": "Les deux propositions liées par 'quand' pour un événement futur doivent être au futur simple." }
+    ]
+  }
+]

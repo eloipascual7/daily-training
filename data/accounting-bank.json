@@ -1,0 +1,349 @@
+[
+  {
+    "id": "acc-0001",
+    "type": "case",
+    "topic": "revenue-recognition",
+    "frameworks": ["IFRS", "SwissGAAP-FER"],
+    "prompt": "A Swiss company sells a one-year software license bundled with mandatory post-sale support, invoiced and collected upfront. Under IFRS, when is the license + support revenue recognised? How does Swiss GAAP FER differ?",
+    "options": [
+      { "label": "Under IFRS 15, the transaction price is allocated between the license and support performance obligations; the license is typically recognised at the point in time control transfers, while support is recognised over the contract term. Swiss GAAP FER has no standalone revenue standard equivalent to IFRS 15 and instead relies on the general realisation principle in FER 2, without a formal multi-step allocation model.", "correct": true },
+      { "label": "Both frameworks require immediate recognition of the full amount on invoicing, since cash was collected upfront.", "correct": false },
+      { "label": "IFRS 15 defers all revenue until the support period ends, exactly matching Swiss GAAP FER practice.", "correct": false }
+    ],
+    "explanation": "IFRS 15's 5-step model forces separation of the license and support performance obligations. Swiss GAAP FER, being more principles-based, has no equivalent standalone standard, so practice follows the general prudence/realisation principle in FER 2.",
+    "source": "IFRS 15 (5-step model, performance obligations); Swiss GAAP FER 2 (valuation/realisation principle)"
+  },
+  {
+    "id": "acc-0002",
+    "type": "quiz",
+    "topic": "revenue-recognition",
+    "frameworks": ["IFRS"],
+    "prompt": "Under IFRS 15, when must an entity recognise revenue over time rather than at a point in time?",
+    "options": [
+      { "label": "Whenever the customer pays in advance", "correct": false },
+      { "label": "When one of the over-time criteria is met - e.g. the customer simultaneously receives and consumes the benefits, or the asset has no alternative use to the entity and it has an enforceable right to payment for performance completed to date", "correct": true },
+      { "label": "Only for construction contracts", "correct": false },
+      { "label": "Never - all IFRS 15 revenue is recognised at a point in time", "correct": false }
+    ],
+    "explanation": "IFRS 15 sets out specific over-time recognition criteria (commonly cited as §35); if none is met, revenue is recognised at the point in time control transfers to the customer.",
+    "source": "IFRS 15 §35 (over-time recognition criteria)"
+  },
+  {
+    "id": "acc-0003",
+    "type": "case",
+    "topic": "held-for-sale",
+    "frameworks": ["IFRS", "SwissGAAP-FER"],
+    "prompt": "A group commits to a plan to sell a manufacturing subsidiary; the sale is expected to complete within 6 months and the subsidiary is being actively marketed. How is this reflected under IFRS, and does Swiss GAAP FER have an equivalent requirement?",
+    "options": [
+      { "label": "Under IFRS 5 §§6-8, once the criteria are met (available for immediate sale, sale highly probable within one year, actively marketed), the disposal group is reclassified as held for sale, measured at the lower of carrying amount and fair value less costs to sell, and depreciation stops. Swiss GAAP FER has no equivalent 'held for sale' reclassification standard - the assets normally continue to be presented and measured as before until actually sold.", "correct": true },
+      { "label": "Both frameworks require identical held-for-sale reclassification with a dedicated line item.", "correct": false },
+      { "label": "IFRS prohibits reclassification until the sale is legally completed.", "correct": false }
+    ],
+    "explanation": "IFRS 5 is a dedicated standard for non-current assets/disposal groups held for sale; Swiss GAAP FER has no direct counterpart - one of the most commonly tested IFRS-vs-FER differences.",
+    "source": "IFRS 5 §§6-8"
+  },
+  {
+    "id": "acc-0004",
+    "type": "quiz",
+    "topic": "held-for-sale",
+    "frameworks": ["IFRS"],
+    "prompt": "Which of these is NOT one of the IFRS 5 conditions for classifying a non-current asset as held for sale?",
+    "options": [
+      { "label": "The asset must be available for immediate sale in its present condition", "correct": false },
+      { "label": "The sale must be highly probable, generally expected within one year", "correct": false },
+      { "label": "The asset must have already generated a binding, unconditional sale contract", "correct": true },
+      { "label": "Management must be committed to a plan to sell and actively marketing the asset at a reasonable price", "correct": false }
+    ],
+    "explanation": "IFRS 5 requires the sale to be highly probable and actively marketed, but does not require an already-signed unconditional sale agreement at the classification date.",
+    "source": "IFRS 5 §§7-8"
+  },
+  {
+    "id": "acc-0005",
+    "type": "case",
+    "topic": "inventory",
+    "frameworks": ["IFRS", "SwissGAAP-FER"],
+    "prompt": "At year-end, a client's finished-goods inventory has a cost of CHF 100,000 but, due to a market downturn, an estimated net realisable value of CHF 85,000. How should this be measured under IAS 2, and is the Swiss GAAP FER approach materially different?",
+    "options": [
+      { "label": "IAS 2.9 requires inventories to be measured at the lower of cost and net realisable value, so the inventory must be written down to CHF 85,000. Swiss GAAP FER 17 follows the same conservative lower-of logic consistent with FER's general prudence principle (FER 2), so the practical outcome is very similar.", "correct": true },
+      { "label": "IAS 2 allows inventory to remain at cost regardless of market value declines.", "correct": false },
+      { "label": "Only Swiss GAAP FER requires a write-down; IFRS does not.", "correct": false }
+    ],
+    "explanation": "Both frameworks apply a conservative lower-of approach to inventory, so the numerical outcome is usually the same even though FER's guidance is less detailed than IAS 2's.",
+    "source": "IAS 2 §9; Swiss GAAP FER 17 (Vorräte/inventories), general prudence principle FER 2"
+  },
+  {
+    "id": "acc-0006",
+    "type": "case",
+    "topic": "leases",
+    "frameworks": ["IFRS", "SwissGAAP-FER"],
+    "prompt": "A company signs a 5-year lease for office space (not short-term, not low-value). How is this reflected on the lessee's balance sheet under IFRS 16, compared with Swiss GAAP FER?",
+    "options": [
+      { "label": "Under IFRS 16 §22, the lessee recognises a right-of-use asset and a lease liability at the commencement date for virtually all leases. Under Swiss GAAP FER 13, the lessee still distinguishes between finance leases (capitalised) and operating leases (kept off-balance-sheet, disclosed in the notes) - a 5-year office lease would often still qualify as an operating lease and stay off-balance-sheet under FER.", "correct": true },
+      { "label": "Both frameworks eliminated the operating lease category for lessees.", "correct": false },
+      { "label": "IFRS 16 keeps the old operating/finance lease split; only FER changed.", "correct": false }
+    ],
+    "explanation": "One of the most-tested IFRS-vs-Swiss-GAAP-FER differences: IFRS 16 brought (almost) all leases onto the lessee's balance sheet, while FER 13 still runs the old dual model.",
+    "source": "IFRS 16 §22; Swiss GAAP FER 13 (Leasinggeschäfte)"
+  },
+  {
+    "id": "acc-0007",
+    "type": "quiz",
+    "topic": "leases",
+    "frameworks": ["IFRS"],
+    "prompt": "Under IFRS 16, a lessee can elect NOT to recognise a right-of-use asset and lease liability for which types of leases?",
+    "options": [
+      { "label": "Short-term leases (12 months or less, no purchase option) and leases of low-value underlying assets", "correct": true },
+      { "label": "Any lease under CHF 1 million", "correct": false },
+      { "label": "Leases of real estate only", "correct": false },
+      { "label": "There is no such exemption under IFRS 16", "correct": false }
+    ],
+    "explanation": "IFRS 16 provides two recognition exemptions available to lessees: short-term leases and low-value assets; if elected, lease payments are expensed on a systematic basis instead.",
+    "source": "IFRS 16 §§5-8"
+  },
+  {
+    "id": "acc-0008",
+    "type": "case",
+    "topic": "intangible-assets",
+    "frameworks": ["IFRS", "SwissGAAP-FER"],
+    "prompt": "A company acquires a trademark with no foreseeable limit on the period it will generate cash flows. How is its useful life treated under IAS 38, and how does Swiss GAAP FER 10 differ?",
+    "options": [
+      { "label": "Under IAS 38, an intangible asset with an indefinite useful life is not amortised; instead it is tested for impairment at least annually under IAS 36. Under Swiss GAAP FER 10, intangible assets are always amortised over their estimated useful life, and if that life cannot be reliably determined, a default period of 5 years is used (up to a maximum of 20 years in justified cases) - FER has no 'indefinite life, no amortisation' category.", "correct": true },
+      { "label": "Both frameworks forbid amortising intangible assets.", "correct": false },
+      { "label": "IAS 38 always requires a maximum 20-year amortisation period like FER 10.", "correct": false }
+    ],
+    "explanation": "This indefinite-life treatment (no amortisation, impairment-only) is unique to IFRS; Swiss GAAP FER's more conservative approach always amortises intangibles, defaulting to 5 years when useful life is uncertain.",
+    "source": "IAS 38 (indefinite useful life, impairment-only under IAS 36); Swiss GAAP FER 10 (Immaterielle Werte)"
+  },
+  {
+    "id": "acc-0009",
+    "type": "quiz",
+    "topic": "intangible-assets",
+    "frameworks": ["IFRS"],
+    "prompt": "How often must an intangible asset with an indefinite useful life be tested for impairment under IAS 36?",
+    "options": [
+      { "label": "Only when there is an indicator of impairment", "correct": false },
+      { "label": "At least annually, and whenever there is an indication of impairment", "correct": true },
+      { "label": "Every 5 years", "correct": false },
+      { "label": "Never - indefinite-life intangibles are not tested", "correct": false }
+    ],
+    "explanation": "Unlike most assets (tested only when indicators exist), indefinite-life intangibles and goodwill require a mandatory annual impairment test regardless of indicators.",
+    "source": "IAS 36 (annual impairment test for indefinite-life intangibles and goodwill)"
+  },
+  {
+    "id": "acc-0010",
+    "type": "case",
+    "topic": "ppe",
+    "frameworks": ["IFRS", "SwissGAAP-FER"],
+    "prompt": "After initial recognition, IAS 16 allows a choice of measurement model for a class of property, plant and equipment. What are the options, and how does Swiss GAAP FER 18 compare?",
+    "options": [
+      { "label": "IAS 16 allows an accounting policy choice, by class of asset, between the cost model and the revaluation model (fair value less subsequent depreciation). Swiss GAAP FER 18 is more conservative and is generally built around the cost model, without an equivalent revaluation option.", "correct": true },
+      { "label": "Both frameworks require fair value remeasurement of all PP&E every year.", "correct": false },
+      { "label": "IAS 16 only permits the cost model, identical to FER 18.", "correct": false }
+    ],
+    "explanation": "The revaluation model under IAS 16 is a genuine policy choice not generally mirrored in Swiss GAAP FER, which stays closer to historical cost.",
+    "source": "IAS 16 (cost vs revaluation model); Swiss GAAP FER 18 (Sachanlagen)"
+  },
+  {
+    "id": "acc-0011",
+    "type": "quiz",
+    "topic": "ppe",
+    "frameworks": ["IFRS"],
+    "prompt": "Under IAS 16, if an aircraft's engine has a materially different useful life from the airframe, how should it be depreciated?",
+    "options": [
+      { "label": "The whole aircraft must be depreciated as a single unit", "correct": false },
+      { "label": "The engine must be identified and depreciated separately as a significant component with its own useful life", "correct": true },
+      { "label": "Components are only separated for tax purposes, never for IFRS depreciation", "correct": false },
+      { "label": "IAS 16 does not allow component depreciation", "correct": false }
+    ],
+    "explanation": "IAS 16 requires significant parts of an asset with materially different useful lives to be depreciated separately - the component approach.",
+    "source": "IAS 16 (component approach to depreciation)"
+  },
+  {
+    "id": "acc-0012",
+    "type": "case",
+    "topic": "impairment",
+    "frameworks": ["IFRS", "SwissGAAP-FER"],
+    "prompt": "A cash-generating unit (CGU) shows indicators of impairment. Under IAS 36, how is the impairment test performed, and how does Swiss GAAP FER 20 treat impairment?",
+    "options": [
+      { "label": "Under IAS 36, the CGU's recoverable amount (the higher of fair value less costs of disposal and value in use) is compared to its carrying amount, with any shortfall recognised as an impairment loss, allocated first to goodwill. Swiss GAAP FER 20 similarly requires a write-down when a carrying amount is not recoverable, but with less detailed and prescriptive guidance than IAS 36 on how to determine the recoverable amount.", "correct": true },
+      { "label": "IAS 36 does not use recoverable amount; it always writes assets down to zero.", "correct": false },
+      { "label": "Swiss GAAP FER 20 explicitly forbids any impairment write-downs.", "correct": false }
+    ],
+    "explanation": "Both frameworks require write-downs when carrying amounts aren't recoverable, but IAS 36's CGU/recoverable-amount mechanics are considerably more detailed and prescriptive than FER 20's principles-based approach.",
+    "source": "IAS 36 (CGU, recoverable amount); Swiss GAAP FER 20 (Wertbeeinträchtigungen)"
+  },
+  {
+    "id": "acc-0013",
+    "type": "quiz",
+    "topic": "impairment",
+    "frameworks": ["IFRS"],
+    "prompt": "Under IAS 36, at what point must an entity test a (non-goodwill, finite-life) asset for impairment?",
+    "options": [
+      { "label": "Only at the end of every reporting period, regardless of circumstances", "correct": false },
+      { "label": "Only when there is an indication that the asset may be impaired", "correct": true },
+      { "label": "Only if requested by the auditor", "correct": false },
+      { "label": "Never - only goodwill is tested", "correct": false }
+    ],
+    "explanation": "Unlike goodwill and indefinite-life intangibles (mandatory annual test), most other assets are only tested for impairment when an indicator is identified.",
+    "source": "IAS 36 §12 (list of impairment indicators)"
+  },
+  {
+    "id": "acc-0014",
+    "type": "case",
+    "topic": "financial-instruments",
+    "frameworks": ["IFRS", "SwissGAAP-FER"],
+    "prompt": "A company holds a bond it intends to collect contractual cash flows from until maturity. How is this classified and measured under IFRS 9, and does Swiss GAAP FER have an equivalent classification model?",
+    "options": [
+      { "label": "Under IFRS 9, the bond is classified based on the entity's business model and the instrument's contractual cash flow characteristics (the SPPI test); if held to collect contractual cash flows that are solely payments of principal and interest, it is measured at amortised cost. Swiss GAAP FER has no equivalent business-model/SPPI classification framework - financial instruments are generally addressed under the general valuation principles of FER 2, without IFRS 9's structured categories.", "correct": true },
+      { "label": "Both frameworks use the identical business model and SPPI classification tests.", "correct": false },
+      { "label": "IFRS 9 classifies all debt instruments at fair value through profit or loss with no exceptions.", "correct": false }
+    ],
+    "explanation": "IFRS 9's business-model-plus-SPPI classification approach (amortised cost / FVOCI / FVTPL) has no direct Swiss GAAP FER counterpart.",
+    "source": "IFRS 9 (classification and measurement, business model and SPPI test)"
+  },
+  {
+    "id": "acc-0015",
+    "type": "quiz",
+    "topic": "financial-instruments",
+    "frameworks": ["IFRS"],
+    "prompt": "What impairment model did IFRS 9 introduce for financial assets, replacing IAS 39's incurred-loss model?",
+    "options": [
+      { "label": "The expected credit loss (ECL) model, requiring recognition of credit losses before they are actually incurred", "correct": true },
+      { "label": "A model that recognises losses only once a default has actually occurred", "correct": false },
+      { "label": "IFRS 9 removed impairment requirements for financial assets entirely", "correct": false },
+      { "label": "A fair-value-only model with no separate impairment concept", "correct": false }
+    ],
+    "explanation": "The ECL model was one of the major post-financial-crisis reforms, requiring forward-looking recognition of expected credit losses rather than waiting for a loss event.",
+    "source": "IFRS 9 (expected credit loss impairment model)"
+  },
+  {
+    "id": "acc-0016",
+    "type": "case",
+    "topic": "provisions",
+    "frameworks": ["IFRS"],
+    "prompt": "A company is being sued and its lawyers believe it is probable (more likely than not) that it will have to pay damages, and the amount can be reliably estimated. Should a provision be recognised under IAS 37?",
+    "options": [
+      { "label": "Yes - IAS 37 requires recognition of a provision when there is a present obligation as a result of a past event, an outflow of resources is probable, and the amount can be reliably estimated. All three conditions appear to be met here.", "correct": true },
+      { "label": "No - provisions can only be recognised once a court judgment is final", "correct": false },
+      { "label": "No - lawsuits are always treated only as contingent liabilities disclosed in the notes", "correct": false }
+    ],
+    "explanation": "IAS 37's three-part recognition test (present obligation, probable outflow, reliable estimate) is met, so a provision - not just a note disclosure - is required.",
+    "source": "IAS 37 (recognition criteria for provisions)"
+  },
+  {
+    "id": "acc-0017",
+    "type": "quiz",
+    "topic": "provisions",
+    "frameworks": ["IFRS"],
+    "prompt": "Under IAS 37, how is a contingent liability treated, as opposed to a provision?",
+    "options": [
+      { "label": "It is recognised on the balance sheet at its best estimate, exactly like a provision", "correct": false },
+      { "label": "It is only disclosed in the notes (not recognised as a liability), because either the outflow is not probable or the amount cannot be reliably measured", "correct": true },
+      { "label": "It is always ignored completely", "correct": false },
+      { "label": "It is recognised as revenue", "correct": false }
+    ],
+    "explanation": "A contingent liability fails at least one of the provision recognition criteria (probable outflow or reliable measurement) and is therefore only disclosed, not recognised.",
+    "source": "IAS 37 (provisions vs contingent liabilities)"
+  },
+  {
+    "id": "acc-0018",
+    "type": "case",
+    "topic": "business-combinations",
+    "frameworks": ["IFRS", "SwissGAAP-FER"],
+    "prompt": "A company acquires 100% of another company's shares. Under IFRS 3, what method must be used to account for this business combination, and does Swiss GAAP FER 30 allow flexibility that IFRS does not?",
+    "options": [
+      { "label": "IFRS 3 requires the acquisition method for all business combinations, recognising identifiable assets/liabilities at fair value and any goodwill (with no amortisation, only impairment testing thereafter). Swiss GAAP FER 30 gives more flexibility, permitting goodwill to be either capitalised and amortised over its useful life or offset directly against equity at the acquisition date - a choice not available under IFRS 3.", "correct": true },
+      { "label": "Both frameworks require identical treatment of goodwill, including amortisation.", "correct": false },
+      { "label": "IFRS 3 allows pooling-of-interests accounting for any acquisition.", "correct": false }
+    ],
+    "explanation": "The acquisition method is mandatory under IFRS 3 with impairment-only goodwill; Swiss GAAP FER 30's goodwill-against-equity option is a well-known point of divergence.",
+    "source": "IFRS 3 (acquisition method, goodwill impairment-only); Swiss GAAP FER 30 (Konzernrechnung)"
+  },
+  {
+    "id": "acc-0019",
+    "type": "quiz",
+    "topic": "business-combinations",
+    "frameworks": ["IFRS"],
+    "prompt": "Under IFRS 3, how is goodwill on acquisition calculated (simplest case, no non-controlling interest)?",
+    "options": [
+      { "label": "Consideration transferred minus the net fair value of identifiable assets acquired and liabilities assumed", "correct": true },
+      { "label": "The book value of the target's total assets", "correct": false },
+      { "label": "The purchase price divided by the number of years of expected benefit", "correct": false },
+      { "label": "Goodwill is never calculated under IFRS - it is always assumed to be zero", "correct": false }
+    ],
+    "explanation": "Goodwill is the residual: what was paid, minus the fair value of the identifiable net assets acquired.",
+    "source": "IFRS 3 (goodwill measurement)"
+  },
+  {
+    "id": "acc-0020",
+    "type": "case",
+    "topic": "consolidation",
+    "frameworks": ["IFRS"],
+    "prompt": "A parent holds 40% of the voting rights of an investee but, due to the dispersion of the remaining shares, is able in practice to direct the investee's relevant activities. Should the parent consolidate this investee under IFRS 10?",
+    "options": [
+      { "label": "Yes, potentially - IFRS 10 defines control based on power over the investee, exposure to variable returns, and the ability to use that power to affect returns; 'de facto control' from a large, dispersed minority stake can meet this definition even below 50% of voting rights.", "correct": true },
+      { "label": "No - consolidation always requires legal ownership of more than 50% of voting rights", "correct": false },
+      { "label": "IFRS 10 has been withdrawn and consolidation is now voluntary", "correct": false }
+    ],
+    "explanation": "IFRS 10's control model looks beyond simple voting-rights thresholds to substance (power, returns, the link between them), which can bring de facto control situations into consolidation.",
+    "source": "IFRS 10 (definition of control)"
+  },
+  {
+    "id": "acc-0021",
+    "type": "quiz",
+    "topic": "fair-value",
+    "frameworks": ["IFRS"],
+    "prompt": "How does IFRS 13 define fair value?",
+    "options": [
+      { "label": "The price that would be received to sell an asset (or paid to transfer a liability) in an orderly transaction between market participants at the measurement date - an exit price", "correct": true },
+      { "label": "The original historical cost of the asset", "correct": false },
+      { "label": "The price management believes the asset is worth internally", "correct": false },
+      { "label": "The replacement cost of the asset new", "correct": false }
+    ],
+    "explanation": "IFRS 13 centres fair value on a market-based exit price, not entity-specific value or historical cost.",
+    "source": "IFRS 13 (definition of fair value)"
+  },
+  {
+    "id": "acc-0022",
+    "type": "case",
+    "topic": "income-taxes",
+    "frameworks": ["IFRS"],
+    "prompt": "A company has an asset whose carrying amount for accounting purposes differs from its tax base because of different depreciation rates. What does IAS 12 require in this situation?",
+    "options": [
+      { "label": "Recognition of a deferred tax asset or liability for the resulting temporary difference between the carrying amount and the tax base, generally measured at the tax rates expected to apply when the difference reverses", "correct": true },
+      { "label": "IAS 12 ignores differences between accounting and tax depreciation", "correct": false },
+      { "label": "The difference is always recognised immediately as a current tax expense with no deferred element", "correct": false }
+    ],
+    "explanation": "This is a textbook temporary difference: different depreciation rates create a deferred tax balance under IAS 12's balance-sheet liability method.",
+    "source": "IAS 12 (deferred tax, temporary differences)"
+  },
+  {
+    "id": "acc-0023",
+    "type": "quiz",
+    "topic": "audit-icfr",
+    "frameworks": ["PCAOB"],
+    "prompt": "Under PCAOB AS 2201, what is the auditor's objective when auditing internal control over financial reporting (ICFR) as part of an integrated audit?",
+    "options": [
+      { "label": "To express an opinion on the effectiveness of the company's internal control over financial reporting", "correct": true },
+      { "label": "To design the company's internal controls for management", "correct": false },
+      { "label": "To guarantee that no fraud will ever occur", "correct": false },
+      { "label": "To replace the audit of the financial statements entirely", "correct": false }
+    ],
+    "explanation": "AS 2201 governs the ICFR audit integrated with the financial statement audit; the auditor's objective is an opinion on ICFR effectiveness, not designing controls or guaranteeing fraud-free operations.",
+    "source": "PCAOB AS 2201 - An Audit of Internal Control Over Financial Reporting"
+  },
+  {
+    "id": "acc-0024",
+    "type": "case",
+    "topic": "audit-risk-assessment",
+    "frameworks": ["ISA"],
+    "prompt": "At the planning stage of an audit, the engagement team needs to identify and assess the risks of material misstatement in the financial statements. Which standard governs this, and what is its core requirement?",
+    "options": [
+      { "label": "ISA 315 (Revised 2019) requires the auditor to identify and assess risks of material misstatement through understanding the entity and its environment, including its internal control, in order to design audit procedures that respond to the assessed risks (per ISA 330).", "correct": true },
+      { "label": "ISA 315 only applies to listed companies", "correct": false },
+      { "label": "Risk assessment is optional and left entirely to auditor judgement without a governing standard", "correct": false }
+    ],
+    "explanation": "ISA 315 (Revised 2019) is the foundational risk-assessment standard, feeding directly into ISA 330's risk-response requirements.",
+    "source": "ISA 315 (Revised 2019) - Identifying and Assessing the Risks of Material Misstatement"
+  }
+]
