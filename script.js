@@ -56,9 +56,18 @@ function showBlock(id) {
   document.querySelectorAll(".block").forEach((el) => (el.hidden = el.id !== id));
 }
 
+function shuffleForDisplay(list) {
+  const arr = [...list];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
 function renderOptions(container, options, onPick) {
   container.innerHTML = "";
-  options.forEach((opt) => {
+  shuffleForDisplay(options).forEach((opt) => {
     const btn = document.createElement("button");
     btn.className = "option-btn";
     btn.textContent = typeof opt === "string" ? opt : opt.label;
