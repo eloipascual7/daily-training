@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Daily Training</title>
+<link rel="manifest" href="manifest.json" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="app-header">
+  <h1>Daily Training</h1>
+  <p id="streak-label">Racha: 0 días</p>
+  <div class="progress-dots">
+    <span class="dot" data-block="0">1</span>
+    <span class="dot" data-block="1">2</span>
+    <span class="dot" data-block="2">3</span>
+  </div>
+</header>
+
+<main id="app-main">
+  <section id="block-accounting" class="block" hidden>
+    <h2>Bloque 1 — Contabilidad y auditoría</h2>
+    <p class="topic-label" id="accounting-topic"></p>
+    <p class="prompt" id="accounting-prompt"></p>
+    <div class="options" id="accounting-options"></div>
+    <div class="feedback" id="accounting-feedback" hidden>
+      <p class="explanation" id="accounting-explanation"></p>
+      <p class="source" id="accounting-source"></p>
+      <button class="next-btn" id="accounting-next">Siguiente</button>
+    </div>
+  </section>
+
+  <section id="block-french" class="block" hidden>
+    <h2>Bloque 2 — Francés</h2>
+    <p class="topic-label" id="french-block-name"></p>
+    <p class="prompt" id="french-prompt"></p>
+    <div class="options" id="french-options"></div>
+    <input type="text" id="french-text-input" placeholder="Escribe tu respuesta..." hidden />
+    <button id="french-submit" hidden>Comprobar</button>
+    <div class="feedback" id="french-feedback" hidden>
+      <p class="explanation" id="french-explanation"></p>
+      <div id="french-self-grade" hidden>
+        <p>¿Lo hiciste bien?</p>
+        <button data-correct="true">Sí, bien</button>
+        <button data-correct="false">Me costó</button>
+      </div>
+      <button class="next-btn" id="french-next" hidden>Siguiente</button>
+    </div>
+  </section>
+
+  <section id="block-english" class="block" hidden>
+    <h2>Bloque 3 — Inglés</h2>
+    <p class="topic-label" id="english-focus"></p>
+    <p class="prompt" id="english-prompt"></p>
+    <div class="options" id="english-options"></div>
+    <div class="feedback" id="english-feedback" hidden>
+      <p class="explanation" id="english-explanation"></p>
+      <p class="model-answer" id="english-model-answer"></p>
+      <button class="next-btn" id="english-next">Terminar</button>
+    </div>
+  </section>
+
+  <section id="block-done" class="block" hidden>
+    <h2>¡Hecho por hoy!</h2>
+    <p id="done-summary"></p>
+    <div class="backup-actions">
+      <button id="export-btn">Exportar progreso</button>
+      <label for="import-input" class="import-label">Importar progreso</label>
+      <input type="file" id="import-input" accept="application/json" hidden />
+    </div>
+  </section>
+</main>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>

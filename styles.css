@@ -1,0 +1,84 @@
+:root {
+  color-scheme: dark;
+  --bg: #0f172a;
+  --card-bg: #1e293b;
+  --text: #f1f5f9;
+  --accent: #38bdf8;
+  --correct: #4ade80;
+  --incorrect: #f87171;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 16px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  max-width: 480px;
+  margin-inline: auto;
+}
+
+.app-header { text-align: center; margin-bottom: 24px; }
+.app-header h1 { font-size: 1.4rem; margin: 0 0 4px; }
+#streak-label { color: var(--accent); margin: 0 0 12px; }
+
+.progress-dots { display: flex; justify-content: center; gap: 8px; }
+.dot {
+  width: 28px; height: 28px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--card-bg); font-size: 0.85rem;
+}
+.dot.active { background: var(--accent); color: #0f172a; font-weight: bold; }
+.dot.done { background: var(--correct); color: #0f172a; }
+
+.block {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.topic-label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.7; }
+.prompt { font-size: 1.1rem; line-height: 1.5; margin: 12px 0 20px; }
+
+.options { display: flex; flex-direction: column; gap: 10px; }
+.option-btn {
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #334155;
+  background: #0f172a;
+  color: var(--text);
+  font-size: 1rem;
+  text-align: left;
+}
+.option-btn.correct { border-color: var(--correct); background: #14532d; }
+.option-btn.incorrect { border-color: var(--incorrect); background: #7f1d1d; }
+
+#french-text-input {
+  width: 100%; padding: 12px; border-radius: 12px; border: 1px solid #334155;
+  background: #0f172a; color: var(--text); font-size: 1rem; margin-bottom: 12px;
+}
+
+button {
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: none;
+  background: var(--accent);
+  color: #0f172a;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.feedback { margin-top: 16px; }
+.explanation { line-height: 1.5; }
+.source { font-size: 0.85rem; opacity: 0.75; font-style: italic; }
+.next-btn { margin-top: 12px; }
+
+.backup-actions { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
+.import-label {
+  display: inline-block; text-align: center; padding: 12px 18px;
+  border-radius: 12px; background: #334155; color: var(--text); font-weight: 600;
+}
