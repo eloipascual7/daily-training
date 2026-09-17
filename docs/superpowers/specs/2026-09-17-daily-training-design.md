@@ -135,3 +135,5 @@ Dado que es 100% estático, el banco debe tener suficiente variedad para no repe
 - La rotación de contabilidad (caso/quiz) sigue el día de la semana correctamente.
 - Cada pregunta de contabilidad lleva una fuente verificable (norma + párrafo).
 - Exportar/importar progreso funciona (descarga y recarga un JSON válido).
+
+**URL desplegada:** https://daily-training-6l9.pages.dev (Cloudflare Pages, cuenta Unobis — proyecto `daily-training`, desplegado 2026-09-17 a petición explícita del usuario tras confirmar que el token disponible era el de la cuenta de Unobis).
