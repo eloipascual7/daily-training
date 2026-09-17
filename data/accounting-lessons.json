@@ -88,5 +88,173 @@
     "title": "Audit risk assessment",
     "lesson": "ISA 315 (Revised 2019) requires the auditor to identify and assess the risks of material misstatement by understanding the entity and its environment, including its internal control, so that audit procedures can be designed to respond to those assessed risks (per ISA 330).",
     "source": "ISA 315 (Revised 2019)"
+  },
+  {
+    "topic": "presentation-financial-statements",
+    "title": "Presentation of financial statements (IFRS 18)",
+    "lesson": "IFRS 18 (effective 1 January 2027, replacing IAS 1) requires every income and expense item in the statement of profit or loss to be classified into one of five categories - operating, investing, financing, income taxes, and discontinued operations - with two new mandatory subtotals: 'operating profit' and 'profit before financing and income taxes'. It also introduces mandatory disclosure of 'management-defined performance measures' (MPMs), reconciled to the nearest IFRS subtotal, bringing transparency to previously unregulated 'adjusted earnings' metrics.",
+    "source": "IFRS 18 (issued April 2024, effective 1 Jan 2027, supersedes IAS 1)"
+  },
+  {
+    "topic": "cash-flow-statements",
+    "title": "Statement of cash flows",
+    "lesson": "IAS 7 requires cash flows to be classified into operating, investing, and financing activities, and permits operating cash flows to be presented using either the direct method (gross receipts and payments) or the indirect method (profit adjusted for non-cash items and working capital movements) - IAS 7 encourages the direct method, but the indirect method dominates in practice.",
+    "source": "IAS 7 (classification of cash flows, direct vs indirect method)"
+  },
+  {
+    "topic": "events-after-reporting-period",
+    "title": "Events after the reporting period",
+    "lesson": "IAS 10 distinguishes adjusting events (which provide further evidence of conditions that already existed at the reporting date, and require the financial statements to be adjusted) from non-adjusting events (which relate to conditions arising after the reporting date, and only require disclosure if material). Going concern is a special case: if management decides after year-end that it must liquidate, this is treated as an adjusting event so fundamental that the going concern basis itself is abandoned.",
+    "source": "IAS 10 (adjusting vs non-adjusting events, going concern)"
+  },
+  {
+    "topic": "government-grants",
+    "title": "Government grants",
+    "lesson": "IAS 20 requires a government grant to be recognised in profit or loss on a systematic basis over the periods in which the entity recognises the related expenses the grant is intended to compensate (§12) - for example, a grant funding a depreciable asset is recognised over that asset's useful life, matched against the depreciation charge. A grant that reimburses costs already incurred is instead recognised immediately as income.",
+    "source": "IAS 20 §12 (income approach, matching principle)"
+  },
+  {
+    "topic": "borrowing-costs",
+    "title": "Borrowing costs",
+    "lesson": "IAS 23 requires borrowing costs directly attributable to the acquisition, construction, or production of a 'qualifying asset' (one that necessarily takes a substantial period to get ready for its intended use or sale) to be capitalised as part of that asset's cost, rather than expensed as incurred (§8). For funds borrowed specifically for the asset, the actual costs incurred are capitalised; for general borrowings, a weighted-average capitalisation rate is applied to the qualifying expenditure.",
+    "source": "IAS 23 §8 (capitalisation of borrowing costs)"
+  },
+  {
+    "topic": "earnings-per-share",
+    "title": "Earnings per share",
+    "lesson": "IAS 33 requires basic EPS to be calculated as profit or loss attributable to ordinary equity holders of the parent, divided by the weighted average number of ordinary shares outstanding during the period - shares issued or bought back during the year are time-weighted by the number of days (or months) they were outstanding. Diluted EPS adjusts both the numerator and denominator for the effect of all dilutive potential ordinary shares (e.g. convertible instruments, share options under the treasury stock method).",
+    "source": "IAS 33 (basic and diluted EPS)"
+  },
+  {
+    "topic": "associates-joint-ventures",
+    "title": "Associates and the equity method",
+    "lesson": "IAS 28 creates a rebuttable presumption of 'significant influence' - the power to participate in financial and operating policy decisions without control - whenever an investor holds 20% or more of an investee's voting power. An investee over which the investor has significant influence is an associate, accounted for using the equity method: the investment starts at cost and is then adjusted each period for the investor's share of the associate's post-acquisition profit or loss and OCI.",
+    "source": "IAS 28 (significant influence, equity method)"
+  },
+  {
+    "topic": "employee-benefits",
+    "title": "Employee benefits (pensions)",
+    "lesson": "IAS 19 splits the change in a defined benefit pension's net liability/asset into two very differently-treated pieces: service cost and net interest go through profit or loss, while remeasurements (actuarial gains/losses, and the difference between actual and expected return on plan assets) go to other comprehensive income and are never recycled to profit or loss afterwards. Net interest is calculated by applying the discount rate used to measure the obligation to the net defined benefit liability or asset.",
+    "source": "IAS 19 (service cost, net interest, remeasurements in OCI)"
+  },
+  {
+    "topic": "foreign-exchange",
+    "title": "Foreign exchange translation",
+    "lesson": "IAS 21 distinguishes an entity's functional currency (the currency of its primary economic environment - a factual determination) from its presentation currency (which it can choose freely). When translating a foreign operation into the group's presentation currency, assets and liabilities are translated at the closing rate, income and expenses at transaction-date (often average) rates, and the resulting exchange differences go to other comprehensive income and a separate translation reserve in equity - not to profit or loss.",
+    "source": "IAS 21 (functional vs presentation currency, translation method)"
+  },
+  {
+    "topic": "related-party-disclosures",
+    "title": "Related party disclosures",
+    "lesson": "IAS 24 requires disclosure of related party relationships, transactions, and outstanding balances (including commitments) whenever a related party relationship exists - control, joint control, significant influence, or key management personnel status - regardless of whether the transactions were priced on normal commercial (arm's length) terms. It also specifically requires disclosure of key management personnel compensation, by category.",
+    "source": "IAS 24 (related party relationships, key management personnel compensation)"
+  },
+  {
+    "topic": "share-based-payment",
+    "title": "Share-based payment",
+    "lesson": "IFRS 2 measures share-based payment transactions at the fair value of the equity instruments granted, determined at the grant date. For equity-settled arrangements (e.g. employee share options), that grant-date fair value is fixed and spread as an expense over the vesting period, with no remeasurement for later share price changes. For cash-settled arrangements, a liability is recognised and remeasured to fair value at every reporting date until settlement.",
+    "source": "IFRS 2 (grant-date fair value; equity-settled vs cash-settled)"
+  },
+  {
+    "topic": "operating-segments",
+    "title": "Operating segments",
+    "lesson": "IFRS 8 requires an entity to identify its operating segments based on the internal reports reviewed by its chief operating decision maker (CODM - a function, not necessarily a single job title). A segment is 'reportable' if it meets any ONE of three 10% quantitative thresholds (revenue, profit or loss, or assets), and if the reportable segments' combined external revenue falls below 75% of total external revenue, further segments must be added until that threshold is met.",
+    "source": "IFRS 8 (CODM, 10% thresholds, 75% test)"
+  },
+  {
+    "topic": "joint-arrangements",
+    "title": "Joint arrangements",
+    "lesson": "IFRS 11 splits joint arrangements into joint operations (where the parties have direct rights to the arrangement's assets and obligations for its liabilities, recognised as a direct share of assets/liabilities/revenues/expenses) and joint ventures (where the parties only have rights to the arrangement's net assets, accounted for using the equity method under IAS 28). Classification depends on the substance of the parties' rights and obligations, not merely on whether a separate legal vehicle is used.",
+    "source": "IFRS 11 (joint operation vs joint venture classification)"
+  },
+  {
+    "topic": "audit-objectives",
+    "title": "Overall objectives of the auditor",
+    "lesson": "ISA 200 establishes that the auditor's overall objectives are to obtain reasonable assurance - a high, but not absolute, level of assurance - that the financial statements as a whole are free from material misstatement, whether due to fraud or error, and to report accordingly. Achieving this requires professional scepticism throughout the audit: a questioning mind that does not simply accept management's explanations at face value.",
+    "source": "ISA 200 (reasonable assurance, professional scepticism)"
+  },
+  {
+    "topic": "audit-documentation",
+    "title": "Audit documentation",
+    "lesson": "ISA 230 requires documentation sufficient to enable an 'experienced auditor' with no prior connection to the engagement to understand the nature, timing and extent of procedures performed, their results, and the significant matters and conclusions reached. A limited period after the report date is allowed to assemble the final file administratively, but no new audit procedures or conclusions may be added during that window.",
+    "source": "ISA 230 (experienced auditor test, final file assembly)"
+  },
+  {
+    "topic": "audit-fraud",
+    "title": "Auditor's responsibilities relating to fraud",
+    "lesson": "ISA 240 makes clear that the primary responsibility for preventing and detecting fraud rests with management and those charged with governance, not the auditor - but the auditor must still obtain reasonable assurance the financial statements are free from material misstatement due to fraud. Because the risk of management override of controls exists at every entity, ISA 240 mandates specific minimum procedures to address it (testing journal entries, reviewing estimates for bias, evaluating significant unusual transactions) regardless of the auditor's other risk assessments.",
+    "source": "ISA 240 (management responsibility, mandatory procedures for override risk)"
+  },
+  {
+    "topic": "audit-control-deficiencies",
+    "title": "Communicating control deficiencies",
+    "lesson": "ISA 265 requires the auditor to communicate control deficiencies identified during the audit. 'Significant deficiencies' - important enough to merit the attention of those charged with governance - must be communicated in writing and on a timely basis; less important deficiencies, which still merit management's attention, can be communicated orally to an appropriate level of management.",
+    "source": "ISA 265 (significant deficiencies, written vs oral communication)"
+  },
+  {
+    "topic": "audit-materiality",
+    "title": "Materiality in planning and performing an audit",
+    "lesson": "ISA 320 requires the auditor to set overall materiality for the financial statements as a whole, and then also set 'performance materiality' - a lower amount applied to individual transactions, balances or disclosures - specifically to reduce the risk that the total of small, undetected or uncorrected misstatements could aggregate to something material. Materiality is not fixed at planning; it must be revised if new information emerges that would have led to a different judgement at the outset.",
+    "source": "ISA 320 §§11-12 (performance materiality, revision of materiality)"
+  },
+  {
+    "topic": "audit-evidence",
+    "title": "Audit evidence",
+    "lesson": "ISA 500 requires the auditor to obtain 'sufficient appropriate' audit evidence to draw reasonable conclusions: sufficiency measures quantity, appropriateness measures quality (relevance and reliability). The two are interrelated - higher-quality (e.g. external, independently obtained) evidence can reduce the quantity needed, while higher assessed risk increases the quantity required.",
+    "source": "ISA 500 (sufficiency, appropriateness, reliability hierarchy)"
+  },
+  {
+    "topic": "audit-specific-items",
+    "title": "Audit evidence for specific items",
+    "lesson": "ISA 501 sets out specific evidence requirements for three areas prone to misstatement or management bias: inventory (attendance at the physical count, or alternative procedures if attendance is impracticable), litigation and claims (enquiry of management and, typically, direct communication with external legal counsel), and segment information (understanding how segments are determined and testing disclosure compliance).",
+    "source": "ISA 501 (inventory, litigation and claims, segment information)"
+  },
+  {
+    "topic": "audit-analytical-procedures",
+    "title": "Analytical procedures",
+    "lesson": "ISA 520 allows analytical procedures - comparing recorded amounts to an auditor-developed expectation - to be used as a substantive procedure. Reliance depends on the plausibility of the relationship being tested, the reliability of the underlying data, and the auditor's industry knowledge. Any significant unexplained fluctuation must be investigated through management enquiry and corroboration, or further procedures.",
+    "source": "ISA 520 (analytical procedures as substantive evidence, investigating fluctuations)"
+  },
+  {
+    "topic": "audit-sampling",
+    "title": "Audit sampling",
+    "lesson": "ISA 530 governs the design, selection and evaluation of audit samples when testing less than 100% of a population. Having found exceptions in a sample, the auditor must project the misstatement rate to the population as a whole (not just report the raw exceptions found) and assess whether that projected result indicates a risk of material misstatement.",
+    "source": "ISA 530 (sample design, projection of results)"
+  },
+  {
+    "topic": "audit-estimates",
+    "title": "Auditing accounting estimates",
+    "lesson": "ISA 540 treats accounting estimates (depreciation, provisions, expected credit losses, fair values) as inherently higher-risk because they involve subjective management judgement and carry a risk of bias. Recognised audit approaches include testing the process and assumptions management used to develop the estimate, and/or developing an independent point estimate or range for comparison.",
+    "source": "ISA 540 (subjectivity, testing management's process, independent estimate)"
+  },
+  {
+    "topic": "audit-related-parties",
+    "title": "Auditing related party relationships and transactions",
+    "lesson": "ISA 550 builds on the related party definitions in IAS 24 to guide the auditor's procedures for identifying related party relationships and transactions, and evaluating whether they have been properly accounted for and disclosed. Related party transactions - especially those not on normal market terms - carry heightened fraud and management override risk, since they can be used to move value out of the entity or manipulate reported results.",
+    "source": "ISA 550 (related party audit procedures, fraud risk)"
+  },
+  {
+    "topic": "audit-subsequent-events",
+    "title": "Subsequent events (audit perspective)",
+    "lesson": "ISA 560 requires the auditor to obtain evidence that events between the reporting date and the date of the auditor's report requiring adjustment or disclosure (per IAS 10) have been properly reflected, and sets out specific procedures for facts discovered after the report is signed but before the financial statements are issued - which can require re-opening the audit, amending the financial statements, and issuing a new report.",
+    "source": "ISA 560 (subsequent events, facts discovered after the report date)"
+  },
+  {
+    "topic": "audit-going-concern",
+    "title": "Going concern (audit perspective)",
+    "lesson": "Under ISA 570, assessing the appropriateness of the going concern basis is management's responsibility; the auditor evaluates that assessment and the related evidence. If a material uncertainty about going concern exists and is adequately disclosed, the opinion is not modified for that reason alone, but the auditor's report must include a dedicated section drawing attention to the disclosure - inadequate disclosure, by contrast, does lead to a modified opinion.",
+    "source": "ISA 570 (management's responsibility, material uncertainty reporting)"
+  },
+  {
+    "topic": "audit-opinions",
+    "title": "Forming and reporting the audit opinion",
+    "lesson": "ISA 700 governs the unmodified opinion - concluding the financial statements are fairly presented, in all material respects, in accordance with the applicable framework. ISA 705 governs modifications (qualified, adverse, or disclaimer of opinion) when a material misstatement exists or sufficient appropriate evidence cannot be obtained. ISA 706's Emphasis of Matter and Other Matter paragraphs highlight something already properly presented or disclosed - they must never be used as a substitute for a modification that ISA 705 actually requires.",
+    "source": "ISA 700/705/706 (unmodified, modified opinions, EOM/OM paragraphs)"
+  },
+  {
+    "topic": "audit-quality-management",
+    "title": "Quality management for audit firms",
+    "lesson": "ISQM 1 (effective from December 2022, replacing ISQC 1) requires firms performing audits, reviews, or other assurance engagements to design, implement and operate a risk-based system of quality management, tailored to the firm's own nature and circumstances - identifying quality risks, assessing them, and designing responses, rather than following a generic, one-size-fits-all checklist.",
+    "source": "ISQM 1 (risk-based system of quality management)"
   }
 ]

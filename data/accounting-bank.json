@@ -3,12 +3,24 @@
     "id": "acc-0001",
     "type": "case",
     "topic": "revenue-recognition",
-    "frameworks": ["IFRS", "SwissGAAP-FER"],
+    "frameworks": [
+      "IFRS",
+      "SwissGAAP-FER"
+    ],
     "prompt": "A Swiss company sells a one-year software license bundled with mandatory post-sale support, invoiced and collected upfront. Under IFRS, when is the license + support revenue recognised? How does Swiss GAAP FER differ?",
     "options": [
-      { "label": "Under IFRS 15, the transaction price is allocated between the license and support performance obligations; the license is typically recognised at the point in time control transfers, while support is recognised over the contract term. Swiss GAAP FER has no standalone revenue standard equivalent to IFRS 15 and instead relies on the general realisation principle in FER 2, without a formal multi-step allocation model.", "correct": true },
-      { "label": "Both frameworks require immediate recognition of the full amount on invoicing, since cash was collected upfront.", "correct": false },
-      { "label": "IFRS 15 defers all revenue until the support period ends, exactly matching Swiss GAAP FER practice.", "correct": false }
+      {
+        "label": "Under IFRS 15, the transaction price is allocated between the license and support performance obligations; the license is typically recognised at the point in time control transfers, while support is recognised over the contract term. Swiss GAAP FER has no standalone revenue standard equivalent to IFRS 15 and instead relies on the general realisation principle in FER 2, without a formal multi-step allocation model.",
+        "correct": true
+      },
+      {
+        "label": "Both frameworks require immediate recognition of the full amount on invoicing, since cash was collected upfront.",
+        "correct": false
+      },
+      {
+        "label": "IFRS 15 defers all revenue until the support period ends, exactly matching Swiss GAAP FER practice.",
+        "correct": false
+      }
     ],
     "explanation": "IFRS 15's 5-step model forces separation of the license and support performance obligations. Swiss GAAP FER, being more principles-based, has no equivalent standalone standard, so practice follows the general prudence/realisation principle in FER 2.",
     "source": "IFRS 15 (5-step model, performance obligations); Swiss GAAP FER 2 (valuation/realisation principle)"
@@ -17,13 +29,27 @@
     "id": "acc-0002",
     "type": "quiz",
     "topic": "revenue-recognition",
-    "frameworks": ["IFRS"],
+    "frameworks": [
+      "IFRS"
+    ],
     "prompt": "Under IFRS 15, when must an entity recognise revenue over time rather than at a point in time?",
     "options": [
-      { "label": "Whenever the customer pays in advance", "correct": false },
-      { "label": "When one of the over-time criteria is met - e.g. the customer simultaneously receives and consumes the benefits, or the asset has no alternative use to the entity and it has an enforceable right to payment for performance completed to date", "correct": true },
-      { "label": "Only for construction contracts", "correct": false },
-      { "label": "Never - all IFRS 15 revenue is recognised at a point in time", "correct": false }
+      {
+        "label": "Whenever the customer pays in advance",
+        "correct": false
+      },
+      {
+        "label": "When one of the over-time criteria is met - e.g. the customer simultaneously receives and consumes the benefits, or the asset has no alternative use to the entity and it has an enforceable right to payment for performance completed to date",
+        "correct": true
+      },
+      {
+        "label": "Only for construction contracts",
+        "correct": false
+      },
+      {
+        "label": "Never - all IFRS 15 revenue is recognised at a point in time",
+        "correct": false
+      }
     ],
     "explanation": "IFRS 15 sets out specific over-time recognition criteria (commonly cited as §35); if none is met, revenue is recognised at the point in time control transfers to the customer.",
     "source": "IFRS 15 §35 (over-time recognition criteria)"
@@ -32,12 +58,24 @@
     "id": "acc-0003",
     "type": "case",
     "topic": "held-for-sale",
-    "frameworks": ["IFRS", "SwissGAAP-FER"],
+    "frameworks": [
+      "IFRS",
+      "SwissGAAP-FER"
+    ],
     "prompt": "A group commits to a plan to sell a manufacturing subsidiary; the sale is expected to complete within 6 months and the subsidiary is being actively marketed. How is this reflected under IFRS, and does Swiss GAAP FER have an equivalent requirement?",
     "options": [
-      { "label": "Under IFRS 5 §§6-8, once the criteria are met (available for immediate sale, sale highly probable within one year, actively marketed), the disposal group is reclassified as held for sale, measured at the lower of carrying amount and fair value less costs to sell, and depreciation stops. Swiss GAAP FER has no equivalent 'held for sale' reclassification standard - the assets normally continue to be presented and measured as before until actually sold.", "correct": true },
-      { "label": "Both frameworks require identical held-for-sale reclassification with a dedicated line item.", "correct": false },
-      { "label": "IFRS prohibits reclassification until the sale is legally completed.", "correct": false }
+      {
+        "label": "Under IFRS 5 §§6-8, once the criteria are met (available for immediate sale, sale highly probable within one year, actively marketed), the disposal group is reclassified as held for sale, measured at the lower of carrying amount and fair value less costs to sell, and depreciation stops. Swiss GAAP FER has no equivalent 'held for sale' reclassification standard - the assets normally continue to be presented and measured as before until actually sold.",
+        "correct": true
+      },
+      {
+        "label": "Both frameworks require identical held-for-sale reclassification with a dedicated line item.",
+        "correct": false
+      },
+      {
+        "label": "IFRS prohibits reclassification until the sale is legally completed.",
+        "correct": false
+      }
     ],
     "explanation": "IFRS 5 is a dedicated standard for non-current assets/disposal groups held for sale; Swiss GAAP FER has no direct counterpart - one of the most commonly tested IFRS-vs-FER differences.",
     "source": "IFRS 5 §§6-8"
@@ -46,13 +84,27 @@
     "id": "acc-0004",
     "type": "quiz",
     "topic": "held-for-sale",
-    "frameworks": ["IFRS"],
+    "frameworks": [
+      "IFRS"
+    ],
     "prompt": "Which of these is NOT one of the IFRS 5 conditions for classifying a non-current asset as held for sale?",
     "options": [
-      { "label": "The asset must be available for immediate sale in its present condition", "correct": false },
-      { "label": "The sale must be highly probable, generally expected within one year", "correct": false },
-      { "label": "The asset must have already generated a binding, unconditional sale contract", "correct": true },
-      { "label": "Management must be committed to a plan to sell and actively marketing the asset at a reasonable price", "correct": false }
+      {
+        "label": "The asset must be available for immediate sale in its present condition",
+        "correct": false
+      },
+      {
+        "label": "The sale must be highly probable, generally expected within one year",
+        "correct": false
+      },
+      {
+        "label": "The asset must have already generated a binding, unconditional sale contract",
+        "correct": true
+      },
+      {
+        "label": "Management must be committed to a plan to sell and actively marketing the asset at a reasonable price",
+        "correct": false
+      }
     ],
     "explanation": "IFRS 5 requires the sale to be highly probable and actively marketed, but does not require an already-signed unconditional sale agreement at the classification date.",
     "source": "IFRS 5 §§7-8"
@@ -61,12 +113,24 @@
     "id": "acc-0005",
     "type": "case",
     "topic": "inventory",
-    "frameworks": ["IFRS", "SwissGAAP-FER"],
+    "frameworks": [
+      "IFRS",
+      "SwissGAAP-FER"
+    ],
     "prompt": "At year-end, a client's finished-goods inventory has a cost of CHF 100,000 but, due to a market downturn, an estimated net realisable value of CHF 85,000. How should this be measured under IAS 2, and is the Swiss GAAP FER approach materially different?",
     "options": [
-      { "label": "IAS 2.9 requires inventories to be measured at the lower of cost and net realisable value, so the inventory must be written down to CHF 85,000. Swiss GAAP FER 17 follows the same conservative lower-of logic consistent with FER's general prudence principle (FER 2), so the practical outcome is very similar.", "correct": true },
-      { "label": "IAS 2 allows inventory to remain at cost regardless of market value declines.", "correct": false },
-      { "label": "Only Swiss GAAP FER requires a write-down; IFRS does not.", "correct": false }
+      {
+        "label": "IAS 2.9 requires inventories to be measured at the lower of cost and net realisable value, so the inventory must be written down to CHF 85,000. Swiss GAAP FER 17 follows the same conservative lower-of logic consistent with FER's general prudence principle (FER 2), so the practical outcome is very similar.",
+        "correct": true
+      },
+      {
+        "label": "IAS 2 allows inventory to remain at cost regardless of market value declines.",
+        "correct": false
+      },
+      {
+        "label": "Only Swiss GAAP FER requires a write-down; IFRS does not.",
+        "correct": false
+      }
     ],
     "explanation": "Both frameworks apply a conservative lower-of approach to inventory, so the numerical outcome is usually the same even though FER's guidance is less detailed than IAS 2's.",
     "source": "IAS 2 §9; Swiss GAAP FER 17 (Vorräte/inventories), general prudence principle FER 2"
@@ -75,12 +139,24 @@
     "id": "acc-0006",
     "type": "case",
     "topic": "leases",
-    "frameworks": ["IFRS", "SwissGAAP-FER"],
+    "frameworks": [
+      "IFRS",
+      "SwissGAAP-FER"
+    ],
     "prompt": "A company signs a 5-year lease for office space (not short-term, not low-value). How is this reflected on the lessee's balance sheet under IFRS 16, compared with Swiss GAAP FER?",
     "options": [
-      { "label": "Under IFRS 16 §22, the lessee recognises a right-of-use asset and a lease liability at the commencement date for virtually all leases. Under Swiss GAAP FER 13, the lessee still distinguishes between finance leases (capitalised) and operating leases (kept off-balance-sheet, disclosed in the notes) - a 5-year office lease would often still qualify as an operating lease and stay off-balance-sheet under FER.", "correct": true },
-      { "label": "Both frameworks eliminated the operating lease category for lessees.", "correct": false },
-      { "label": "IFRS 16 keeps the old operating/finance lease split; only FER changed.", "correct": false }
+      {
+        "label": "Under IFRS 16 §22, the lessee recognises a right-of-use asset and a lease liability at the commencement date for virtually all leases. Under Swiss GAAP FER 13, the lessee still distinguishes between finance leases (capitalised) and operating leases (kept off-balance-sheet, disclosed in the notes) - a 5-year office lease would often still qualify as an operating lease and stay off-balance-sheet under FER.",
+        "correct": true
+      },
+      {
+        "label": "Both frameworks eliminated the operating lease category for lessees.",
+        "correct": false
+      },
+      {
+        "label": "IFRS 16 keeps the old operating/finance lease split; only FER changed.",
+        "correct": false
+      }
     ],
     "explanation": "One of the most-tested IFRS-vs-Swiss-GAAP-FER differences: IFRS 16 brought (almost) all leases onto the lessee's balance sheet, while FER 13 still runs the old dual model.",
     "source": "IFRS 16 §22; Swiss GAAP FER 13 (Leasinggeschäfte)"
@@ -89,13 +165,27 @@
     "id": "acc-0007",
     "type": "quiz",
     "topic": "leases",
-    "frameworks": ["IFRS"],
+    "frameworks": [
+      "IFRS"
+    ],
     "prompt": "Under IFRS 16, a lessee can elect NOT to recognise a right-of-use asset and lease liability for which types of leases?",
     "options": [
-      { "label": "Short-term leases (12 months or less, no purchase option) and leases of low-value underlying assets", "correct": true },
-      { "label": "Any lease under CHF 1 million", "correct": false },
-      { "label": "Leases of real estate only", "correct": false },
-      { "label": "There is no such exemption under IFRS 16", "correct": false }
+      {
+        "label": "Short-term leases (12 months or less, no purchase option) and leases of low-value underlying assets",
+        "correct": true
+      },
+      {
+        "label": "Any lease under CHF 1 million",
+        "correct": false
+      },
+      {
+        "label": "Leases of real estate only",
+        "correct": false
+      },
+      {
+        "label": "There is no such exemption under IFRS 16",
+        "correct": false
+      }
     ],
     "explanation": "IFRS 16 provides two recognition exemptions available to lessees: short-term leases and low-value assets; if elected, lease payments are expensed on a systematic basis instead.",
     "source": "IFRS 16 §§5-8"
@@ -104,12 +194,24 @@
     "id": "acc-0008",
     "type": "case",
     "topic": "intangible-assets",
-    "frameworks": ["IFRS", "SwissGAAP-FER"],
+    "frameworks": [
+      "IFRS",
+      "SwissGAAP-FER"
+    ],
     "prompt": "A company acquires a trademark with no foreseeable limit on the period it will generate cash flows. How is its useful life treated under IAS 38, and how does Swiss GAAP FER 10 differ?",
     "options": [
-      { "label": "Under IAS 38, an intangible asset with an indefinite useful life is not amortised; instead it is tested for impairment at least annually under IAS 36. Under Swiss GAAP FER 10, intangible assets are always amortised over their estimated useful life, and if that life cannot be reliably determined, a default period of 5 years is used (up to a maximum of 20 years in justified cases) - FER has no 'indefinite life, no amortisation' category.", "correct": true },
-      { "label": "Both frameworks forbid amortising intangible assets.", "correct": false },
-      { "label": "IAS 38 always requires a maximum 20-year amortisation period like FER 10.", "correct": false }
+      {
+        "label": "Under IAS 38, an intangible asset with an indefinite useful life is not amortised; instead it is tested for impairment at least annually under IAS 36. Under Swiss GAAP FER 10, intangible assets are always amortised over their estimated useful life, and if that life cannot be reliably determined, a default period of 5 years is used (up to a maximum of 20 years in justified cases) - FER has no 'indefinite life, no amortisation' category.",
+        "correct": true
+      },
+      {
+        "label": "Both frameworks forbid amortising intangible assets.",
+        "correct": false
+      },
+      {
+        "label": "IAS 38 always requires a maximum 20-year amortisation period like FER 10.",
+        "correct": false
+      }
     ],
     "explanation": "This indefinite-life treatment (no amortisation, impairment-only) is unique to IFRS; Swiss GAAP FER's more conservative approach always amortises intangibles, defaulting to 5 years when useful life is uncertain.",
     "source": "IAS 38 (indefinite useful life, impairment-only under IAS 36); Swiss GAAP FER 10 (Immaterielle Werte)"
@@ -118,13 +220,27 @@
     "id": "acc-0009",
     "type": "quiz",
     "topic": "intangible-assets",
-    "frameworks": ["IFRS"],
+    "frameworks": [
+      "IFRS"
+    ],
     "prompt": "How often must an intangible asset with an indefinite useful life be tested for impairment under IAS 36?",
     "options": [
-      { "label": "Only when there is an indicator of impairment", "correct": false },
-      { "label": "At least annually, and whenever there is an indication of impairment", "correct": true },
-      { "label": "Every 5 years", "correct": false },
-      { "label": "Never - indefinite-life intangibles are not tested", "correct": false }
+      {
+        "label": "Only when there is an indicator of impairment",
+        "correct": false
+      },
+      {
+        "label": "At least annually, and whenever there is an indication of impairment",
+        "correct": true
+      },
+      {
+        "label": "Every 5 years",
+        "correct": false
+      },
+      {
+        "label": "Never - indefinite-life intangibles are not tested",
+        "correct": false
+      }
     ],
     "explanation": "Unlike most assets (tested only when indicators exist), indefinite-life intangibles and goodwill require a mandatory annual impairment test regardless of indicators.",
     "source": "IAS 36 (annual impairment test for indefinite-life intangibles and goodwill)"
@@ -133,12 +249,24 @@
     "id": "acc-0010",
     "type": "case",
     "topic": "ppe",
-    "frameworks": ["IFRS", "SwissGAAP-FER"],
+    "frameworks": [
+      "IFRS",
+      "SwissGAAP-FER"
+    ],
     "prompt": "After initial recognition, IAS 16 allows a choice of measurement model for a class of property, plant and equipment. What are the options, and how does Swiss GAAP FER 18 compare?",
     "options": [
-      { "label": "IAS 16 allows an accounting policy choice, by class of asset, between the cost model and the revaluation model (fair value less subsequent depreciation). Swiss GAAP FER 18 is more conservative and is generally built around the cost model, without an equivalent revaluation option.", "correct": true },
-      { "label": "Both frameworks require fair value remeasurement of all PP&E every year.", "correct": false },
-      { "label": "IAS 16 only permits the cost model, identical to FER 18.", "correct": false }
+      {
+        "label": "IAS 16 allows an accounting policy choice, by class of asset, between the cost model and the revaluation model (fair value less subsequent depreciation). Swiss GAAP FER 18 is more conservative and is generally built around the cost model, without an equivalent revaluation option.",
+        "correct": true
+      },
+      {
+        "label": "Both frameworks require fair value remeasurement of all PP&E every year.",
+        "correct": false
+      },
+      {
+        "label": "IAS 16 only permits the cost model, identical to FER 18.",
+        "correct": false
+      }
     ],
     "explanation": "The revaluation model under IAS 16 is a genuine policy choice not generally mirrored in Swiss GAAP FER, which stays closer to historical cost.",
     "source": "IAS 16 (cost vs revaluation model); Swiss GAAP FER 18 (Sachanlagen)"
@@ -147,13 +275,27 @@
     "id": "acc-0011",
     "type": "quiz",
     "topic": "ppe",
-    "frameworks": ["IFRS"],
+    "frameworks": [
+      "IFRS"
+    ],
     "prompt": "Under IAS 16, if an aircraft's engine has a materially different useful life from the airframe, how should it be depreciated?",
     "options": [
-      { "label": "The whole aircraft must be depreciated as a single unit", "correct": false },
-      { "label": "The engine must be identified and depreciated separately as a significant component with its own useful life", "correct": true },
-      { "label": "Components are only separated for tax purposes, never for IFRS depreciation", "correct": false },
-      { "label": "IAS 16 does not allow component depreciation", "correct": false }
+      {
+        "label": "The whole aircraft must be depreciated as a single unit",
+        "correct": false
+      },
+      {
+        "label": "The engine must be identified and depreciated separately as a significant component with its own useful life",
+        "correct": true
+      },
+      {
+        "label": "Components are only separated for tax purposes, never for IFRS depreciation",
+        "correct": false
+      },
+      {
+        "label": "IAS 16 does not allow component depreciation",
+        "correct": false
+      }
     ],
     "explanation": "IAS 16 requires significant parts of an asset with materially different useful lives to be depreciated separately - the component approach.",
     "source": "IAS 16 (component approach to depreciation)"
@@ -162,12 +304,24 @@
     "id": "acc-0012",
     "type": "case",
     "topic": "impairment",
-    "frameworks": ["IFRS", "SwissGAAP-FER"],
+    "frameworks": [
+      "IFRS",
+      "SwissGAAP-FER"
+    ],
     "prompt": "A cash-generating unit (CGU) shows indicators of impairment. Under IAS 36, how is the impairment test performed, and how does Swiss GAAP FER 20 treat impairment?",
     "options": [
-      { "label": "Under IAS 36, the CGU's recoverable amount (the higher of fair value less costs of disposal and value in use) is compared to its carrying amount, with any shortfall recognised as an impairment loss, allocated first to goodwill. Swiss GAAP FER 20 similarly requires a write-down when a carrying amount is not recoverable, but with less detailed and prescriptive guidance than IAS 36 on how to determine the recoverable amount.", "correct": true },
-      { "label": "IAS 36 does not use recoverable amount; it always writes assets down to zero.", "correct": false },
-      { "label": "Swiss GAAP FER 20 explicitly forbids any impairment write-downs.", "correct": false }
+      {
+        "label": "Under IAS 36, the CGU's recoverable amount (the higher of fair value less costs of disposal and value in use) is compared to its carrying amount, with any shortfall recognised as an impairment loss, allocated first to goodwill. Swiss GAAP FER 20 similarly requires a write-down when a carrying amount is not recoverable, but with less detailed and prescriptive guidance than IAS 36 on how to determine the recoverable amount.",
+        "correct": true
+      },
+      {
+        "label": "IAS 36 does not use recoverable amount; it always writes assets down to zero.",
+        "correct": false
+      },
+      {
+        "label": "Swiss GAAP FER 20 explicitly forbids any impairment write-downs.",
+        "correct": false
+      }
     ],
     "explanation": "Both frameworks require write-downs when carrying amounts aren't recoverable, but IAS 36's CGU/recoverable-amount mechanics are considerably more detailed and prescriptive than FER 20's principles-based approach.",
     "source": "IAS 36 (CGU, recoverable amount); Swiss GAAP FER 20 (Wertbeeinträchtigungen)"
@@ -176,13 +330,27 @@
     "id": "acc-0013",
     "type": "quiz",
     "topic": "impairment",
-    "frameworks": ["IFRS"],
+    "frameworks": [
+      "IFRS"
+    ],
     "prompt": "Under IAS 36, at what point must an entity test a (non-goodwill, finite-life) asset for impairment?",
     "options": [
-      { "label": "Only at the end of every reporting period, regardless of circumstances", "correct": false },
-      { "label": "Only when there is an indication that the asset may be impaired", "correct": true },
-      { "label": "Only if requested by the auditor", "correct": false },
-      { "label": "Never - only goodwill is tested", "correct": false }
+      {
+        "label": "Only at the end of every reporting period, regardless of circumstances",
+        "correct": false
+      },
+      {
+        "label": "Only when there is an indication that the asset may be impaired",
+        "correct": true
+      },
+      {
+        "label": "Only if requested by the auditor",
+        "correct": false
+      },
+      {
+        "label": "Never - only goodwill is tested",
+        "correct": false
+      }
     ],
     "explanation": "Unlike goodwill and indefinite-life intangibles (mandatory annual test), most other assets are only tested for impairment when an indicator is identified.",
     "source": "IAS 36 §12 (list of impairment indicators)"
@@ -191,12 +359,24 @@
     "id": "acc-0014",
     "type": "case",
     "topic": "financial-instruments",
-    "frameworks": ["IFRS", "SwissGAAP-FER"],
+    "frameworks": [
+      "IFRS",
+      "SwissGAAP-FER"
+    ],
     "prompt": "A company holds a bond it intends to collect contractual cash flows from until maturity. How is this classified and measured under IFRS 9, and does Swiss GAAP FER have an equivalent classification model?",
     "options": [
-      { "label": "Under IFRS 9, the bond is classified based on the entity's business model and the instrument's contractual cash flow characteristics (the SPPI test); if held to collect contractual cash flows that are solely payments of principal and interest, it is measured at amortised cost. Swiss GAAP FER has no equivalent business-model/SPPI classification framework - financial instruments are generally addressed under the general valuation principles of FER 2, without IFRS 9's structured categories.", "correct": true },
-      { "label": "Both frameworks use the identical business model and SPPI classification tests.", "correct": false },
-      { "label": "IFRS 9 classifies all debt instruments at fair value through profit or loss with no exceptions.", "correct": false }
+      {
+        "label": "Under IFRS 9, the bond is classified based on the entity's business model and the instrument's contractual cash flow characteristics (the SPPI test); if held to collect contractual cash flows that are solely payments of principal and interest, it is measured at amortised cost. Swiss GAAP FER has no equivalent business-model/SPPI classification framework - financial instruments are generally addressed under the general valuation principles of FER 2, without IFRS 9's structured categories.",
+        "correct": true
+      },
+      {
+        "label": "Both frameworks use the identical business model and SPPI classification tests.",
+        "correct": false
+      },
+      {
+        "label": "IFRS 9 classifies all debt instruments at fair value through profit or loss with no exceptions.",
+        "correct": false
+      }
     ],
     "explanation": "IFRS 9's business-model-plus-SPPI classification approach (amortised cost / FVOCI / FVTPL) has no direct Swiss GAAP FER counterpart.",
     "source": "IFRS 9 (classification and measurement, business model and SPPI test)"
@@ -205,13 +385,27 @@
     "id": "acc-0015",
     "type": "quiz",
     "topic": "financial-instruments",
-    "frameworks": ["IFRS"],
+    "frameworks": [
+      "IFRS"
+    ],
     "prompt": "What impairment model did IFRS 9 introduce for financial assets, replacing IAS 39's incurred-loss model?",
     "options": [
-      { "label": "The expected credit loss (ECL) model, requiring recognition of credit losses before they are actually incurred", "correct": true },
-      { "label": "A model that recognises losses only once a default has actually occurred", "correct": false },
-      { "label": "IFRS 9 removed impairment requirements for financial assets entirely", "correct": false },
-      { "label": "A fair-value-only model with no separate impairment concept", "correct": false }
+      {
+        "label": "The expected credit loss (ECL) model, requiring recognition of credit losses before they are actually incurred",
+        "correct": true
+      },
+      {
+        "label": "A model that recognises losses only once a default has actually occurred",
+        "correct": false
+      },
+      {
+        "label": "IFRS 9 removed impairment requirements for financial assets entirely",
+        "correct": false
+      },
+      {
+        "label": "A fair-value-only model with no separate impairment concept",
+        "correct": false
+      }
     ],
     "explanation": "The ECL model was one of the major post-financial-crisis reforms, requiring forward-looking recognition of expected credit losses rather than waiting for a loss event.",
     "source": "IFRS 9 (expected credit loss impairment model)"
@@ -220,12 +414,23 @@
     "id": "acc-0016",
     "type": "case",
     "topic": "provisions",
-    "frameworks": ["IFRS"],
+    "frameworks": [
+      "IFRS"
+    ],
     "prompt": "A company is being sued and its lawyers believe it is probable (more likely than not) that it will have to pay damages, and the amount can be reliably estimated. Should a provision be recognised under IAS 37?",
     "options": [
-      { "label": "Yes - IAS 37 requires recognition of a provision when there is a present obligation as a result of a past event, an outflow of resources is probable, and the amount can be reliably estimated. All three conditions appear to be met here.", "correct": true },
-      { "label": "No - provisions can only be recognised once a court judgment is final", "correct": false },
-      { "label": "No - lawsuits are always treated only as contingent liabilities disclosed in the notes", "correct": false }
+      {
+        "label": "Yes - IAS 37 requires recognition of a provision when there is a present obligation as a result of a past event, an outflow of resources is probable, and the amount can be reliably estimated. All three conditions appear to be met here.",
+        "correct": true
+      },
+      {
+        "label": "No - provisions can only be recognised once a court judgment is final",
+        "correct": false
+      },
+      {
+        "label": "No - lawsuits are always treated only as contingent liabilities disclosed in the notes",
+        "correct": false
+      }
     ],
     "explanation": "IAS 37's three-part recognition test (present obligation, probable outflow, reliable estimate) is met, so a provision - not just a note disclosure - is required.",
     "source": "IAS 37 (recognition criteria for provisions)"
@@ -234,13 +439,27 @@
     "id": "acc-0017",
     "type": "quiz",
     "topic": "provisions",
-    "frameworks": ["IFRS"],
+    "frameworks": [
+      "IFRS"
+    ],
     "prompt": "Under IAS 37, how is a contingent liability treated, as opposed to a provision?",
     "options": [
-      { "label": "It is recognised on the balance sheet at its best estimate, exactly like a provision", "correct": false },
-      { "label": "It is only disclosed in the notes (not recognised as a liability), because either the outflow is not probable or the amount cannot be reliably measured", "correct": true },
-      { "label": "It is always ignored completely", "correct": false },
-      { "label": "It is recognised as revenue", "correct": false }
+      {
+        "label": "It is recognised on the balance sheet at its best estimate, exactly like a provision",
+        "correct": false
+      },
+      {
+        "label": "It is only disclosed in the notes (not recognised as a liability), because either the outflow is not probable or the amount cannot be reliably measured",
+        "correct": true
+      },
+      {
+        "label": "It is always ignored completely",
+        "correct": false
+      },
+      {
+        "label": "It is recognised as revenue",
+        "correct": false
+      }
     ],
     "explanation": "A contingent liability fails at least one of the provision recognition criteria (probable outflow or reliable measurement) and is therefore only disclosed, not recognised.",
     "source": "IAS 37 (provisions vs contingent liabilities)"
@@ -249,12 +468,24 @@
     "id": "acc-0018",
     "type": "case",
     "topic": "business-combinations",
-    "frameworks": ["IFRS", "SwissGAAP-FER"],
+    "frameworks": [
+      "IFRS",
+      "SwissGAAP-FER"
+    ],
     "prompt": "A company acquires 100% of another company's shares. Under IFRS 3, what method must be used to account for this business combination, and does Swiss GAAP FER 30 allow flexibility that IFRS does not?",
     "options": [
-      { "label": "IFRS 3 requires the acquisition method for all business combinations, recognising identifiable assets/liabilities at fair value and any goodwill (with no amortisation, only impairment testing thereafter). Swiss GAAP FER 30 gives more flexibility, permitting goodwill to be either capitalised and amortised over its useful life or offset directly against equity at the acquisition date - a choice not available under IFRS 3.", "correct": true },
-      { "label": "Both frameworks require identical treatment of goodwill, including amortisation.", "correct": false },
-      { "label": "IFRS 3 allows pooling-of-interests accounting for any acquisition.", "correct": false }
+      {
+        "label": "IFRS 3 requires the acquisition method for all business combinations, recognising identifiable assets/liabilities at fair value and any goodwill (with no amortisation, only impairment testing thereafter). Swiss GAAP FER 30 gives more flexibility, permitting goodwill to be either capitalised and amortised over its useful life or offset directly against equity at the acquisition date - a choice not available under IFRS 3.",
+        "correct": true
+      },
+      {
+        "label": "Both frameworks require identical treatment of goodwill, including amortisation.",
+        "correct": false
+      },
+      {
+        "label": "IFRS 3 allows pooling-of-interests accounting for any acquisition.",
+        "correct": false
+      }
     ],
     "explanation": "The acquisition method is mandatory under IFRS 3 with impairment-only goodwill; Swiss GAAP FER 30's goodwill-against-equity option is a well-known point of divergence.",
     "source": "IFRS 3 (acquisition method, goodwill impairment-only); Swiss GAAP FER 30 (Konzernrechnung)"
@@ -263,13 +494,27 @@
     "id": "acc-0019",
     "type": "quiz",
     "topic": "business-combinations",
-    "frameworks": ["IFRS"],
+    "frameworks": [
+      "IFRS"
+    ],
     "prompt": "Under IFRS 3, how is goodwill on acquisition calculated (simplest case, no non-controlling interest)?",
     "options": [
-      { "label": "Consideration transferred minus the net fair value of identifiable assets acquired and liabilities assumed", "correct": true },
-      { "label": "The book value of the target's total assets", "correct": false },
-      { "label": "The purchase price divided by the number of years of expected benefit", "correct": false },
-      { "label": "Goodwill is never calculated under IFRS - it is always assumed to be zero", "correct": false }
+      {
+        "label": "Consideration transferred minus the net fair value of identifiable assets acquired and liabilities assumed",
+        "correct": true
+      },
+      {
+        "label": "The book value of the target's total assets",
+        "correct": false
+      },
+      {
+        "label": "The purchase price divided by the number of years of expected benefit",
+        "correct": false
+      },
+      {
+        "label": "Goodwill is never calculated under IFRS - it is always assumed to be zero",
+        "correct": false
+      }
     ],
     "explanation": "Goodwill is the residual: what was paid, minus the fair value of the identifiable net assets acquired.",
     "source": "IFRS 3 (goodwill measurement)"
@@ -278,12 +523,23 @@
     "id": "acc-0020",
     "type": "case",
     "topic": "consolidation",
-    "frameworks": ["IFRS"],
+    "frameworks": [
+      "IFRS"
+    ],
     "prompt": "A parent holds 40% of the voting rights of an investee but, due to the dispersion of the remaining shares, is able in practice to direct the investee's relevant activities. Should the parent consolidate this investee under IFRS 10?",
     "options": [
-      { "label": "Yes, potentially - IFRS 10 defines control based on power over the investee, exposure to variable returns, and the ability to use that power to affect returns; 'de facto control' from a large, dispersed minority stake can meet this definition even below 50% of voting rights.", "correct": true },
-      { "label": "No - consolidation always requires legal ownership of more than 50% of voting rights", "correct": false },
-      { "label": "IFRS 10 has been withdrawn and consolidation is now voluntary", "correct": false }
+      {
+        "label": "Yes, potentially - IFRS 10 defines control based on power over the investee, exposure to variable returns, and the ability to use that power to affect returns; 'de facto control' from a large, dispersed minority stake can meet this definition even below 50% of voting rights.",
+        "correct": true
+      },
+      {
+        "label": "No - consolidation always requires legal ownership of more than 50% of voting rights",
+        "correct": false
+      },
+      {
+        "label": "IFRS 10 has been withdrawn and consolidation is now voluntary",
+        "correct": false
+      }
     ],
     "explanation": "IFRS 10's control model looks beyond simple voting-rights thresholds to substance (power, returns, the link between them), which can bring de facto control situations into consolidation.",
     "source": "IFRS 10 (definition of control)"
@@ -292,13 +548,27 @@
     "id": "acc-0021",
     "type": "quiz",
     "topic": "fair-value",
-    "frameworks": ["IFRS"],
+    "frameworks": [
+      "IFRS"
+    ],
     "prompt": "How does IFRS 13 define fair value?",
     "options": [
-      { "label": "The price that would be received to sell an asset (or paid to transfer a liability) in an orderly transaction between market participants at the measurement date - an exit price", "correct": true },
-      { "label": "The original historical cost of the asset", "correct": false },
-      { "label": "The price management believes the asset is worth internally", "correct": false },
-      { "label": "The replacement cost of the asset new", "correct": false }
+      {
+        "label": "The price that would be received to sell an asset (or paid to transfer a liability) in an orderly transaction between market participants at the measurement date - an exit price",
+        "correct": true
+      },
+      {
+        "label": "The original historical cost of the asset",
+        "correct": false
+      },
+      {
+        "label": "The price management believes the asset is worth internally",
+        "correct": false
+      },
+      {
+        "label": "The replacement cost of the asset new",
+        "correct": false
+      }
     ],
     "explanation": "IFRS 13 centres fair value on a market-based exit price, not entity-specific value or historical cost.",
     "source": "IFRS 13 (definition of fair value)"
@@ -307,12 +577,23 @@
     "id": "acc-0022",
     "type": "case",
     "topic": "income-taxes",
-    "frameworks": ["IFRS"],
+    "frameworks": [
+      "IFRS"
+    ],
     "prompt": "A company has an asset whose carrying amount for accounting purposes differs from its tax base because of different depreciation rates. What does IAS 12 require in this situation?",
     "options": [
-      { "label": "Recognition of a deferred tax asset or liability for the resulting temporary difference between the carrying amount and the tax base, generally measured at the tax rates expected to apply when the difference reverses", "correct": true },
-      { "label": "IAS 12 ignores differences between accounting and tax depreciation", "correct": false },
-      { "label": "The difference is always recognised immediately as a current tax expense with no deferred element", "correct": false }
+      {
+        "label": "Recognition of a deferred tax asset or liability for the resulting temporary difference between the carrying amount and the tax base, generally measured at the tax rates expected to apply when the difference reverses",
+        "correct": true
+      },
+      {
+        "label": "IAS 12 ignores differences between accounting and tax depreciation",
+        "correct": false
+      },
+      {
+        "label": "The difference is always recognised immediately as a current tax expense with no deferred element",
+        "correct": false
+      }
     ],
     "explanation": "This is a textbook temporary difference: different depreciation rates create a deferred tax balance under IAS 12's balance-sheet liability method.",
     "source": "IAS 12 (deferred tax, temporary differences)"
@@ -321,13 +602,27 @@
     "id": "acc-0023",
     "type": "quiz",
     "topic": "audit-icfr",
-    "frameworks": ["PCAOB"],
+    "frameworks": [
+      "PCAOB"
+    ],
     "prompt": "Under PCAOB AS 2201, what is the auditor's objective when auditing internal control over financial reporting (ICFR) as part of an integrated audit?",
     "options": [
-      { "label": "To express an opinion on the effectiveness of the company's internal control over financial reporting", "correct": true },
-      { "label": "To design the company's internal controls for management", "correct": false },
-      { "label": "To guarantee that no fraud will ever occur", "correct": false },
-      { "label": "To replace the audit of the financial statements entirely", "correct": false }
+      {
+        "label": "To express an opinion on the effectiveness of the company's internal control over financial reporting",
+        "correct": true
+      },
+      {
+        "label": "To design the company's internal controls for management",
+        "correct": false
+      },
+      {
+        "label": "To guarantee that no fraud will ever occur",
+        "correct": false
+      },
+      {
+        "label": "To replace the audit of the financial statements entirely",
+        "correct": false
+      }
     ],
     "explanation": "AS 2201 governs the ICFR audit integrated with the financial statement audit; the auditor's objective is an opinion on ICFR effectiveness, not designing controls or guaranteeing fraud-free operations.",
     "source": "PCAOB AS 2201 - An Audit of Internal Control Over Financial Reporting"
@@ -336,14 +631,1445 @@
     "id": "acc-0024",
     "type": "case",
     "topic": "audit-risk-assessment",
-    "frameworks": ["ISA"],
+    "frameworks": [
+      "ISA"
+    ],
     "prompt": "At the planning stage of an audit, the engagement team needs to identify and assess the risks of material misstatement in the financial statements. Which standard governs this, and what is its core requirement?",
     "options": [
-      { "label": "ISA 315 (Revised 2019) requires the auditor to identify and assess risks of material misstatement through understanding the entity and its environment, including its internal control, in order to design audit procedures that respond to the assessed risks (per ISA 330).", "correct": true },
-      { "label": "ISA 315 only applies to listed companies", "correct": false },
-      { "label": "Risk assessment is optional and left entirely to auditor judgement without a governing standard", "correct": false }
+      {
+        "label": "ISA 315 (Revised 2019) requires the auditor to identify and assess risks of material misstatement through understanding the entity and its environment, including its internal control, in order to design audit procedures that respond to the assessed risks (per ISA 330).",
+        "correct": true
+      },
+      {
+        "label": "ISA 315 only applies to listed companies",
+        "correct": false
+      },
+      {
+        "label": "Risk assessment is optional and left entirely to auditor judgement without a governing standard",
+        "correct": false
+      }
     ],
     "explanation": "ISA 315 (Revised 2019) is the foundational risk-assessment standard, feeding directly into ISA 330's risk-response requirements.",
     "source": "ISA 315 (Revised 2019) - Identifying and Assessing the Risks of Material Misstatement"
+  },
+  {
+    "id": "acc-0025",
+    "type": "case",
+    "topic": "presentation-financial-statements",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "A UK-listed group is preparing its financial statements for a period beginning after 1 January 2027. Under the new IFRS 18, how must income and expenses be classified in the statement of profit or loss, compared to the old IAS 1 approach?",
+    "options": [
+      {
+        "label": "IFRS 18 requires every income and expense item to be classified into one of five categories - operating, investing, financing, income taxes, and discontinued operations - with two new mandatory subtotals ('operating profit' and 'profit before financing and income taxes'). IAS 1, which IFRS 18 supersedes, gave entities much more flexibility over income statement structure and did not mandate these categories or subtotals.",
+        "correct": true
+      },
+      {
+        "label": "IFRS 18 abolishes the income statement altogether in favour of a single statement of comprehensive income.",
+        "correct": false
+      },
+      {
+        "label": "IFRS 18 is identical to IAS 1 except for a change in name.",
+        "correct": false
+      }
+    ],
+    "explanation": "IFRS 18 (effective 1 January 2027, early application permitted) is ACCA's newly examinable presentation standard, replacing IAS 1. Its main innovation is the mandatory 5-category structure and required subtotals, aimed at improving comparability across companies.",
+    "source": "IFRS 18 (issued April 2024, effective 1 Jan 2027, supersedes IAS 1)"
+  },
+  {
+    "id": "acc-0026",
+    "type": "quiz",
+    "topic": "presentation-financial-statements",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Which of these is a new concept introduced by IFRS 18 that did not exist under IAS 1?",
+    "options": [
+      {
+        "label": "Management-defined performance measures (MPMs), which must be reconciled to the most directly comparable IFRS subtotal",
+        "correct": true
+      },
+      {
+        "label": "The requirement to present a statement of financial position",
+        "correct": false
+      },
+      {
+        "label": "The requirement to present comparative information",
+        "correct": false
+      },
+      {
+        "label": "The going concern assessment",
+        "correct": false
+      }
+    ],
+    "explanation": "MPMs (often similar to what companies previously called 'adjusted' or 'underlying' earnings measures) are a new disclosure concept under IFRS 18, requiring reconciliation and disclosure in the notes to bring transparency to previously unregulated 'non-GAAP' metrics.",
+    "source": "IFRS 18 (management-defined performance measures)"
+  },
+  {
+    "id": "acc-0027",
+    "type": "case",
+    "topic": "cash-flow-statements",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "A company's finance team is deciding whether to use the direct or indirect method to present operating cash flows in its statement of cash flows. What does IAS 7 say about this choice, and which method is more common in practice?",
+    "options": [
+      {
+        "label": "IAS 7 permits either the direct method (disclosing major classes of gross cash receipts and payments) or the indirect method (adjusting profit before tax for non-cash items and working capital movements), and it explicitly encourages use of the direct method - but the indirect method is far more common in practice because the underlying data is easier to obtain from the accounting records.",
+        "correct": true
+      },
+      {
+        "label": "IAS 7 requires the direct method and prohibits the indirect method.",
+        "correct": false
+      },
+      {
+        "label": "IAS 7 requires the indirect method and prohibits the direct method.",
+        "correct": false
+      }
+    ],
+    "explanation": "Both methods arrive at the same operating cash flow total; they differ only in how it is presented. IAS 7 has a stated preference for the direct method, but in practice almost all companies use the indirect method.",
+    "source": "IAS 7 (direct vs indirect method)"
+  },
+  {
+    "id": "acc-0028",
+    "type": "quiz",
+    "topic": "cash-flow-statements",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Under IAS 7, which of these would normally be classified as an investing activity?",
+    "options": [
+      {
+        "label": "Cash paid to acquire property, plant and equipment",
+        "correct": true
+      },
+      {
+        "label": "Cash received from customers for the sale of goods",
+        "correct": false
+      },
+      {
+        "label": "Cash paid to repay a bank loan",
+        "correct": false
+      },
+      {
+        "label": "Cash paid to suppliers",
+        "correct": false
+      }
+    ],
+    "explanation": "Investing activities relate to the acquisition and disposal of long-term assets and other investments not falling within cash equivalents.",
+    "source": "IAS 7 (classification of investing activities)"
+  },
+  {
+    "id": "acc-0029",
+    "type": "case",
+    "topic": "events-after-reporting-period",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "After the reporting date but before the financial statements are authorised for issue, a major customer that owed a material receivable at year-end goes into insolvency, confirming that the receivable was already largely uncollectible at the reporting date. How should this be treated under IAS 10?",
+    "options": [
+      {
+        "label": "This is an adjusting event - it provides further evidence of a condition (the customer's deteriorating position) that already existed at the reporting date - so the financial statements must be adjusted (e.g. impairing the receivable), not merely disclosed.",
+        "correct": true
+      },
+      {
+        "label": "This is a non-adjusting event, so only disclosure in the notes is required, with no change to the recognised amounts.",
+        "correct": false
+      },
+      {
+        "label": "IAS 10 says events after the reporting period are always ignored.",
+        "correct": false
+      }
+    ],
+    "explanation": "The customer's insolvency after year-end merely confirms a condition (financial difficulty) that existed at the reporting date - this is the classic textbook example of an adjusting event.",
+    "source": "IAS 10 (adjusting vs non-adjusting events)"
+  },
+  {
+    "id": "acc-0030",
+    "type": "quiz",
+    "topic": "events-after-reporting-period",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Under IAS 10, if management determines after the reporting period that it intends to liquidate the entity and has no realistic alternative, how is this treated?",
+    "options": [
+      {
+        "label": "As an adjusting event so fundamental that the financial statements must not be prepared on a going concern basis at all",
+        "correct": true
+      },
+      {
+        "label": "As a purely non-adjusting event requiring only a note disclosure, with the financial statements otherwise unchanged",
+        "correct": false
+      },
+      {
+        "label": "It is outside the scope of IAS 10",
+        "correct": false
+      }
+    ],
+    "explanation": "Going concern gets special treatment under IAS 10: because the going concern basis underlies the entire measurement of assets and liabilities, a post-year-end decision to liquidate forces a fundamental change in the basis of preparation, not just a disclosure.",
+    "source": "IAS 10 (going concern as a special case)"
+  },
+  {
+    "id": "acc-0031",
+    "type": "case",
+    "topic": "government-grants",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "A manufacturer receives a government grant to help fund a machine that will be depreciated over 10 years. Under IAS 20's income approach, how should the grant be recognised?",
+    "options": [
+      {
+        "label": "The grant is recognised in profit or loss on a systematic basis over the periods in which the entity recognises the related depreciation expense - i.e. also over the 10-year useful life of the machine, typically as a credit to other income (or as a deduction from the related expense).",
+        "correct": true
+      },
+      {
+        "label": "The grant is recognised in full as income immediately on receipt.",
+        "correct": false
+      },
+      {
+        "label": "The grant is credited directly to equity and never passes through profit or loss.",
+        "correct": false
+      }
+    ],
+    "explanation": "IAS 20.12 requires grants to be matched against the costs they are intended to compensate - here, matched against the machine's 10-year depreciation charge.",
+    "source": "IAS 20 §12 (income approach, matching principle)"
+  },
+  {
+    "id": "acc-0032",
+    "type": "quiz",
+    "topic": "government-grants",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Under IAS 20, a government grant that compensates a company for expenses already incurred, with no future related costs, should be:",
+    "options": [
+      {
+        "label": "Recognised in profit or loss in the period in which it becomes receivable",
+        "correct": true
+      },
+      {
+        "label": "Spread over the next 10 years regardless of the nature of the grant",
+        "correct": false
+      },
+      {
+        "label": "Never recognised in profit or loss",
+        "correct": false
+      }
+    ],
+    "explanation": "Grants that reimburse costs already incurred (rather than costs to be incurred over future periods) are recognised as income in the period they become receivable, since there is no future expense left to match them against.",
+    "source": "IAS 20 (grants related to costs already incurred)"
+  },
+  {
+    "id": "acc-0033",
+    "type": "case",
+    "topic": "borrowing-costs",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "A company borrows specifically to fund construction of a new head office building that will take 18 months to build. Under IAS 23, how should the interest on that specific borrowing be treated during construction?",
+    "options": [
+      {
+        "label": "Because the building is a 'qualifying asset' (it necessarily takes a substantial period to get ready for its intended use), the borrowing costs directly attributable to its construction must be capitalised as part of the cost of the building during the construction period, rather than expensed as incurred.",
+        "correct": true
+      },
+      {
+        "label": "All borrowing costs must always be expensed immediately in profit or loss, regardless of what they finance.",
+        "correct": false
+      },
+      {
+        "label": "Borrowing costs can only be capitalised if the asset is a financial instrument.",
+        "correct": false
+      }
+    ],
+    "explanation": "IAS 23.8 mandates capitalisation of borrowing costs directly attributable to a qualifying asset - a head office building under construction for 18 months clearly qualifies.",
+    "source": "IAS 23 §8 (capitalisation of borrowing costs on qualifying assets)"
+  },
+  {
+    "id": "acc-0034",
+    "type": "quiz",
+    "topic": "borrowing-costs",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Under IAS 23, when a company uses general (not asset-specific) borrowings to fund construction of a qualifying asset, how is the amount of borrowing cost eligible for capitalisation determined?",
+    "options": [
+      {
+        "label": "By applying a capitalisation rate (the weighted average of the general borrowing costs) to the expenditures incurred on that asset",
+        "correct": true
+      },
+      {
+        "label": "By capitalising 100% of all general borrowing interest for the year, regardless of how much was spent on the asset",
+        "correct": false
+      },
+      {
+        "label": "General borrowings can never be used to support capitalisation - only asset-specific loans qualify",
+        "correct": false
+      }
+    ],
+    "explanation": "For general borrowings, IAS 23 requires a weighted-average capitalisation rate to be applied to qualifying expenditure, as opposed to specific borrowings, where the actual costs incurred on that borrowing are capitalised directly.",
+    "source": "IAS 23 (general vs specific borrowings)"
+  },
+  {
+    "id": "acc-0035",
+    "type": "case",
+    "topic": "earnings-per-share",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "A company's profit attributable to ordinary shareholders is CHF 1,000,000. It had 1,000,000 shares in issue for the first half of the year, then issued a further 200,000 shares for cash on 1 July. How does IAS 33 require the weighted average number of shares to reflect the mid-year issue?",
+    "options": [
+      {
+        "label": "The new shares issued for cash are time-weighted by the proportion of the year they were outstanding - so the 200,000 shares issued on 1 July (halfway through the year) contribute only 100,000 to the weighted average, giving a weighted average of 1,100,000 shares, not the full 1,200,000 year-end total.",
+        "correct": true
+      },
+      {
+        "label": "All 1,200,000 shares are used for the entire year, since that is the year-end share count.",
+        "correct": false
+      },
+      {
+        "label": "Only the original 1,000,000 shares are used, and the new issue is ignored entirely.",
+        "correct": false
+      }
+    ],
+    "explanation": "IAS 33's weighted-average mechanism time-weights shares issued for cash during the year by the number of days (or, for simplicity, months) they were outstanding, so a mid-year cash issue is only half-counted for the year.",
+    "source": "IAS 33 (weighted average number of ordinary shares)"
+  },
+  {
+    "id": "acc-0036",
+    "type": "quiz",
+    "topic": "earnings-per-share",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "How is basic earnings per share calculated under IAS 33?",
+    "options": [
+      {
+        "label": "Profit or loss attributable to ordinary equity holders of the parent, divided by the weighted average number of ordinary shares outstanding during the period",
+        "correct": true
+      },
+      {
+        "label": "Total profit for the year divided by the year-end number of shares in issue",
+        "correct": false
+      },
+      {
+        "label": "Total equity divided by the number of shares in issue",
+        "correct": false
+      },
+      {
+        "label": "Dividends paid divided by the number of shares in issue",
+        "correct": false
+      }
+    ],
+    "explanation": "This is the core IAS 33 formula - note it uses profit attributable to ordinary equity holders (i.e. after preference dividends), not total profit, and the weighted average share count, not the year-end count.",
+    "source": "IAS 33 (basic EPS formula)"
+  },
+  {
+    "id": "acc-0037",
+    "type": "case",
+    "topic": "associates-joint-ventures",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "An investor acquires 25% of the voting shares of another company and obtains a seat on its board of directors, but does not control it. How should the investor account for this investment under IAS 28?",
+    "options": [
+      {
+        "label": "Holding 25% of the voting power creates a rebuttable presumption of significant influence (the 20% threshold), reinforced here by board representation - so the investee is an associate, and the investor must apply the equity method: initially recognise the investment at cost, then adjust it each period for its share of the associate's post-acquisition profit or loss (and OCI), rather than simply recording dividends received as income.",
+        "correct": true
+      },
+      {
+        "label": "Below 50% ownership, the investor simply expenses the cost of the investment.",
+        "correct": false
+      },
+      {
+        "label": "The investor must fully consolidate the investee line by line, exactly as if it were a subsidiary.",
+        "correct": false
+      }
+    ],
+    "explanation": "IAS 28's 20% threshold creates a rebuttable presumption of significant influence, distinct from IFRS 10's control threshold for consolidation. Associates are equity-accounted, not consolidated line-by-line.",
+    "source": "IAS 28 (significant influence, 20% threshold, equity method)"
+  },
+  {
+    "id": "acc-0038",
+    "type": "quiz",
+    "topic": "associates-joint-ventures",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Under the equity method (IAS 28), how does an investor initially and subsequently measure its investment in an associate?",
+    "options": [
+      {
+        "label": "Initially at cost, then adjusted each period for the investor's share of the associate's post-acquisition profit or loss and other comprehensive income",
+        "correct": true
+      },
+      {
+        "label": "Always at fair value through profit or loss",
+        "correct": false
+      },
+      {
+        "label": "At cost, never remeasured",
+        "correct": false
+      }
+    ],
+    "explanation": "This is the defining mechanic of the equity method - a 'one-line consolidation' that rolls the investor's share of the associate's performance into the carrying amount of the investment.",
+    "source": "IAS 28 (equity method mechanics)"
+  },
+  {
+    "id": "acc-0039",
+    "type": "case",
+    "topic": "employee-benefits",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "A company operates a defined benefit pension plan. At year-end, actuarial assumptions change, producing a gain on the pension obligation, and the actual return on plan assets differs from the amount already included in net interest. Under IAS 19, where are these remeasurement gains recognised?",
+    "options": [
+      {
+        "label": "Remeasurements of the net defined benefit liability/asset - actuarial gains and losses, and the difference between actual and expected (interest-based) return on plan assets - are recognised immediately in other comprehensive income (OCI), and unlike some other OCI items, they are never recycled to profit or loss in later periods.",
+        "correct": true
+      },
+      {
+        "label": "All remeasurement gains and losses are recognised immediately in profit or loss.",
+        "correct": false
+      },
+      {
+        "label": "Remeasurement gains and losses are spread over the remaining service lives of employees.",
+        "correct": false
+      }
+    ],
+    "explanation": "IAS 19 splits the change in the net defined benefit liability into service cost and net interest (both in profit or loss) versus remeasurements (in OCI, never recycled) - a frequently tested distinction.",
+    "source": "IAS 19 (remeasurements in OCI, net interest)"
+  },
+  {
+    "id": "acc-0040",
+    "type": "quiz",
+    "topic": "employee-benefits",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Under IAS 19, how is the 'net interest' component of defined benefit pension cost calculated?",
+    "options": [
+      {
+        "label": "By multiplying the net defined benefit liability (or asset) at the start of the period by the discount rate used to measure the obligation",
+        "correct": true
+      },
+      {
+        "label": "By multiplying total plan assets by the expected long-term return on equities",
+        "correct": false
+      },
+      {
+        "label": "Net interest is not part of IAS 19 - it is purely a cash flow concept",
+        "correct": false
+      }
+    ],
+    "explanation": "Net interest reflects the unwinding of the discount on the net pension position over time and is recognised in profit or loss as a finance cost, separate from the remeasurements recognised in OCI.",
+    "source": "IAS 19 (net interest on the net defined benefit liability)"
+  },
+  {
+    "id": "acc-0041",
+    "type": "case",
+    "topic": "foreign-exchange",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "A Swiss parent company has a foreign subsidiary whose functional currency is US dollars. When translating the subsidiary's financial statements into the group's Swiss franc presentation currency under IAS 21, how are the subsidiary's assets, liabilities, and income/expenses translated, and where do the resulting exchange differences go?",
+    "options": [
+      {
+        "label": "Assets and liabilities are translated at the closing rate at the reporting date; income and expenses are translated at the exchange rates at the dates of the transactions (in practice, often an average rate for the period). The resulting exchange differences are recognised in other comprehensive income and accumulated in a separate translation reserve within equity, not in profit or loss.",
+        "correct": true
+      },
+      {
+        "label": "Everything is translated at the exchange rate on the balance sheet date, including income and expenses, with differences taken to profit or loss.",
+        "correct": false
+      },
+      {
+        "label": "IAS 21 prohibits presenting financial statements in a currency other than the functional currency.",
+        "correct": false
+      }
+    ],
+    "explanation": "This is the standard closing-rate/average-rate method IAS 21 requires when translating a foreign operation's results into the group's presentation currency, with exchange differences parked in OCI/equity rather than profit or loss.",
+    "source": "IAS 21 (translation of foreign operations to presentation currency)"
+  },
+  {
+    "id": "acc-0042",
+    "type": "quiz",
+    "topic": "foreign-exchange",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "How does IAS 21 define an entity's 'functional currency'?",
+    "options": [
+      {
+        "label": "The currency of the primary economic environment in which the entity operates - the environment in which it primarily generates and expends cash",
+        "correct": true
+      },
+      {
+        "label": "Whatever currency the entity chooses to present its financial statements in",
+        "correct": false
+      },
+      {
+        "label": "Always the currency of the country where the entity is legally incorporated",
+        "correct": false
+      }
+    ],
+    "explanation": "Functional currency is a factual determination based on the entity's actual economic environment, distinct from presentation currency, which IAS 21 allows an entity to choose freely.",
+    "source": "IAS 21 (definition of functional currency)"
+  },
+  {
+    "id": "acc-0043",
+    "type": "case",
+    "topic": "related-party-disclosures",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "A company's CEO is also a director of one of the company's major suppliers, and the two entities transact regularly on normal commercial terms. Does IAS 24 require disclosure of this relationship and the transactions, even though the terms are at arm's length?",
+    "options": [
+      {
+        "label": "Yes - IAS 24 requires disclosure of related party relationships, transactions, and outstanding balances (including commitments) once a related party relationship exists (here, through the CEO's dual role as key management personnel of one entity and director of the other) - the disclosure requirement is not conditional on the terms being non-commercial; the point is to let users assess whether the relationship could have influenced the figures.",
+        "correct": true
+      },
+      {
+        "label": "No disclosure is required because the transactions are on normal commercial terms.",
+        "correct": false
+      },
+      {
+        "label": "IAS 24 only applies to transactions between a parent and its subsidiaries.",
+        "correct": false
+      }
+    ],
+    "explanation": "A common misconception is that arm's-length terms exempt a relationship from IAS 24 disclosure - they do not. The objective is transparency about the existence and nature of the relationship itself.",
+    "source": "IAS 24 (related party disclosure requirements)"
+  },
+  {
+    "id": "acc-0044",
+    "type": "quiz",
+    "topic": "related-party-disclosures",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Under IAS 24, what must an entity disclose about its key management personnel?",
+    "options": [
+      {
+        "label": "Key management personnel compensation, in total and by category as defined in the standard",
+        "correct": true
+      },
+      {
+        "label": "Nothing - key management personnel are excluded from IAS 24's scope",
+        "correct": false
+      },
+      {
+        "label": "Only their names, never their compensation",
+        "correct": false
+      }
+    ],
+    "explanation": "IAS 24 specifically requires disclosure of key management personnel compensation, broken down by category (e.g. short-term benefits, post-employment benefits, share-based payment), since this group can significantly influence the entity's financial position and performance.",
+    "source": "IAS 24 (key management personnel compensation disclosure)"
+  },
+  {
+    "id": "acc-0045",
+    "type": "case",
+    "topic": "share-based-payment",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "A company grants share options to employees as part of their remuneration, vesting after 3 years of service. Under IFRS 2, how is the cost of this equity-settled arrangement measured, and can it be remeasured later if the share price changes?",
+    "options": [
+      {
+        "label": "The transaction is measured at the fair value of the equity instruments granted, determined at the grant date - not the fair value of the employee services received, which is presumed unable to be measured reliably. For equity-settled arrangements, that grant-date fair value is NOT subsequently remeasured for later changes in the share price; it is simply spread as an expense over the vesting period.",
+        "correct": true
+      },
+      {
+        "label": "The expense is remeasured to current fair value at every reporting date until settlement, just like a cash-settled award.",
+        "correct": false
+      },
+      {
+        "label": "No expense is recognised until the options are actually exercised.",
+        "correct": false
+      }
+    ],
+    "explanation": "A classic point of confusion in IFRS 2: equity-settled awards are fixed at grant-date fair value (no remeasurement for share price changes), while cash-settled awards ARE remeasured to fair value at each reporting date because they create a liability, not equity.",
+    "source": "IFRS 2 (grant-date fair value, equity-settled vs cash-settled)"
+  },
+  {
+    "id": "acc-0046",
+    "type": "quiz",
+    "topic": "share-based-payment",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Under IFRS 2, how does the accounting for a cash-settled share-based payment differ from an equity-settled one?",
+    "options": [
+      {
+        "label": "A cash-settled award is recognised as a liability, remeasured to fair value at each reporting date until settlement, whereas an equity-settled award is recognised in equity at a fixed grant-date fair value",
+        "correct": true
+      },
+      {
+        "label": "There is no difference - both are always recognised in equity",
+        "correct": false
+      },
+      {
+        "label": "Cash-settled awards are never expensed",
+        "correct": false
+      }
+    ],
+    "explanation": "The settlement mechanism (cash vs shares) drives fundamentally different balance sheet classification and remeasurement treatment under IFRS 2.",
+    "source": "IFRS 2 (cash-settled vs equity-settled)"
+  },
+  {
+    "id": "acc-0047",
+    "type": "case",
+    "topic": "operating-segments",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "A group has five operating segments. Segment D reports revenue of 8% of total combined segment revenue, but its reported loss is 15% of the combined losses of all loss-making segments. Is Segment D a reportable segment under IFRS 8?",
+    "options": [
+      {
+        "label": "Yes - IFRS 8 requires a segment to be reported if it meets ANY ONE of three 10% quantitative thresholds (revenue, profit/loss, or assets), not all three. Segment D fails the 10% revenue test but passes the 10% profit-or-loss test (its loss is 15% of the relevant combined total), so it must be separately reported.",
+        "correct": true
+      },
+      {
+        "label": "No, because it failed the revenue test.",
+        "correct": false
+      },
+      {
+        "label": "IFRS 8 only looks at revenue - profit or loss and assets are irrelevant.",
+        "correct": false
+      }
+    ],
+    "explanation": "A common trap: candidates assume all three 10% tests must be failed to exclude a segment, when in fact meeting just one of the three tests is enough to require separate reporting.",
+    "source": "IFRS 8 (10% quantitative thresholds for reportable segments)"
+  },
+  {
+    "id": "acc-0048",
+    "type": "quiz",
+    "topic": "operating-segments",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Under IFRS 8, who or what is the 'chief operating decision maker' (CODM)?",
+    "options": [
+      {
+        "label": "A function - not necessarily a single named individual - that allocates resources to operating segments and assesses their performance, which could be the CEO, COO, or a group of executive directors depending on the entity's governance structure",
+        "correct": true
+      },
+      {
+        "label": "Always a specific job title, 'Chief Operating Decision Maker', that every company must appoint",
+        "correct": false
+      },
+      {
+        "label": "The external auditor",
+        "correct": false
+      }
+    ],
+    "explanation": "IFRS 8 deliberately defines the CODM functionally rather than by job title, since governance structures vary widely between entities.",
+    "source": "IFRS 8 (chief operating decision maker)"
+  },
+  {
+    "id": "acc-0049",
+    "type": "case",
+    "topic": "joint-arrangements",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Two companies set up a jointly controlled entity through a separate legal vehicle to manufacture and sell a product, sharing control equally. Under the arrangement's legal structure, the two parties only have rights to the net assets of the vehicle, not direct rights to its individual assets and obligations for its individual liabilities. How is this classified and accounted for under IFRS 11?",
+    "options": [
+      {
+        "label": "Because the parties' rights and obligations are to the net assets of the arrangement (not direct rights/obligations to specific assets and liabilities), this is a joint venture, not a joint operation - and IFRS 11 requires joint ventures to be accounted for using the equity method (as under IAS 28), not by recognising a proportionate share of the underlying assets and liabilities.",
+        "correct": true
+      },
+      {
+        "label": "It is automatically a joint operation because it uses a separate legal vehicle.",
+        "correct": false
+      },
+      {
+        "label": "IFRS 11 requires proportionate consolidation of all joint arrangements.",
+        "correct": false
+      }
+    ],
+    "explanation": "Classification under IFRS 11 turns on the parties' rights and obligations (assessed in substance), not merely on whether a separate vehicle exists - joint ventures use the equity method; joint operations recognise the operator's direct share of assets/liabilities/revenues/expenses.",
+    "source": "IFRS 11 (joint venture vs joint operation, equity method)"
+  },
+  {
+    "id": "acc-0050",
+    "type": "quiz",
+    "topic": "joint-arrangements",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Under IFRS 11, how is a joint operation accounted for by each operator, as distinct from a joint venture?",
+    "options": [
+      {
+        "label": "Each operator recognises its own share of the assets, liabilities, revenues and expenses of the joint operation directly in its own financial statements",
+        "correct": true
+      },
+      {
+        "label": "Joint operations are always equity-accounted, exactly like joint ventures",
+        "correct": false
+      },
+      {
+        "label": "Joint operations are never recognised in the operator's financial statements",
+        "correct": false
+      }
+    ],
+    "explanation": "This is the key distinguishing accounting treatment: joint operations get a direct 'share of the pie' recognition, while joint ventures get the one-line equity method.",
+    "source": "IFRS 11 (accounting for joint operations)"
+  },
+  {
+    "id": "acc-0051",
+    "type": "quiz",
+    "topic": "audit-objectives",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "What are the auditor's overall objectives in conducting an audit of financial statements, according to ISA 200?",
+    "options": [
+      {
+        "label": "To obtain reasonable assurance that the financial statements as a whole are free from material misstatement, whether due to fraud or error, and to report on the financial statements in accordance with the auditor's findings",
+        "correct": true
+      },
+      {
+        "label": "To guarantee with absolute certainty that no misstatement exists",
+        "correct": false
+      },
+      {
+        "label": "To prepare the financial statements on behalf of management",
+        "correct": false
+      },
+      {
+        "label": "To detect every instance of fraud, however immaterial",
+        "correct": false
+      }
+    ],
+    "explanation": "ISA 200 is explicit that audits provide 'reasonable', not absolute, assurance - an inherent limitation of auditing - and the auditor's objective is opinion formation, not statement preparation (that remains management's responsibility).",
+    "source": "ISA 200 (overall objectives of the independent auditor)"
+  },
+  {
+    "id": "acc-0052",
+    "type": "case",
+    "topic": "audit-objectives",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "During fieldwork, a client's finance director provides an explanation for an unusual journal entry that seems plausible but cannot be independently corroborated. What does ISA 200's concept of professional scepticism require of the auditor in this situation?",
+    "options": [
+      {
+        "label": "The auditor should not simply accept the explanation at face value; professional scepticism requires a questioning mind and a critical assessment of audit evidence, being alert to conditions that may indicate possible misstatement due to error or fraud, even when management's explanations seem reasonable.",
+        "correct": true
+      },
+      {
+        "label": "Professional scepticism only applies to fraud, not to everyday explanations from management.",
+        "correct": false
+      },
+      {
+        "label": "Once management provides any explanation, the auditor must accept it and move on.",
+        "correct": false
+      }
+    ],
+    "explanation": "Professional scepticism is a mindset the auditor must maintain throughout the audit - it means not being satisfied with less-than-persuasive evidence just because an explanation sounds plausible.",
+    "source": "ISA 200 (professional scepticism)"
+  },
+  {
+    "id": "acc-0053",
+    "type": "quiz",
+    "topic": "audit-documentation",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "According to ISA 230, what is the 'experienced auditor' test used to judge the adequacy of audit documentation?",
+    "options": [
+      {
+        "label": "Documentation must be sufficient to enable an experienced auditor, with no previous connection to the audit, to understand the nature, timing and extent of procedures performed, their results, the evidence obtained, and the significant matters and conclusions reached",
+        "correct": true
+      },
+      {
+        "label": "Only the audit partner needs to be able to understand the working papers",
+        "correct": false
+      },
+      {
+        "label": "Documentation is adequate as long as the client can understand it",
+        "correct": false
+      }
+    ],
+    "explanation": "The 'experienced auditor' is a hypothetical outside reviewer - this test is the benchmark ISA 230 uses to assess whether working papers are detailed enough.",
+    "source": "ISA 230 (the experienced auditor test)"
+  },
+  {
+    "id": "acc-0054",
+    "type": "case",
+    "topic": "audit-documentation",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "An audit team completes fieldwork and later realises a working paper is missing a cross-reference explaining how a sample size was determined. Per ISA 230, is it acceptable to add this documentation to the file after the auditor's report has been signed?",
+    "options": [
+      {
+        "label": "Yes, within limits - ISA 230 allows a limited period after the report date (the 'assembly period', typically up to 60 days) to complete the administrative process of assembling the final audit file, but this cannot involve performing new audit procedures or reaching new conclusions - only finalising documentation of work already done.",
+        "correct": true
+      },
+      {
+        "label": "No, once the report is signed, absolutely nothing may ever be added to the file.",
+        "correct": false
+      },
+      {
+        "label": "Yes, and there is no time limit at all on when documentation can be added.",
+        "correct": false
+      }
+    ],
+    "explanation": "ISA 230 recognises a practical need for a short file-assembly period after the report date, but strictly limits what can be added during it - it's about tidying documentation of work already performed, not doing new work.",
+    "source": "ISA 230 (assembly of the final audit file)"
+  },
+  {
+    "id": "acc-0055",
+    "type": "case",
+    "topic": "audit-fraud",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "During planning, the audit team identifies that the risk of management override of controls is present. How does ISA 240 require the team to respond to this specific risk, regardless of the results of its normal risk assessment?",
+    "options": [
+      {
+        "label": "ISA 240 treats management override of controls as a risk present in every entity, regardless of the auditor's assessment of other controls - so the auditor must always perform specific mandatory procedures to address it, such as testing journal entries, reviewing accounting estimates for possible management bias, and evaluating the business rationale for significant unusual transactions.",
+        "correct": true
+      },
+      {
+        "label": "Because it is a general business risk, no specific audit procedures are required beyond the normal risk-based approach.",
+        "correct": false
+      },
+      {
+        "label": "Management override is only relevant if the entity has poor general IT controls.",
+        "correct": false
+      }
+    ],
+    "explanation": "ISA 240 singles out management override as a risk that exists at every entity, precisely because management is typically in a position to override otherwise effective controls - hence the mandatory minimum procedures, independent of the auditor's other risk assessments.",
+    "source": "ISA 240 (mandatory procedures for management override risk)"
+  },
+  {
+    "id": "acc-0056",
+    "type": "quiz",
+    "topic": "audit-fraud",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "Under ISA 240, who has the primary responsibility for the prevention and detection of fraud?",
+    "options": [
+      {
+        "label": "Those charged with governance and management of the entity",
+        "correct": true
+      },
+      {
+        "label": "The external auditor",
+        "correct": false
+      },
+      {
+        "label": "The regulator",
+        "correct": false
+      },
+      {
+        "label": "The audit committee's external legal counsel",
+        "correct": false
+      }
+    ],
+    "explanation": "A frequently tested distinction: the auditor's responsibility is to obtain reasonable assurance the financial statements are free from material misstatement due to fraud or error - but preventing and detecting fraud in the first place is management's and governance's job, achieved through a strong control environment.",
+    "source": "ISA 240 (primary responsibility for fraud prevention/detection)"
+  },
+  {
+    "id": "acc-0057",
+    "type": "case",
+    "topic": "audit-control-deficiencies",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "During the audit, the team identifies a control deficiency that, in their professional judgement, is important enough to merit the attention of those charged with governance, but not the client's day-to-day management alone. How and to whom must this be communicated under ISA 265?",
+    "options": [
+      {
+        "label": "This meets the definition of a 'significant deficiency', which ISA 265 requires to be communicated in writing and on a timely basis to those charged with governance (as well as to management), describing the deficiency, its potential effects, and enough context for them to understand it.",
+        "correct": true
+      },
+      {
+        "label": "All control deficiencies, however minor, must be communicated in writing to those charged with governance.",
+        "correct": false
+      },
+      {
+        "label": "Control deficiencies are outside the scope of the audit and need not be communicated at all.",
+        "correct": false
+      }
+    ],
+    "explanation": "ISA 265 distinguishes 'significant deficiencies' (written communication to governance) from other, less important deficiencies (which can be communicated orally to an appropriate level of management).",
+    "source": "ISA 265 (significant deficiencies, written communication to governance)"
+  },
+  {
+    "id": "acc-0058",
+    "type": "quiz",
+    "topic": "audit-control-deficiencies",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "Under ISA 265, how may a control deficiency that is not significant enough to warrant governance's attention, but still merits management's attention, be communicated?",
+    "options": [
+      {
+        "label": "Orally, to an appropriate level of management",
+        "correct": true
+      },
+      {
+        "label": "It must always be communicated in writing to the audit committee",
+        "correct": false
+      },
+      {
+        "label": "It should not be communicated at all if it is not 'significant'",
+        "correct": false
+      }
+    ],
+    "explanation": "ISA 265 sets a lower bar for less important deficiencies - they still need to be raised with management, but formal written communication to governance is reserved for significant deficiencies.",
+    "source": "ISA 265 (communication of other deficiencies)"
+  },
+  {
+    "id": "acc-0059",
+    "type": "case",
+    "topic": "audit-materiality",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "An auditor sets overall materiality for the financial statements as a whole at CHF 500,000. Per ISA 320, should the auditor also apply this same CHF 500,000 threshold when testing individual account balances and transactions, or something lower?",
+    "options": [
+      {
+        "label": "Something lower - ISA 320 requires the auditor to also set 'performance materiality', an amount (or amounts) below overall materiality, applied to particular transactions, balances or disclosures, specifically to reduce the risk that the total of undetected and uncorrected misstatements could aggregate to something material to the financial statements as a whole.",
+        "correct": true
+      },
+      {
+        "label": "The exact same CHF 500,000 figure should be used for every individual balance and transaction tested.",
+        "correct": false
+      },
+      {
+        "label": "Performance materiality is a concept used only in tax audits, not financial statement audits.",
+        "correct": false
+      }
+    ],
+    "explanation": "This is the whole rationale for performance materiality under ISA 320 §11: if you only ever tested to overall materiality, lots of small undetected errors across many balances could add up to a material total misstatement.",
+    "source": "ISA 320 §11 (performance materiality)"
+  },
+  {
+    "id": "acc-0060",
+    "type": "quiz",
+    "topic": "audit-materiality",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "According to ISA 320, should materiality be revised during the course of the audit?",
+    "options": [
+      {
+        "label": "Yes, if the auditor becomes aware of information that, had it been known at the start of the audit, would have caused a different materiality to be set",
+        "correct": true
+      },
+      {
+        "label": "No, materiality is fixed once at the planning stage and can never be changed",
+        "correct": false
+      },
+      {
+        "label": "Materiality is only revised at the client's request",
+        "correct": false
+      }
+    ],
+    "explanation": "ISA 320 §12 explicitly contemplates revising materiality mid-audit in response to new information - materiality is not a one-time, unchangeable planning decision.",
+    "source": "ISA 320 §12 (revision of materiality)"
+  },
+  {
+    "id": "acc-0061",
+    "type": "quiz",
+    "topic": "audit-evidence",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "ISA 500 requires the auditor to obtain 'sufficient appropriate' audit evidence. What do these two terms measure?",
+    "options": [
+      {
+        "label": "Sufficiency measures the quantity of audit evidence; appropriateness measures its quality - i.e. its relevance and reliability",
+        "correct": true
+      },
+      {
+        "label": "Both terms measure exactly the same thing - the cost of obtaining the evidence",
+        "correct": false
+      },
+      {
+        "label": "Sufficiency relates only to written evidence, appropriateness only to oral evidence",
+        "correct": false
+      }
+    ],
+    "explanation": "Sufficiency (quantity) and appropriateness (quality) are interrelated: the greater the risk of misstatement, the more evidence is likely needed, but higher-quality evidence can reduce the quantity required.",
+    "source": "ISA 500 (sufficient appropriate audit evidence)"
+  },
+  {
+    "id": "acc-0062",
+    "type": "case",
+    "topic": "audit-evidence",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "An auditor obtains a written confirmation directly from the client's bank, versus a copy of a bank statement provided by the client. Which piece of evidence is generally considered more reliable under ISA 500's evidence hierarchy principles, and why?",
+    "options": [
+      {
+        "label": "The direct bank confirmation, because audit evidence obtained directly by the auditor from an independent external source is generally more reliable than evidence obtained indirectly or evidence that has passed through the client's own hands, which is more susceptible to manipulation or error.",
+        "correct": true
+      },
+      {
+        "label": "Both are equally reliable because they relate to the same bank account.",
+        "correct": false
+      },
+      {
+        "label": "The client-provided bank statement is more reliable because it is more detailed.",
+        "correct": false
+      }
+    ],
+    "explanation": "ISA 500's generalisations about reliability of audit evidence favour evidence obtained directly by the auditor from independent external sources - a cornerstone reason external confirmations (ISA 505) are so heavily used in practice.",
+    "source": "ISA 500 (reliability of audit evidence - external, direct sources)"
+  },
+  {
+    "id": "acc-0063",
+    "type": "quiz",
+    "topic": "audit-specific-items",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "Under ISA 501, what must the auditor do if physical attendance at the client's year-end inventory count is impracticable?",
+    "options": [
+      {
+        "label": "Perform alternative audit procedures to obtain sufficient appropriate evidence regarding the existence and condition of inventory",
+        "correct": true
+      },
+      {
+        "label": "Simply rely on management's own count with no further procedures",
+        "correct": false
+      },
+      {
+        "label": "Qualify the audit opinion automatically, with no alternative procedures possible",
+        "correct": false
+      }
+    ],
+    "explanation": "Attendance at the count is the primary procedure, but ISA 501 explicitly allows for alternative procedures where physical attendance is genuinely impracticable (e.g. dangerous locations), rather than requiring an automatic opinion modification.",
+    "source": "ISA 501 (inventory - alternative procedures when attendance is impracticable)"
+  },
+  {
+    "id": "acc-0064",
+    "type": "case",
+    "topic": "audit-specific-items",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "A client is involved in significant litigation with a competitor that could result in a material liability. Per ISA 501, what evidence should the auditor seek regarding the completeness of litigation and claims?",
+    "options": [
+      {
+        "label": "The auditor should inquire of management and, where relevant, communicate directly with the entity's external legal counsel (often via a formal letter of enquiry) to corroborate management's assessment of litigation, claims, and their likely outcome and financial effect.",
+        "correct": true
+      },
+      {
+        "label": "The auditor should rely solely on management's verbal assurance that no material litigation exists.",
+        "correct": false
+      },
+      {
+        "label": "Litigation and claims fall entirely outside the scope of a financial statement audit.",
+        "correct": false
+      }
+    ],
+    "explanation": "ISA 501 specifically addresses litigation and claims as one of its selected items requiring special evidence-gathering procedures, given management's potential bias to understate exposure.",
+    "source": "ISA 501 (litigation and claims - external legal counsel enquiry)"
+  },
+  {
+    "id": "acc-0065",
+    "type": "quiz",
+    "topic": "audit-analytical-procedures",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "Under ISA 520, analytical procedures can be used as a form of substantive procedure. What factors affect how much reliance the auditor can place on them?",
+    "options": [
+      {
+        "label": "The plausibility and predictability of the relationship being tested, the reliability of the underlying data, the level of disaggregation available, and the auditor's knowledge of the client and its industry",
+        "correct": true
+      },
+      {
+        "label": "Analytical procedures are always equally reliable, regardless of the data or relationship involved",
+        "correct": false
+      },
+      {
+        "label": "Only procedures performed by a computer, never manual calculations, can be relied upon",
+        "correct": false
+      }
+    ],
+    "explanation": "ISA 520 does not treat all analytical procedures as equally persuasive - the strength of the relationship being analysed and the quality of the data behind it both drive how much substantive assurance the procedure can provide.",
+    "source": "ISA 520 (analytical procedures as substantive evidence)"
+  },
+  {
+    "id": "acc-0066",
+    "type": "case",
+    "topic": "audit-analytical-procedures",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "An auditor develops an expectation for a client's payroll expense based on average headcount and pay rates, then compares it to the actual recorded expense. The actual figure differs from the expectation by an amount exceeding the auditor's tolerable difference. What must the auditor do next under ISA 520?",
+    "options": [
+      {
+        "label": "Investigate the difference by, first, enquiring of management and obtaining corroborating evidence relevant to management's responses, and, if satisfactory explanations are not obtained, performing other audit procedures as necessary.",
+        "correct": true
+      },
+      {
+        "label": "Ignore the difference, since analytical procedures are only used for planning, never for concluding.",
+        "correct": false
+      },
+      {
+        "label": "Immediately modify the audit opinion without further investigation.",
+        "correct": false
+      }
+    ],
+    "explanation": "A significant unexplained fluctuation identified through analytical procedures triggers further investigation under ISA 520 - it cannot simply be accepted or dismissed without corroborated explanation.",
+    "source": "ISA 520 (investigating significant fluctuations)"
+  },
+  {
+    "id": "acc-0067",
+    "type": "quiz",
+    "topic": "audit-sampling",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "What does ISA 530 govern?",
+    "options": [
+      {
+        "label": "The auditor's design and selection of an audit sample, and evaluation of the results, when testing less than 100% of a population",
+        "correct": true
+      },
+      {
+        "label": "The calculation of materiality",
+        "correct": false
+      },
+      {
+        "label": "The auditor's independence requirements",
+        "correct": false
+      }
+    ],
+    "explanation": "ISA 530 addresses audit sampling and other means of selective testing as a way to obtain audit evidence without examining 100% of a population.",
+    "source": "ISA 530 (audit sampling)"
+  },
+  {
+    "id": "acc-0068",
+    "type": "case",
+    "topic": "audit-sampling",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "An auditor selects a sample of 60 sales invoices from a population of 5,000 to test for proper authorisation, and finds 3 exceptions. Per ISA 530 principles, what should the auditor do with this sample result?",
+    "options": [
+      {
+        "label": "Project (extrapolate) the misstatement rate found in the sample to the population as a whole, to estimate the likely rate/extent of exception across the full population, and evaluate whether that projected result, combined with qualitative factors, indicates a risk of material misstatement.",
+        "correct": true
+      },
+      {
+        "label": "Simply note the 3 exceptions found and draw no conclusion about the remaining 4,940 unsampled invoices.",
+        "correct": false
+      },
+      {
+        "label": "Automatically conclude the whole population is materially misstated because any exceptions were found.",
+        "correct": false
+      }
+    ],
+    "explanation": "The whole point of sampling under ISA 530 is to draw a conclusion about the population based on the sample - which requires projecting sample results, not just reporting the raw exceptions found.",
+    "source": "ISA 530 (projecting sample results to the population)"
+  },
+  {
+    "id": "acc-0069",
+    "type": "quiz",
+    "topic": "audit-estimates",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "Why does ISA 540 treat accounting estimates (e.g. depreciation, provisions, expected credit losses) as an area of higher audit risk?",
+    "options": [
+      {
+        "label": "Because they are inherently subjective, involve management judgement, and carry a risk of management bias, whether intentional or unintentional",
+        "correct": true
+      },
+      {
+        "label": "Because estimates are always calculated by a computer with no human involvement",
+        "correct": false
+      },
+      {
+        "label": "Because ISA 540 only applies to cash transactions",
+        "correct": false
+      }
+    ],
+    "explanation": "Estimates cannot be verified with the same precision as, say, a bank balance confirmation - the subjectivity and judgement inherent in them is exactly why ISA 540 singles them out for special audit attention.",
+    "source": "ISA 540 (subjectivity and risk of management bias in estimates)"
+  },
+  {
+    "id": "acc-0070",
+    "type": "case",
+    "topic": "audit-estimates",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "An auditor is testing management's estimate of an expected credit loss allowance on trade receivables. Per ISA 540, which of these is a recognised audit approach to testing such an estimate?",
+    "options": [
+      {
+        "label": "Reviewing and testing the process and assumptions management used to develop the estimate, and/or developing an independent point estimate (or range) to compare against management's figure",
+        "correct": true
+      },
+      {
+        "label": "Simply accepting whatever figure management provides, with no further procedures, since estimates cannot be audited",
+        "correct": false
+      },
+      {
+        "label": "Recalculating the estimate is never an acceptable audit procedure under ISA 540",
+        "correct": false
+      }
+    ],
+    "explanation": "ISA 540 recognises multiple valid approaches to testing an estimate - testing management's process, or the auditor forming an independent estimate for comparison - rather than one single mandated method.",
+    "source": "ISA 540 (testing management's process; independent estimate)"
+  },
+  {
+    "id": "acc-0071",
+    "type": "quiz",
+    "topic": "audit-related-parties",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "ISA 550 builds on which accounting standard's definitions when identifying related parties and related party transactions for audit purposes?",
+    "options": [
+      {
+        "label": "IAS 24, Related Party Disclosures",
+        "correct": true
+      },
+      {
+        "label": "IFRS 15, Revenue from Contracts with Customers",
+        "correct": false
+      },
+      {
+        "label": "IAS 2, Inventories",
+        "correct": false
+      }
+    ],
+    "explanation": "ISA 550 uses the related party definitions already established in the applicable financial reporting framework (typically IAS 24) as its starting point for audit procedures on related party relationships and transactions.",
+    "source": "ISA 550 (uses IAS 24 definitions of related parties)"
+  },
+  {
+    "id": "acc-0072",
+    "type": "case",
+    "topic": "audit-related-parties",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "During the audit, the team discovers a significant, previously undisclosed transaction between the client and an entity controlled by a director's close family member, on terms that appear more favourable to the counterparty than an arm's-length transaction would be. What audit risk does ISA 550 particularly associate with this kind of scenario?",
+    "options": [
+      {
+        "label": "Related party transactions - especially ones not on normal market terms - carry a heightened risk of fraud or management override, because they can be used to manipulate reported results or move value out of the entity to related individuals; ISA 550 requires heightened audit attention to identify and properly evaluate such transactions.",
+        "correct": true
+      },
+      {
+        "label": "Related party transactions carry no particular audit risk beyond any other transaction.",
+        "correct": false
+      },
+      {
+        "label": "ISA 550 only requires attention to related party transactions with subsidiaries, not with individuals.",
+        "correct": false
+      }
+    ],
+    "explanation": "This is exactly the kind of scenario ISA 550 is designed to catch - undisclosed, off-market related party transactions are a classic fraud/misstatement risk pattern.",
+    "source": "ISA 550 (fraud risk associated with related party transactions)"
+  },
+  {
+    "id": "acc-0073",
+    "type": "quiz",
+    "topic": "audit-subsequent-events",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "What is the auditor's objective under ISA 560 regarding subsequent events?",
+    "options": [
+      {
+        "label": "To obtain sufficient appropriate audit evidence about whether events occurring between the reporting date and the date of the auditor's report that require adjustment or disclosure have been appropriately reflected in the financial statements, and to respond appropriately to facts that become known to the auditor after the report date",
+        "correct": true
+      },
+      {
+        "label": "To ignore anything that happens after the year-end date",
+        "correct": false
+      },
+      {
+        "label": "To re-audit the entire prior year's financial statements",
+        "correct": false
+      }
+    ],
+    "explanation": "ISA 560 covers the period from year-end through to the report date (and, in limited circumstances, afterward), aligning with IAS 10's adjusting/non-adjusting event framework from the auditor's perspective.",
+    "source": "ISA 560 (subsequent events - auditor's objective)"
+  },
+  {
+    "id": "acc-0074",
+    "type": "case",
+    "topic": "audit-subsequent-events",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "After the auditor's report has been signed but before the financial statements are issued, the auditor becomes aware of a fact that, had it been known at the report date, would have caused the auditor to amend the report. What does ISA 560 require?",
+    "options": [
+      {
+        "label": "The auditor should discuss the matter with management and, where appropriate, those charged with governance, determine whether the financial statements need amendment, and if so, inquire how management intends to address the matter - potentially extending audit procedures and issuing a new or amended auditor's report.",
+        "correct": true
+      },
+      {
+        "label": "Nothing further can be done once the report is signed, regardless of what is subsequently discovered.",
+        "correct": false
+      },
+      {
+        "label": "The auditor should simply withdraw from the engagement with no further action.",
+        "correct": false
+      }
+    ],
+    "explanation": "ISA 560 has a specific procedure for facts discovered after the report date but before issuance - it is not simply 'too late to matter'.",
+    "source": "ISA 560 (facts discovered after the date of the auditor's report but before issuance)"
+  },
+  {
+    "id": "acc-0075",
+    "type": "case",
+    "topic": "audit-going-concern",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "Management has assessed that the entity can continue as a going concern, but the auditor identifies conditions (e.g. recurring losses, breach of loan covenants) that cast significant doubt on that ability, and concludes a material uncertainty exists that is adequately disclosed in the notes. Under ISA 570, how should this affect the auditor's report?",
+    "options": [
+      {
+        "label": "The auditor's opinion is not modified for this alone (since disclosure is adequate), but ISA 570 requires the auditor's report to include a specific, separate section drawing attention to the note disclosing the material uncertainty related to going concern.",
+        "correct": true
+      },
+      {
+        "label": "The auditor must automatically issue a disclaimer of opinion whenever going concern doubt exists, regardless of disclosure adequacy.",
+        "correct": false
+      },
+      {
+        "label": "Going concern doubt is never mentioned in the auditor's report if the entity ultimately survives.",
+        "correct": false
+      }
+    ],
+    "explanation": "A key distinction in ISA 570: adequate disclosure of a material uncertainty does not, by itself, modify the opinion - but it does trigger a dedicated 'Material Uncertainty Related to Going Concern' section in the report. Inadequate disclosure, by contrast, would lead to a modified opinion.",
+    "source": "ISA 570 (material uncertainty related to going concern - reporting)"
+  },
+  {
+    "id": "acc-0076",
+    "type": "quiz",
+    "topic": "audit-going-concern",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "Under ISA 570, whose primary responsibility is it to assess the appropriateness of the going concern basis of accounting?",
+    "options": [
+      {
+        "label": "Management's, in preparing the financial statements - the auditor's role is to evaluate that assessment and consider the audit evidence",
+        "correct": true
+      },
+      {
+        "label": "The auditor's alone, with no involvement from management",
+        "correct": false
+      },
+      {
+        "label": "The company's bank",
+        "correct": false
+      }
+    ],
+    "explanation": "As with fraud (ISA 240), going concern assessment is fundamentally a management responsibility; the auditor's role is evaluative, not primary.",
+    "source": "ISA 570 (management's responsibility for the going concern assessment)"
+  },
+  {
+    "id": "acc-0077",
+    "type": "quiz",
+    "topic": "audit-opinions",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "Under ISA 700, when does the auditor express an unmodified (unqualified) opinion?",
+    "options": [
+      {
+        "label": "When the auditor concludes that the financial statements are prepared, in all material respects, in accordance with the applicable financial reporting framework",
+        "correct": true
+      },
+      {
+        "label": "Whenever the client requests one",
+        "correct": false
+      },
+      {
+        "label": "Only when there is zero risk of any misstatement anywhere in the financial statements",
+        "correct": false
+      }
+    ],
+    "explanation": "An unmodified opinion is the auditor's positive conclusion of fair presentation in all material respects - it does not mean the auditor guarantees the statements are perfect, only that no material misstatement was found (or unresolved scope limitation encountered).",
+    "source": "ISA 700 (unmodified opinion)"
+  },
+  {
+    "id": "acc-0078",
+    "type": "case",
+    "topic": "audit-opinions",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "The auditor concludes that a matter, while appropriately presented and disclosed in the financial statements, is of such importance that it is fundamental to users' understanding. The matter does not represent a misstatement. What is the correct reporting mechanism under ISA 706, and could an Emphasis of Matter paragraph be used instead of modifying the opinion if the matter WERE a misstatement?",
+    "options": [
+      {
+        "label": "An Emphasis of Matter paragraph (ISA 706) is the correct mechanism here, since the matter is appropriately presented/disclosed and not a misstatement - but an EOM paragraph must never be used as a substitute for a modified opinion; if a matter is in fact a material misstatement or scope limitation, ISA 705 requires the opinion itself to be modified.",
+        "correct": true
+      },
+      {
+        "label": "An Emphasis of Matter paragraph can always be used instead of qualifying the opinion, even for material misstatements, since both achieve the same communication purpose.",
+        "correct": false
+      },
+      {
+        "label": "ISA 706 paragraphs are prohibited whenever ISA 705 is also being considered.",
+        "correct": false
+      }
+    ],
+    "explanation": "This is one of the most tested traps in ACCA AA: an Emphasis of Matter (or Other Matter) paragraph highlights something already properly handled in the statements - it is never a workaround for a modification that ISA 705 actually requires.",
+    "source": "ISA 706 (Emphasis of Matter, not a substitute for ISA 705 modification)"
+  },
+  {
+    "id": "acc-0079",
+    "type": "quiz",
+    "topic": "audit-quality-management",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "What does ISQM 1 require of a firm that performs audits or reviews of financial statements?",
+    "options": [
+      {
+        "label": "To design, implement and operate a system of quality management tailored to the nature and circumstances of the firm and its engagements, built around identifying and assessing quality risks and designing responses to address them",
+        "correct": true
+      },
+      {
+        "label": "To use exactly the same quality control checklist as every other audit firm in the world, with no customisation",
+        "correct": false
+      },
+      {
+        "label": "ISQM 1 applies only to firms auditing listed companies",
+        "correct": false
+      }
+    ],
+    "explanation": "ISQM 1 (effective from December 2022, replacing the older ISQC 1) shifted quality control toward a risk-based 'system of quality management' that each firm tailors to its own circumstances, rather than a one-size-fits-all checklist.",
+    "source": "ISQM 1 (risk-based system of quality management)"
+  },
+  {
+    "id": "acc-0080",
+    "type": "case",
+    "topic": "audit-quality-management",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "A mid-sized audit firm is designing its system of quality management under ISQM 1. What is the general methodology ISQM 1 expects the firm to follow?",
+    "options": [
+      {
+        "label": "Identify quality risks specific to the firm's engagements and circumstances, assess those risks, and design and implement responses tailored to address them - a risk-based, iterative process rather than a static, generic checklist.",
+        "correct": true
+      },
+      {
+        "label": "Simply copy the quality management system of the largest global audit network, regardless of the firm's own size or client base.",
+        "correct": false
+      },
+      {
+        "label": "ISQM 1 does not require any documented system at all - verbal understanding among partners is sufficient.",
+        "correct": false
+      }
+    ],
+    "explanation": "ISQM 1's central methodology is genuinely risk-based (identify -> assess -> respond), explicitly scaled to the firm's own nature and circumstances rather than prescribing one universal system.",
+    "source": "ISQM 1 (risk identification, assessment, and response methodology)"
   }
 ]
