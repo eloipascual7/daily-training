@@ -5,7 +5,8 @@ import {
   deserializeProgress,
   pushRecent,
   accountingModeForDate,
-  pickAccountingQuestion,
+  pickAccountingTopic,
+  pickAccountingSession,
   getBlockById,
   pickFrenchExercise,
   advanceFrenchState,
@@ -14,6 +15,7 @@ import {
 } from "./logic.js";
 
 const STORAGE_KEY = "daily-training-progress";
+const SESSION_SIZE = 5;
 
 function loadProgress() {
   try {
@@ -32,12 +34,13 @@ function saveProgress(state) {
 }
 
 async function loadBanks() {
-  const [accounting, french, english] = await Promise.all([
+  const [accounting, accountingLessons, french, english] = await Promise.all([
     fetch("data/accounting-bank.json").then((r) => r.json()),
+    fetch("data/accounting-lessons.json").then((r) => r.json()),
     fetch("data/french-ladder.json").then((r) => r.json()),
     fetch("data/english-bank.json").then((r) => r.json()),
   ]);
-  return { accounting, french, english };
+  return { accounting, accountingLessons, french, english };
 }
 
 function setDotState(index, className) {
@@ -73,13 +76,37 @@ async function main() {
     document.getElementById("streak-label").textContent = `Racha: ${progress.streakDays} días`;
   }
 
+  // ---- Block 1: Accounting (lesson, then a session of questions) ----
   function runAccounting() {
     showBlock("block-accounting");
     setDotState(0, "active");
-    const mode = accountingModeForDate(today);
-    const question = pickAccountingQuestion(banks.accounting, mode, progress.accounting.recentIds);
 
-    document.getElementById("accounting-topic").textContent = `${question.topic} (${mode})`;
+    const mode = accountingModeForDate(today);
+    const topic = pickAccountingTopic(banks.accounting, mode, progress.accounting.recentTopics);
+    const lesson = banks.accountingLessons.find((l) => l.topic === topic);
+    const session = pickAccountingSession(banks.accounting, mode, topic, progress.accounting.recentIds, SESSION_SIZE);
+
+    progress.accounting.recentTopics = pushRecent(progress.accounting.recentTopics, topic, 5);
+    saveProgress(progress);
+
+    document.getElementById("accounting-lesson").hidden = false;
+    document.getElementById("accounting-quiz").hidden = true;
+    document.getElementById("accounting-lesson-title").textContent = lesson ? lesson.title : topic;
+    document.getElementById("accounting-lesson-text").textContent = lesson ? lesson.lesson : "";
+    document.getElementById("accounting-lesson-source").textContent = lesson ? `Fuente: ${lesson.source}` : "";
+
+    document.getElementById("accounting-lesson-start").onclick = () => {
+      document.getElementById("accounting-lesson").hidden = true;
+      document.getElementById("accounting-quiz").hidden = false;
+      runAccountingQuestion(session, 0);
+    };
+  }
+
+  function runAccountingQuestion(session, index) {
+    const question = session[index];
+    document.getElementById("accounting-progress-label").textContent =
+      `Pregunta ${index + 1} de ${session.length}`;
+    document.getElementById("accounting-topic").textContent = `${question.topic} (${question.type})`;
     document.getElementById("accounting-prompt").textContent = question.prompt;
     document.getElementById("accounting-feedback").hidden = true;
 
@@ -95,18 +122,31 @@ async function main() {
       saveProgress(progress);
     });
 
-    document.getElementById("accounting-next").onclick = () => {
-      setDotState(0, "done");
-      runFrench();
+    const nextBtn = document.getElementById("accounting-next");
+    const isLast = index === session.length - 1;
+    nextBtn.textContent = isLast ? "Siguiente bloque" : "Siguiente";
+    nextBtn.onclick = () => {
+      if (isLast) {
+        setDotState(0, "done");
+        runFrench();
+      } else {
+        runAccountingQuestion(session, index + 1);
+      }
     };
   }
 
+  // ---- Block 2: French (a session of exercises from the current ladder block) ----
   function runFrench() {
     showBlock("block-french");
     setDotState(1, "active");
+    runFrenchExercise(0);
+  }
+
+  function runFrenchExercise(index) {
     const block = getBlockById(banks.french, progress.french.currentBlockId);
     const exercise = pickFrenchExercise(block, progress.french.recentExerciseIds);
 
+    document.getElementById("french-progress-label").textContent = `Ejercicio ${index + 1} de ${SESSION_SIZE}`;
     document.getElementById("french-block-name").textContent = block.name;
     document.getElementById("french-prompt").textContent = exercise.prompt;
     document.getElementById("french-feedback").hidden = true;
@@ -120,13 +160,25 @@ async function main() {
     inputEl.hidden = true;
     submitBtn.hidden = true;
 
+    const isLast = index === SESSION_SIZE - 1;
+
     function finishFrench(wasCorrect) {
       progress.french.recentExerciseIds = pushRecent(progress.french.recentExerciseIds, exercise.id, 10);
       progress.french = advanceFrenchState(banks.french, progress.french, wasCorrect);
       saveProgress(progress);
 
       document.getElementById("french-feedback").hidden = false;
-      document.getElementById("french-next").hidden = false;
+      const nextBtn = document.getElementById("french-next");
+      nextBtn.hidden = false;
+      nextBtn.textContent = isLast ? "Siguiente bloque" : "Siguiente";
+      nextBtn.onclick = () => {
+        if (isLast) {
+          setDotState(1, "done");
+          runEnglish();
+        } else {
+          runFrenchExercise(index + 1);
+        }
+      };
     }
 
     if (exercise.type === "mcq") {
@@ -157,19 +209,20 @@ async function main() {
         b.onclick = () => finishFrench(b.dataset.correct === "true");
       });
     }
-
-    document.getElementById("french-next").onclick = () => {
-      setDotState(1, "done");
-      runEnglish();
-    };
   }
 
+  // ---- Block 3: English (a session of exercises cycling through the 3 focuses) ----
   function runEnglish() {
     showBlock("block-english");
     setDotState(2, "active");
+    runEnglishExercise(0);
+  }
+
+  function runEnglishExercise(index) {
     const focus = nextEnglishFocus(progress.english.lastFocus);
     const exercise = pickEnglishExercise(banks.english, focus, progress.english.recentIds);
 
+    document.getElementById("english-progress-label").textContent = `Ejercicio ${index + 1} de ${SESSION_SIZE}`;
     document.getElementById("english-focus").textContent = focus;
     document.getElementById("english-prompt").textContent = exercise.prompt;
     document.getElementById("english-feedback").hidden = true;
@@ -178,12 +231,25 @@ async function main() {
     const optionsEl = document.getElementById("english-options");
     optionsEl.innerHTML = "";
 
+    const isLast = index === SESSION_SIZE - 1;
+
     function finishEnglish() {
       progress.english.recentIds = pushRecent(progress.english.recentIds, exercise.id);
       progress.english.lastFocus = focus;
       saveProgress(progress);
       document.getElementById("english-explanation").textContent = exercise.explanation;
       document.getElementById("english-feedback").hidden = false;
+
+      const nextBtn = document.getElementById("english-next");
+      nextBtn.textContent = isLast ? "Terminar" : "Siguiente";
+      nextBtn.onclick = () => {
+        if (isLast) {
+          setDotState(2, "done");
+          finishSession();
+        } else {
+          runEnglishExercise(index + 1);
+        }
+      };
     }
 
     if (exercise.type === "mcq") {
@@ -196,11 +262,6 @@ async function main() {
       document.getElementById("english-model-answer").textContent = `Modelo: ${exercise.modelAnswer}`;
       finishEnglish();
     }
-
-    document.getElementById("english-next").onclick = () => {
-      setDotState(2, "done");
-      finishSession();
-    };
   }
 
   function finishSession() {

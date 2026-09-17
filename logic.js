@@ -9,7 +9,7 @@ export function defaultProgressState() {
   return {
     streakDays: 0,
     lastCompletedDate: null,
-    accounting: { recentIds: [] },
+    accounting: { recentIds: [], recentTopics: [] },
     french: { currentBlockId: "passe-compose", consecutiveCorrect: 0, recentExerciseIds: [] },
     english: { lastFocus: null, recentIds: [] },
   };
@@ -35,6 +35,7 @@ export function deserializeProgress(json) {
       typeof parsed.lastCompletedDate === "string" ? parsed.lastCompletedDate : defaults.lastCompletedDate,
     accounting: {
       recentIds: Array.isArray(parsed.accounting?.recentIds) ? parsed.accounting.recentIds : [],
+      recentTopics: Array.isArray(parsed.accounting?.recentTopics) ? parsed.accounting.recentTopics : [],
     },
     french: {
       currentBlockId:
@@ -70,6 +71,45 @@ export function pickAccountingQuestion(bank, mode, recentIds, randomFn = Math.ra
   let candidates = pool.filter((q) => !recentIds.includes(q.id));
   if (candidates.length === 0) candidates = pool;
   return candidates[Math.floor(randomFn() * candidates.length)];
+}
+
+function shuffle(list, randomFn) {
+  const arr = [...list];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(randomFn() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+function pickManyExcluding(pool, n, recentIds, excludeIds, randomFn) {
+  const fresh = pool.filter((q) => !excludeIds.has(q.id) && !recentIds.includes(q.id));
+  const source = fresh.length >= n ? fresh : pool.filter((q) => !excludeIds.has(q.id));
+  return shuffle(source, randomFn).slice(0, n);
+}
+
+export function pickAccountingTopic(bank, mode, recentTopics, randomFn = Math.random) {
+  const topics = [...new Set(bank.filter((q) => q.type === mode).map((q) => q.topic))];
+  let candidates = topics.filter((t) => !recentTopics.includes(t));
+  if (candidates.length === 0) candidates = topics;
+  return candidates[Math.floor(randomFn() * candidates.length)];
+}
+
+export function pickAccountingSession(bank, mode, topic, recentIds, sessionSize = 5, randomFn = Math.random) {
+  const pool = bank.filter((q) => q.type === mode);
+  const topicPool = pool.filter((q) => q.topic === topic);
+  const otherPool = pool.filter((q) => q.topic !== topic);
+
+  const excludeIds = new Set();
+  const topicCount = Math.min(Math.ceil(sessionSize / 2), topicPool.length);
+  const topicQuestions = pickManyExcluding(topicPool, topicCount, recentIds, excludeIds, randomFn);
+  topicQuestions.forEach((q) => excludeIds.add(q.id));
+
+  const remaining = sessionSize - topicQuestions.length;
+  const fallbackPool = otherPool.length > 0 ? otherPool : pool;
+  const otherQuestions = pickManyExcluding(fallbackPool, remaining, recentIds, excludeIds, randomFn);
+
+  return [...topicQuestions, ...otherQuestions];
 }
 
 export function getBlockById(ladder, id) {

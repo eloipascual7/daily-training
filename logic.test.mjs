@@ -8,6 +8,8 @@ import {
   pushRecent,
   accountingModeForDate,
   pickAccountingQuestion,
+  pickAccountingTopic,
+  pickAccountingSession,
   getBlockById,
   pickFrenchExercise,
   advanceFrenchState,
@@ -24,7 +26,7 @@ test("defaultProgressState has the expected shape", () => {
   const state = defaultProgressState();
   assert.strictEqual(state.streakDays, 0);
   assert.strictEqual(state.lastCompletedDate, null);
-  assert.deepStrictEqual(state.accounting, { recentIds: [] });
+  assert.deepStrictEqual(state.accounting, { recentIds: [], recentTopics: [] });
   assert.strictEqual(state.french.currentBlockId, "passe-compose");
   assert.strictEqual(state.french.consecutiveCorrect, 0);
   assert.deepStrictEqual(state.english, { lastFocus: null, recentIds: [] });
@@ -84,6 +86,40 @@ test("pickAccountingQuestion falls back to full pool when all recently seen", ()
 
 test("pickAccountingQuestion throws when no question matches the mode", () => {
   assert.throws(() => pickAccountingQuestion([{ id: "q1", type: "quiz" }], "case", []));
+});
+
+const sessionBank = [
+  { id: "a1", type: "quiz", topic: "leases" },
+  { id: "a2", type: "quiz", topic: "leases" },
+  { id: "a3", type: "quiz", topic: "inventory" },
+  { id: "a4", type: "quiz", topic: "provisions" },
+  { id: "a5", type: "quiz", topic: "fair-value" },
+  { id: "a6", type: "case", topic: "leases" },
+];
+
+test("pickAccountingTopic only considers topics that have a question of that mode", () => {
+  const topic = pickAccountingTopic(sessionBank, "case", [], () => 0);
+  assert.strictEqual(topic, "leases"); // the only topic with a "case" question
+});
+
+test("pickAccountingTopic avoids recently used topics, falling back when exhausted", () => {
+  const allQuizTopics = ["leases", "inventory", "provisions", "fair-value"];
+  assert.strictEqual(pickAccountingTopic(sessionBank, "quiz", allQuizTopics, () => 0), "leases");
+  assert.notStrictEqual(pickAccountingTopic(sessionBank, "quiz", ["leases"], () => 0), "leases");
+});
+
+test("pickAccountingSession mixes topic-of-the-day questions with others, no duplicates, correct size", () => {
+  const session = pickAccountingSession(sessionBank, "quiz", "leases", [], 4, Math.random);
+  assert.strictEqual(session.length, 4);
+  const ids = session.map((q) => q.id);
+  assert.strictEqual(new Set(ids).size, ids.length);
+  assert.ok(session.some((q) => q.topic === "leases"));
+  assert.ok(session.some((q) => q.topic !== "leases"));
+});
+
+test("pickAccountingSession never exceeds the available pool for that mode", () => {
+  const session = pickAccountingSession(sessionBank, "quiz", "leases", [], 10, Math.random);
+  assert.strictEqual(session.length, 5); // only 5 "quiz" questions exist in sessionBank
 });
 
 const testLadder = [
