@@ -137,3 +137,5 @@ Dado que es 100% estático, el banco debe tener suficiente variedad para no repe
 - Exportar/importar progreso funciona (descarga y recarga un JSON válido).
 
 **URL desplegada:** https://daily-training-6l9.pages.dev (Cloudflare Pages, cuenta Unobis — proyecto `daily-training`, desplegado 2026-09-17 a petición explícita del usuario tras confirmar que el token disponible era el de la cuenta de Unobis).
+
+**URL principal (desde 2026-10-05):** https://eloipascual7.github.io/daily-training/ (GitHub Pages, repo público `eloipascual7/daily-training`). Se movió fuera de Cloudflare porque `*.pages.dev` no abría desde el iPhone (bloqueos de IPs de Cloudflare en España). La URL de Cloudflare sigue activa pero ya no se actualiza.
