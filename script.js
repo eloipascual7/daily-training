@@ -4,9 +4,9 @@ import {
   serializeProgress,
   deserializeProgress,
   pushRecent,
-  accountingModeForDate,
   pickAccountingTopic,
   pickAccountingSession,
+  pickReviewQuestion,
   getBlockById,
   pickFrenchExercise,
   advanceFrenchState,
@@ -16,6 +16,8 @@ import {
 
 const STORAGE_KEY = "daily-training-progress";
 const SESSION_SIZE = 5;
+const ACCOUNTING_TOPIC_QUESTIONS = 4; // + 1 general-review question = SESSION_SIZE
+const ACCOUNTING_RECENT_IDS = 40;
 
 function loadProgress() {
   try {
@@ -34,13 +36,14 @@ function saveProgress(state) {
 }
 
 async function loadBanks() {
-  const [accounting, accountingLessons, french, english] = await Promise.all([
+  const [accounting, accountingReview, accountingLessons, french, english] = await Promise.all([
     fetch("data/accounting-bank.json").then((r) => r.json()),
+    fetch("data/accounting-review.json").then((r) => r.json()),
     fetch("data/accounting-lessons.json").then((r) => r.json()),
     fetch("data/french-ladder.json").then((r) => r.json()),
     fetch("data/english-bank.json").then((r) => r.json()),
   ]);
-  return { accounting, accountingLessons, french, english };
+  return { accounting, accountingReview, accountingLessons, french, english };
 }
 
 function setDotState(index, className) {
@@ -65,14 +68,29 @@ function shuffleForDisplay(list) {
   return arr;
 }
 
-function renderOptions(container, options, onPick) {
+// isCorrect(opt) marks the right answer after any pick, so a wrong pick always shows what was correct.
+function renderOptions(container, options, isCorrect, onPick) {
   container.innerHTML = "";
-  shuffleForDisplay(options).forEach((opt) => {
+  const shuffled = shuffleForDisplay(options);
+  const buttons = shuffled.map((opt) => {
     const btn = document.createElement("button");
     btn.className = "option-btn";
     btn.textContent = typeof opt === "string" ? opt : opt.label;
-    btn.addEventListener("click", () => onPick(opt, btn), { once: true });
+    btn.addEventListener(
+      "click",
+      () => {
+        const right = isCorrect(opt);
+        buttons.forEach((b, i) => {
+          b.disabled = true;
+          if (isCorrect(shuffled[i])) b.classList.add("correct");
+        });
+        if (!right) btn.classList.add("incorrect");
+        onPick(opt, right);
+      },
+      { once: true }
+    );
     container.appendChild(btn);
+    return btn;
   });
 }
 
@@ -90,10 +108,12 @@ async function main() {
     showBlock("block-accounting");
     setDotState(0, "active");
 
-    const mode = accountingModeForDate(today);
-    const topic = pickAccountingTopic(banks.accounting, mode, progress.accounting.recentTopics);
+    const topic = pickAccountingTopic(banks.accounting, progress.accounting.recentTopics);
     const lesson = banks.accountingLessons.find((l) => l.topic === topic);
-    const session = pickAccountingSession(banks.accounting, mode, topic, progress.accounting.recentIds, SESSION_SIZE);
+    const session = [
+      ...pickAccountingSession(banks.accounting, topic, progress.accounting.recentIds, ACCOUNTING_TOPIC_QUESTIONS),
+      pickReviewQuestion(banks.accountingReview, progress.accounting.recentIds),
+    ];
 
     progress.accounting.recentTopics = pushRecent(progress.accounting.recentTopics, topic, 5);
     saveProgress(progress);
@@ -115,19 +135,17 @@ async function main() {
     const question = session[index];
     document.getElementById("accounting-progress-label").textContent =
       `Pregunta ${index + 1} de ${session.length}`;
-    document.getElementById("accounting-topic").textContent = `${question.topic} (${question.type})`;
+    document.getElementById("accounting-topic").textContent =
+      question.type === "review" ? "Repaso general" : `${question.topic} (${question.type})`;
     document.getElementById("accounting-prompt").textContent = question.prompt;
     document.getElementById("accounting-feedback").hidden = true;
 
-    renderOptions(document.getElementById("accounting-options"), question.options, (opt, btn) => {
-      document.querySelectorAll("#accounting-options .option-btn").forEach((b) => (b.disabled = true));
-      btn.classList.add(opt.correct ? "correct" : "incorrect");
-
+    renderOptions(document.getElementById("accounting-options"), question.options, (opt) => opt.correct, () => {
       document.getElementById("accounting-explanation").textContent = question.explanation;
       document.getElementById("accounting-source").textContent = `Fuente: ${question.source}`;
       document.getElementById("accounting-feedback").hidden = false;
 
-      progress.accounting.recentIds = pushRecent(progress.accounting.recentIds, question.id);
+      progress.accounting.recentIds = pushRecent(progress.accounting.recentIds, question.id, ACCOUNTING_RECENT_IDS);
       saveProgress(progress);
     });
 
@@ -171,11 +189,27 @@ async function main() {
 
     const isLast = index === SESSION_SIZE - 1;
 
+    // Grammar mistakes get an explanation (including why the chosen option is wrong);
+    // vocabulary mistakes only show the right answer - there is nothing to reason about, just to learn.
+    function showFrenchFeedback(wasCorrect, given) {
+      const isGrammar = exercise.kind !== "vocab";
+      const verdict = document.getElementById("french-verdict");
+      verdict.className = `verdict ${wasCorrect ? "ok" : "ko"}`;
+      verdict.textContent = wasCorrect ? "Correcto" : `Incorrecto. Respuesta correcta: ${exercise.correctAnswer}`;
+
+      const parts = [];
+      if (!wasCorrect && given) parts.push(`Tu respuesta: ${given}`);
+      if (!wasCorrect && isGrammar && exercise.whyWrong?.[given]) parts.push(`Por qué no: ${exercise.whyWrong[given]}`);
+      if (isGrammar) parts.push(exercise.explanation);
+      document.getElementById("french-explanation").textContent = parts.join("\n\n");
+    }
+
     function finishFrench(wasCorrect) {
       progress.french.recentExerciseIds = pushRecent(progress.french.recentExerciseIds, exercise.id, 10);
       progress.french = advanceFrenchState(banks.french, progress.french, wasCorrect);
       saveProgress(progress);
 
+      document.getElementById("french-self-grade").hidden = true;
       document.getElementById("french-feedback").hidden = false;
       const nextBtn = document.getElementById("french-next");
       nextBtn.hidden = false;
@@ -191,11 +225,8 @@ async function main() {
     }
 
     if (exercise.type === "mcq") {
-      renderOptions(optionsEl, exercise.options, (opt, btn) => {
-        optionsEl.querySelectorAll(".option-btn").forEach((b) => (b.disabled = true));
-        const wasCorrect = opt === exercise.correctAnswer;
-        btn.classList.add(wasCorrect ? "correct" : "incorrect");
-        document.getElementById("french-explanation").textContent = exercise.explanation;
+      renderOptions(optionsEl, exercise.options, (opt) => opt === exercise.correctAnswer, (opt, wasCorrect) => {
+        showFrenchFeedback(wasCorrect, opt);
         finishFrench(wasCorrect);
       });
     } else if (exercise.type === "fill-blank") {
@@ -203,16 +234,20 @@ async function main() {
       submitBtn.hidden = false;
       inputEl.value = "";
       submitBtn.onclick = () => {
-        const normalize = (s) => s.trim().toLowerCase().replace(/\s+/g, " ");
+        // iPhone keyboards type curly apostrophes; treat them like straight ones.
+        const normalize = (s) => s.replace(/[\u2019\u2018]/g, "'").trim().toLowerCase().replace(/\s+/g, " ");
         const wasCorrect = normalize(inputEl.value) === normalize(exercise.correctAnswer);
-        document.getElementById("french-explanation").textContent =
-          `${exercise.explanation} (Respuesta correcta: ${exercise.correctAnswer})`;
+        submitBtn.hidden = true;
+        showFrenchFeedback(wasCorrect, inputEl.value.trim());
         finishFrench(wasCorrect);
       };
     } else {
+      // error-spot / production: show the model answer, then the user self-grades
+      const verdict = document.getElementById("french-verdict");
+      verdict.className = "verdict";
+      verdict.textContent = `Respuesta modelo: ${exercise.correctAnswer}`;
+      document.getElementById("french-explanation").textContent = exercise.kind === "vocab" ? "" : exercise.explanation;
       document.getElementById("french-self-grade").hidden = false;
-      document.getElementById("french-explanation").textContent =
-        `Respuesta modelo: ${exercise.correctAnswer} — ${exercise.explanation}`;
       document.getElementById("french-feedback").hidden = false;
       document.querySelectorAll("#french-self-grade button").forEach((b) => {
         b.onclick = () => finishFrench(b.dataset.correct === "true");
@@ -262,11 +297,7 @@ async function main() {
     }
 
     if (exercise.type === "mcq") {
-      renderOptions(optionsEl, exercise.options, (opt, btn) => {
-        optionsEl.querySelectorAll(".option-btn").forEach((b) => (b.disabled = true));
-        btn.classList.add(opt.correct ? "correct" : "incorrect");
-        finishEnglish();
-      });
+      renderOptions(optionsEl, exercise.options, (opt) => opt.correct, () => finishEnglish());
     } else {
       document.getElementById("english-model-answer").textContent = `Modelo: ${exercise.modelAnswer}`;
       finishEnglish();

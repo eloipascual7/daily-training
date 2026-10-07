@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "rev-0001",
+    "type": "review",
+    "topic": "business-combinations",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Which balance sheet item does IFRS 3 give rise to?",
+    "options": [
+      {
+        "label": "Goodwill",
+        "correct": true
+      },
+      {
+        "label": "Inventories",
+        "correct": false
+      },
+      {
+        "label": "Cash",
+        "correct": false
+      }
+    ],
+    "explanation": "IFRS 3 deals with business combinations; goodwill is the residual recognised on acquisition.",
+    "source": "IFRS 3.32"
+  },
+  {
+    "id": "rev-0002",
+    "type": "review",
+    "topic": "inventory",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Which standard covers inventories?",
+    "options": [
+      {
+        "label": "IAS 2",
+        "correct": true
+      },
+      {
+        "label": "IAS 16",
+        "correct": false
+      },
+      {
+        "label": "IFRS 9",
+        "correct": false
+      }
+    ],
+    "explanation": "IAS 2 Inventories: lower of cost and net realisable value.",
+    "source": "IAS 2.1"
+  },
+  {
+    "id": "rev-0003",
+    "type": "review",
+    "topic": "ppe",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Which standard covers property, plant and equipment?",
+    "options": [
+      {
+        "label": "IAS 16",
+        "correct": true
+      },
+      {
+        "label": "IAS 38",
+        "correct": false
+      },
+      {
+        "label": "IAS 40",
+        "correct": false
+      }
+    ],
+    "explanation": "IAS 16 covers PP&E; IAS 38 intangibles; IAS 40 investment property.",
+    "source": "IAS 16.2"
+  },
+  {
+    "id": "rev-0004",
+    "type": "review",
+    "topic": "intangible-assets",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Which standard covers intangible assets such as software?",
+    "options": [
+      {
+        "label": "IAS 38",
+        "correct": true
+      },
+      {
+        "label": "IAS 16",
+        "correct": false
+      },
+      {
+        "label": "IFRS 15",
+        "correct": false
+      }
+    ],
+    "explanation": "IAS 38 covers intangibles other than those in other standards' scope.",
+    "source": "IAS 38.2"
+  },
+  {
+    "id": "rev-0005",
+    "type": "review",
+    "topic": "leases",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Which standard puts right-of-use assets on the balance sheet?",
+    "options": [
+      {
+        "label": "IFRS 16",
+        "correct": true
+      },
+      {
+        "label": "IAS 17",
+        "correct": false
+      },
+      {
+        "label": "IFRS 9",
+        "correct": false
+      }
+    ],
+    "explanation": "IFRS 16 replaced IAS 17 from 2019 and requires lessees to recognise right-of-use assets.",
+    "source": "IFRS 16.22"
+  },
+  {
+    "id": "rev-0006",
+    "type": "review",
+    "topic": "revenue-recognition",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Which standard contains the five-step revenue model?",
+    "options": [
+      {
+        "label": "IFRS 15",
+        "correct": true
+      },
+      {
+        "label": "IAS 18",
+        "correct": false
+      },
+      {
+        "label": "IFRS 17",
+        "correct": false
+      }
+    ],
+    "explanation": "IFRS 15 replaced IAS 18 and IAS 11. IFRS 17 covers insurance contracts.",
+    "source": "IFRS 15.IN7"
+  },
+  {
+    "id": "rev-0007",
+    "type": "review",
+    "topic": "financial-instruments",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Expected credit losses on receivables fall under which standard?",
+    "options": [
+      {
+        "label": "IFRS 9",
+        "correct": true
+      },
+      {
+        "label": "IAS 37",
+        "correct": false
+      },
+      {
+        "label": "IFRS 7",
+        "correct": false
+      }
+    ],
+    "explanation": "IFRS 9 sets the ECL model; IFRS 7 covers financial instrument disclosures.",
+    "source": "IFRS 9.5.5.1"
+  },
+  {
+    "id": "rev-0008",
+    "type": "review",
+    "topic": "provisions",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "A warranty provision is governed by which standard?",
+    "options": [
+      {
+        "label": "IAS 37",
+        "correct": true
+      },
+      {
+        "label": "IAS 19",
+        "correct": false
+      },
+      {
+        "label": "IFRS 15",
+        "correct": false
+      }
+    ],
+    "explanation": "IAS 37 covers provisions, contingent liabilities and contingent assets. Service-type warranties sold separately fall under IFRS 15.",
+    "source": "IAS 37.1; IFRS 15.B28-B33"
+  },
+  {
+    "id": "rev-0009",
+    "type": "review",
+    "topic": "employee-benefits",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "A defined benefit pension liability falls under which standard?",
+    "options": [
+      {
+        "label": "IAS 19",
+        "correct": true
+      },
+      {
+        "label": "IFRS 2",
+        "correct": false
+      },
+      {
+        "label": "IAS 37",
+        "correct": false
+      }
+    ],
+    "explanation": "IAS 19 Employee Benefits covers post-employment benefit plans.",
+    "source": "IAS 19.2"
+  },
+  {
+    "id": "rev-0010",
+    "type": "review",
+    "topic": "share-based-payment",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Employee stock options are accounted for under which standard?",
+    "options": [
+      {
+        "label": "IFRS 2",
+        "correct": true
+      },
+      {
+        "label": "IAS 19",
+        "correct": false
+      },
+      {
+        "label": "IAS 32",
+        "correct": false
+      }
+    ],
+    "explanation": "IFRS 2 Share-based Payment.",
+    "source": "IFRS 2.2"
+  },
+  {
+    "id": "rev-0011",
+    "type": "review",
+    "topic": "income-taxes",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Deferred tax assets and liabilities are covered by which standard?",
+    "options": [
+      {
+        "label": "IAS 12",
+        "correct": true
+      },
+      {
+        "label": "IAS 37",
+        "correct": false
+      },
+      {
+        "label": "IAS 20",
+        "correct": false
+      }
+    ],
+    "explanation": "IAS 12 Income Taxes covers current and deferred tax.",
+    "source": "IAS 12.1"
+  },
+  {
+    "id": "rev-0012",
+    "type": "review",
+    "topic": "impairment",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Impairment testing of goodwill follows which standard?",
+    "options": [
+      {
+        "label": "IAS 36",
+        "correct": true
+      },
+      {
+        "label": "IFRS 3",
+        "correct": false
+      },
+      {
+        "label": "IFRS 9",
+        "correct": false
+      }
+    ],
+    "explanation": "IAS 36 Impairment of Assets, including annual goodwill testing.",
+    "source": "IAS 36.10"
+  },
+  {
+    "id": "rev-0013",
+    "type": "review",
+    "topic": "held-for-sale",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Assets held for sale are covered by which standard?",
+    "options": [
+      {
+        "label": "IFRS 5",
+        "correct": true
+      },
+      {
+        "label": "IAS 16",
+        "correct": false
+      },
+      {
+        "label": "IAS 40",
+        "correct": false
+      }
+    ],
+    "explanation": "IFRS 5 Non-current Assets Held for Sale and Discontinued Operations.",
+    "source": "IFRS 5.1"
+  },
+  {
+    "id": "rev-0014",
+    "type": "review",
+    "topic": "consolidation",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "The definition of control for consolidation comes from which standard?",
+    "options": [
+      {
+        "label": "IFRS 10",
+        "correct": true
+      },
+      {
+        "label": "IFRS 3",
+        "correct": false
+      },
+      {
+        "label": "IAS 28",
+        "correct": false
+      }
+    ],
+    "explanation": "IFRS 10 Consolidated Financial Statements defines control.",
+    "source": "IFRS 10.7"
+  },
+  {
+    "id": "rev-0015",
+    "type": "review",
+    "topic": "associates-joint-ventures",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "The equity method is set out in which standard?",
+    "options": [
+      {
+        "label": "IAS 28",
+        "correct": true
+      },
+      {
+        "label": "IFRS 10",
+        "correct": false
+      },
+      {
+        "label": "IAS 27",
+        "correct": false
+      }
+    ],
+    "explanation": "IAS 28 Investments in Associates and Joint Ventures.",
+    "source": "IAS 28.16"
+  },
+  {
+    "id": "rev-0016",
+    "type": "review",
+    "topic": "joint-arrangements",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Joint operations vs joint ventures: which standard?",
+    "options": [
+      {
+        "label": "IFRS 11",
+        "correct": true
+      },
+      {
+        "label": "IFRS 12",
+        "correct": false
+      },
+      {
+        "label": "IAS 31",
+        "correct": false
+      }
+    ],
+    "explanation": "IFRS 11 Joint Arrangements; IFRS 12 covers disclosures; IAS 31 was withdrawn.",
+    "source": "IFRS 11.1"
+  },
+  {
+    "id": "rev-0017",
+    "type": "review",
+    "topic": "fair-value",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "The fair value hierarchy (Levels 1-3) comes from which standard?",
+    "options": [
+      {
+        "label": "IFRS 13",
+        "correct": true
+      },
+      {
+        "label": "IFRS 9",
+        "correct": false
+      },
+      {
+        "label": "IAS 40",
+        "correct": false
+      }
+    ],
+    "explanation": "IFRS 13 Fair Value Measurement.",
+    "source": "IFRS 13.72"
+  },
+  {
+    "id": "rev-0018",
+    "type": "review",
+    "topic": "cash-flow-statements",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "The statement of cash flows is governed by which standard?",
+    "options": [
+      {
+        "label": "IAS 7",
+        "correct": true
+      },
+      {
+        "label": "IAS 1",
+        "correct": false
+      },
+      {
+        "label": "IAS 8",
+        "correct": false
+      }
+    ],
+    "explanation": "IAS 7 Statement of Cash Flows.",
+    "source": "IAS 7.1"
+  },
+  {
+    "id": "rev-0019",
+    "type": "review",
+    "topic": "events-after-reporting-period",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Adjusting vs non-adjusting events: which standard?",
+    "options": [
+      {
+        "label": "IAS 10",
+        "correct": true
+      },
+      {
+        "label": "IAS 8",
+        "correct": false
+      },
+      {
+        "label": "IAS 37",
+        "correct": false
+      }
+    ],
+    "explanation": "IAS 10 Events after the Reporting Period.",
+    "source": "IAS 10.1"
+  },
+  {
+    "id": "rev-0020",
+    "type": "review",
+    "topic": "presentation-financial-statements",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Current vs non-current classification is set out in which standard?",
+    "options": [
+      {
+        "label": "IAS 1",
+        "correct": true
+      },
+      {
+        "label": "IAS 7",
+        "correct": false
+      },
+      {
+        "label": "IAS 8",
+        "correct": false
+      }
+    ],
+    "explanation": "IAS 1 Presentation of Financial Statements.",
+    "source": "IAS 1.60"
+  },
+  {
+    "id": "rev-0021",
+    "type": "review",
+    "topic": "foreign-exchange",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Functional currency is defined in which standard?",
+    "options": [
+      {
+        "label": "IAS 21",
+        "correct": true
+      },
+      {
+        "label": "IAS 29",
+        "correct": false
+      },
+      {
+        "label": "IFRS 9",
+        "correct": false
+      }
+    ],
+    "explanation": "IAS 21 The Effects of Changes in Foreign Exchange Rates. IAS 29 covers hyperinflation.",
+    "source": "IAS 21.8"
+  },
+  {
+    "id": "rev-0022",
+    "type": "review",
+    "topic": "related-party-disclosures",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Key management compensation disclosure is required by which standard?",
+    "options": [
+      {
+        "label": "IAS 24",
+        "correct": true
+      },
+      {
+        "label": "IAS 19",
+        "correct": false
+      },
+      {
+        "label": "IFRS 8",
+        "correct": false
+      }
+    ],
+    "explanation": "IAS 24 Related Party Disclosures.",
+    "source": "IAS 24.17"
+  },
+  {
+    "id": "rev-0023",
+    "type": "review",
+    "topic": "operating-segments",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Segment reporting follows which standard?",
+    "options": [
+      {
+        "label": "IFRS 8",
+        "correct": true
+      },
+      {
+        "label": "IAS 14",
+        "correct": false
+      },
+      {
+        "label": "IFRS 12",
+        "correct": false
+      }
+    ],
+    "explanation": "IFRS 8 Operating Segments replaced IAS 14.",
+    "source": "IFRS 8.1"
+  },
+  {
+    "id": "rev-0024",
+    "type": "review",
+    "topic": "earnings-per-share",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Basic and diluted EPS are defined in which standard?",
+    "options": [
+      {
+        "label": "IAS 33",
+        "correct": true
+      },
+      {
+        "label": "IAS 1",
+        "correct": false
+      },
+      {
+        "label": "IAS 34",
+        "correct": false
+      }
+    ],
+    "explanation": "IAS 33 Earnings per Share. IAS 34 covers interim reporting.",
+    "source": "IAS 33.1"
+  },
+  {
+    "id": "rev-0025",
+    "type": "review",
+    "topic": "government-grants",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Government grants are accounted for under which standard?",
+    "options": [
+      {
+        "label": "IAS 20",
+        "correct": true
+      },
+      {
+        "label": "IAS 37",
+        "correct": false
+      },
+      {
+        "label": "IFRS 15",
+        "correct": false
+      }
+    ],
+    "explanation": "IAS 20 Accounting for Government Grants and Disclosure of Government Assistance.",
+    "source": "IAS 20.1"
+  },
+  {
+    "id": "rev-0026",
+    "type": "review",
+    "topic": "borrowing-costs",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Capitalised interest on a qualifying asset follows which standard?",
+    "options": [
+      {
+        "label": "IAS 23",
+        "correct": true
+      },
+      {
+        "label": "IFRS 9",
+        "correct": false
+      },
+      {
+        "label": "IAS 16",
+        "correct": false
+      }
+    ],
+    "explanation": "IAS 23 Borrowing Costs.",
+    "source": "IAS 23.8"
+  },
+  {
+    "id": "rev-0027",
+    "type": "review",
+    "topic": "presentation-financial-statements",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Changes in accounting policies and errors: which standard?",
+    "options": [
+      {
+        "label": "IAS 8",
+        "correct": true
+      },
+      {
+        "label": "IAS 1",
+        "correct": false
+      },
+      {
+        "label": "IAS 10",
+        "correct": false
+      }
+    ],
+    "explanation": "IAS 8 Accounting Policies, Changes in Accounting Estimates and Errors.",
+    "source": "IAS 8.1"
+  },
+  {
+    "id": "rev-0028",
+    "type": "review",
+    "topic": "ppe",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "A building held to earn rentals falls under which standard?",
+    "options": [
+      {
+        "label": "IAS 40",
+        "correct": true
+      },
+      {
+        "label": "IAS 16",
+        "correct": false
+      },
+      {
+        "label": "IFRS 16",
+        "correct": false
+      }
+    ],
+    "explanation": "IAS 40 Investment Property covers property held for rentals or capital appreciation.",
+    "source": "IAS 40.5"
+  },
+  {
+    "id": "rev-0029",
+    "type": "review",
+    "topic": "financial-instruments",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Debt vs equity classification of an instrument follows which standard?",
+    "options": [
+      {
+        "label": "IAS 32",
+        "correct": true
+      },
+      {
+        "label": "IFRS 9",
+        "correct": false
+      },
+      {
+        "label": "IFRS 7",
+        "correct": false
+      }
+    ],
+    "explanation": "IAS 32 Financial Instruments: Presentation sets the liability/equity split.",
+    "source": "IAS 32.11, 32.16"
+  },
+  {
+    "id": "rev-0030",
+    "type": "review",
+    "topic": "revenue-recognition",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Where does a customer's advance payment appear on the balance sheet?",
+    "options": [
+      {
+        "label": "Contract liability",
+        "correct": true
+      },
+      {
+        "label": "Trade receivable",
+        "correct": false
+      },
+      {
+        "label": "Provision",
+        "correct": false
+      }
+    ],
+    "explanation": "Consideration received before the entity performs is a contract liability under IFRS 15.",
+    "source": "IFRS 15.106"
+  },
+  {
+    "id": "rev-0031",
+    "type": "review",
+    "topic": "leases",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Where does the lessee's lease obligation sit under IFRS 16?",
+    "options": [
+      {
+        "label": "Lease liability",
+        "correct": true
+      },
+      {
+        "label": "Provision",
+        "correct": false
+      },
+      {
+        "label": "Equity reserve",
+        "correct": false
+      }
+    ],
+    "explanation": "The lessee recognises a lease liability at the present value of lease payments.",
+    "source": "IFRS 16.26"
+  },
+  {
+    "id": "rev-0032",
+    "type": "review",
+    "topic": "employee-benefits",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Where do pension remeasurements go?",
+    "options": [
+      {
+        "label": "OCI",
+        "correct": true
+      },
+      {
+        "label": "P&L",
+        "correct": false
+      },
+      {
+        "label": "Goodwill",
+        "correct": false
+      }
+    ],
+    "explanation": "Remeasurements of the net defined benefit liability are recognised in OCI.",
+    "source": "IAS 19.120"
+  },
+  {
+    "id": "rev-0033",
+    "type": "review",
+    "topic": "foreign-exchange",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Where do translation differences on a foreign subsidiary go?",
+    "options": [
+      {
+        "label": "OCI",
+        "correct": true
+      },
+      {
+        "label": "P&L",
+        "correct": false
+      },
+      {
+        "label": "Goodwill",
+        "correct": false
+      }
+    ],
+    "explanation": "Translation differences are recognised in OCI and recycled on disposal.",
+    "source": "IAS 21.39"
+  },
+  {
+    "id": "rev-0034",
+    "type": "review",
+    "topic": "intangible-assets",
+    "frameworks": [
+      "IFRS"
+    ],
+    "prompt": "Which item can never be recognised as an intangible asset?",
+    "options": [
+      {
+        "label": "Internally generated goodwill",
+        "correct": true
+      },
+      {
+        "label": "Purchased software licence",
+        "correct": false
+      },
+      {
+        "label": "Patent acquired in a deal",
+        "correct": false
+      }
+    ],
+    "explanation": "Internally generated goodwill is not recognised as an asset.",
+    "source": "IAS 38.48"
+  },
+  {
+    "id": "rev-0035",
+    "type": "review",
+    "topic": "audit-materiality",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "Which ISA covers materiality in planning and performing an audit?",
+    "options": [
+      {
+        "label": "ISA 320",
+        "correct": true
+      },
+      {
+        "label": "ISA 450",
+        "correct": false
+      },
+      {
+        "label": "ISA 315",
+        "correct": false
+      }
+    ],
+    "explanation": "ISA 320 sets materiality; ISA 450 evaluates misstatements identified.",
+    "source": "ISA 320.1"
+  },
+  {
+    "id": "rev-0036",
+    "type": "review",
+    "topic": "audit-risk-assessment",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "Which ISA covers identifying and assessing risks of material misstatement?",
+    "options": [
+      {
+        "label": "ISA 315",
+        "correct": true
+      },
+      {
+        "label": "ISA 330",
+        "correct": false
+      },
+      {
+        "label": "ISA 240",
+        "correct": false
+      }
+    ],
+    "explanation": "ISA 315 (Revised 2019) covers risk assessment; ISA 330 covers responses.",
+    "source": "ISA 315.1"
+  },
+  {
+    "id": "rev-0037",
+    "type": "review",
+    "topic": "audit-fraud",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "Which ISA deals with the auditor's responsibilities relating to fraud?",
+    "options": [
+      {
+        "label": "ISA 240",
+        "correct": true
+      },
+      {
+        "label": "ISA 250",
+        "correct": false
+      },
+      {
+        "label": "ISA 265",
+        "correct": false
+      }
+    ],
+    "explanation": "ISA 240. ISA 250 covers laws and regulations; ISA 265 control deficiencies.",
+    "source": "ISA 240.1"
+  },
+  {
+    "id": "rev-0038",
+    "type": "review",
+    "topic": "audit-going-concern",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "Which ISA covers going concern?",
+    "options": [
+      {
+        "label": "ISA 570",
+        "correct": true
+      },
+      {
+        "label": "ISA 560",
+        "correct": false
+      },
+      {
+        "label": "ISA 580",
+        "correct": false
+      }
+    ],
+    "explanation": "ISA 570 Going Concern; ISA 560 subsequent events; ISA 580 written representations.",
+    "source": "ISA 570.1"
+  },
+  {
+    "id": "rev-0039",
+    "type": "review",
+    "topic": "audit-subsequent-events",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "Which ISA covers subsequent events?",
+    "options": [
+      {
+        "label": "ISA 560",
+        "correct": true
+      },
+      {
+        "label": "ISA 570",
+        "correct": false
+      },
+      {
+        "label": "ISA 710",
+        "correct": false
+      }
+    ],
+    "explanation": "ISA 560 Subsequent Events.",
+    "source": "ISA 560.1"
+  },
+  {
+    "id": "rev-0040",
+    "type": "review",
+    "topic": "audit-opinions",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "Which ISA covers modified opinions?",
+    "options": [
+      {
+        "label": "ISA 705",
+        "correct": true
+      },
+      {
+        "label": "ISA 700",
+        "correct": false
+      },
+      {
+        "label": "ISA 706",
+        "correct": false
+      }
+    ],
+    "explanation": "ISA 700 forms the opinion, ISA 705 modifies it, ISA 706 adds emphasis of matter.",
+    "source": "ISA 705.1"
+  },
+  {
+    "id": "rev-0041",
+    "type": "review",
+    "topic": "audit-opinions",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "Key audit matters are covered by which ISA?",
+    "options": [
+      {
+        "label": "ISA 701",
+        "correct": true
+      },
+      {
+        "label": "ISA 706",
+        "correct": false
+      },
+      {
+        "label": "ISA 720",
+        "correct": false
+      }
+    ],
+    "explanation": "ISA 701 Communicating Key Audit Matters. ISA 720 covers other information.",
+    "source": "ISA 701.1"
+  },
+  {
+    "id": "rev-0042",
+    "type": "review",
+    "topic": "audit-estimates",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "Which ISA covers auditing accounting estimates?",
+    "options": [
+      {
+        "label": "ISA 540",
+        "correct": true
+      },
+      {
+        "label": "ISA 520",
+        "correct": false
+      },
+      {
+        "label": "ISA 530",
+        "correct": false
+      }
+    ],
+    "explanation": "ISA 540 (Revised); ISA 520 analytical procedures; ISA 530 sampling.",
+    "source": "ISA 540.1"
+  },
+  {
+    "id": "rev-0043",
+    "type": "review",
+    "topic": "audit-related-parties",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "Which ISA covers related parties?",
+    "options": [
+      {
+        "label": "ISA 550",
+        "correct": true
+      },
+      {
+        "label": "ISA 505",
+        "correct": false
+      },
+      {
+        "label": "ISA 580",
+        "correct": false
+      }
+    ],
+    "explanation": "ISA 550 Related Parties; ISA 505 external confirmations.",
+    "source": "ISA 550.1"
+  },
+  {
+    "id": "rev-0044",
+    "type": "review",
+    "topic": "audit-evidence",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "Which ISA covers external confirmations?",
+    "options": [
+      {
+        "label": "ISA 505",
+        "correct": true
+      },
+      {
+        "label": "ISA 501",
+        "correct": false
+      },
+      {
+        "label": "ISA 500",
+        "correct": false
+      }
+    ],
+    "explanation": "ISA 505 External Confirmations; ISA 501 specific items; ISA 500 audit evidence.",
+    "source": "ISA 505.1"
+  },
+  {
+    "id": "rev-0045",
+    "type": "review",
+    "topic": "audit-documentation",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "Which ISA covers audit documentation?",
+    "options": [
+      {
+        "label": "ISA 230",
+        "correct": true
+      },
+      {
+        "label": "ISA 220",
+        "correct": false
+      },
+      {
+        "label": "ISA 210",
+        "correct": false
+      }
+    ],
+    "explanation": "ISA 230 Audit Documentation; ISA 220 quality management; ISA 210 terms of engagement.",
+    "source": "ISA 230.1"
+  },
+  {
+    "id": "rev-0046",
+    "type": "review",
+    "topic": "audit-control-deficiencies",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "Which ISA covers communicating control deficiencies?",
+    "options": [
+      {
+        "label": "ISA 265",
+        "correct": true
+      },
+      {
+        "label": "ISA 260",
+        "correct": false
+      },
+      {
+        "label": "ISA 315",
+        "correct": false
+      }
+    ],
+    "explanation": "ISA 265; ISA 260 covers communication with those charged with governance more broadly.",
+    "source": "ISA 265.1"
+  },
+  {
+    "id": "rev-0047",
+    "type": "review",
+    "topic": "audit-specific-items",
+    "frameworks": [
+      "ISA"
+    ],
+    "prompt": "Which ISA requires attending the inventory count?",
+    "options": [
+      {
+        "label": "ISA 501",
+        "correct": true
+      },
+      {
+        "label": "ISA 500",
+        "correct": false
+      },
+      {
+        "label": "ISA 505",
+        "correct": false
+      }
+    ],
+    "explanation": "ISA 501 Audit Evidence: Specific Considerations for Selected Items.",
+    "source": "ISA 501.4"
+  },
+  {
+    "id": "rev-0048",
+    "type": "review",
+    "topic": "audit-icfr",
+    "frameworks": [
+      "PCAOB"
+    ],
+    "prompt": "Which PCAOB standard governs the integrated audit of ICFR?",
+    "options": [
+      {
+        "label": "AS 2201",
+        "correct": true
+      },
+      {
+        "label": "AS 2110",
+        "correct": false
+      },
+      {
+        "label": "AS 1015",
+        "correct": false
+      }
+    ],
+    "explanation": "AS 2201 An Audit of ICFR Integrated with an Audit of Financial Statements; AS 2110 covers risk assessment.",
+    "source": "PCAOB AS 2201.1"
+  }
+]

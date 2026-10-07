@@ -6,10 +6,10 @@ import {
   serializeProgress,
   deserializeProgress,
   pushRecent,
-  accountingModeForDate,
   pickAccountingQuestion,
   pickAccountingTopic,
   pickAccountingSession,
+  pickReviewQuestion,
   getBlockById,
   pickFrenchExercise,
   advanceFrenchState,
@@ -55,16 +55,6 @@ test("pushRecent appends and caps at maxLen, deduplicating", () => {
   assert.deepStrictEqual(deduped, ["y", "x"]);
 });
 
-test("accountingModeForDate: Mon/Wed/Fri/Sun are case, Tue/Thu/Sat are quiz", () => {
-  assert.strictEqual(accountingModeForDate("2026-09-14"), "case"); // Monday
-  assert.strictEqual(accountingModeForDate("2026-09-15"), "quiz"); // Tuesday
-  assert.strictEqual(accountingModeForDate("2026-09-16"), "case"); // Wednesday
-  assert.strictEqual(accountingModeForDate("2026-09-17"), "quiz"); // Thursday
-  assert.strictEqual(accountingModeForDate("2026-09-18"), "case"); // Friday
-  assert.strictEqual(accountingModeForDate("2026-09-19"), "quiz"); // Saturday
-  assert.strictEqual(accountingModeForDate("2026-09-20"), "case"); // Sunday
-});
-
 test("pickAccountingQuestion filters by mode and avoids recent ids", () => {
   const bank = [
     { id: "q1", type: "case" },
@@ -97,29 +87,36 @@ const sessionBank = [
   { id: "a6", type: "case", topic: "leases" },
 ];
 
-test("pickAccountingTopic only considers topics that have a question of that mode", () => {
-  const topic = pickAccountingTopic(sessionBank, "case", [], () => 0);
-  assert.strictEqual(topic, "leases"); // the only topic with a "case" question
+test("pickAccountingTopic considers every topic regardless of type", () => {
+  const topics = new Set();
+  for (let i = 0; i < 4; i++) topics.add(pickAccountingTopic(sessionBank, [], () => i / 4));
+  assert.deepStrictEqual([...topics].sort(), ["fair-value", "inventory", "leases", "provisions"]);
 });
 
 test("pickAccountingTopic avoids recently used topics, falling back when exhausted", () => {
-  const allQuizTopics = ["leases", "inventory", "provisions", "fair-value"];
-  assert.strictEqual(pickAccountingTopic(sessionBank, "quiz", allQuizTopics, () => 0), "leases");
-  assert.notStrictEqual(pickAccountingTopic(sessionBank, "quiz", ["leases"], () => 0), "leases");
+  const allTopics = ["leases", "inventory", "provisions", "fair-value"];
+  assert.strictEqual(pickAccountingTopic(sessionBank, allTopics, () => 0), "leases");
+  assert.notStrictEqual(pickAccountingTopic(sessionBank, ["leases"], () => 0), "leases");
 });
 
-test("pickAccountingSession mixes topic-of-the-day questions with others, no duplicates, correct size", () => {
-  const session = pickAccountingSession(sessionBank, "quiz", "leases", [], 4, Math.random);
-  assert.strictEqual(session.length, 4);
-  const ids = session.map((q) => q.id);
-  assert.strictEqual(new Set(ids).size, ids.length);
-  assert.ok(session.some((q) => q.topic === "leases"));
-  assert.ok(session.some((q) => q.topic !== "leases"));
+test("pickAccountingSession returns only topic-of-the-day questions (case and quiz mixed), no duplicates", () => {
+  const session = pickAccountingSession(sessionBank, "leases", [], 4, Math.random);
+  assert.strictEqual(session.length, 3); // only 3 "leases" questions exist in sessionBank
+  assert.ok(session.every((q) => q.topic === "leases"));
+  assert.strictEqual(new Set(session.map((q) => q.id)).size, 3);
+  assert.ok(session.some((q) => q.type === "case") && session.some((q) => q.type === "quiz"));
 });
 
-test("pickAccountingSession never exceeds the available pool for that mode", () => {
-  const session = pickAccountingSession(sessionBank, "quiz", "leases", [], 10, Math.random);
-  assert.strictEqual(session.length, 5); // only 5 "quiz" questions exist in sessionBank
+test("pickAccountingSession prefers questions not seen recently", () => {
+  const session = pickAccountingSession(sessionBank, "leases", ["a1"], 2, Math.random);
+  assert.deepStrictEqual(session.map((q) => q.id).sort(), ["a2", "a6"]);
+});
+
+test("pickReviewQuestion avoids recent ids, falls back when exhausted, throws on empty bank", () => {
+  const review = [{ id: "r1" }, { id: "r2" }];
+  assert.strictEqual(pickReviewQuestion(review, ["r1"], () => 0).id, "r2");
+  assert.strictEqual(pickReviewQuestion(review, ["r1", "r2"], () => 0).id, "r1");
+  assert.throws(() => pickReviewQuestion([], []));
 });
 
 const testLadder = [

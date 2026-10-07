@@ -1,20 +1,752 @@
 [
-  { "id": "en-0001", "focus": "nuance", "type": "mcq", "prompt": "Which sounds more natural in a professional follow-up email?", "options": [{ "label": "I wanted to follow up regarding the report.", "correct": true }, { "label": "I want to follow up about the report.", "correct": false }], "explanation": "The softened past tense ('wanted') is a common, more polite convention for follow-ups - it reads as less abrupt than the present tense version." },
-  { "id": "en-0002", "focus": "nuance", "type": "mcq", "prompt": "Choose the correct preposition: 'We are responsible ___ the year-end close.'", "options": [{ "label": "for", "correct": true }, { "label": "of", "correct": false }, { "label": "about", "correct": false }], "explanation": "'Responsible for' is the standard collocation in English." },
-  { "id": "en-0003", "focus": "nuance", "type": "mcq", "prompt": "Which collocation is most universally understood in international business English?", "options": [{ "label": "make a decision", "correct": true }, { "label": "take a decision", "correct": false }], "explanation": "'Take a decision' is common in British/international English, but 'make a decision' is the more universally recognised form with a mixed international audience." },
-  { "id": "en-0004", "focus": "nuance", "type": "mcq", "prompt": "Which is more appropriate when addressing a client (vs. a close colleague)?", "options": [{ "label": "Could you possibly clarify this point for us?", "correct": true }, { "label": "Can you clarify this?", "correct": false }], "explanation": "The more indirect, hedged phrasing ('Could you possibly...') signals a more formal, client-facing register." },
-  { "id": "en-0005", "focus": "nuance", "type": "mcq", "prompt": "Choose the correct preposition: 'The entity is compliant ___ IFRS.'", "options": [{ "label": "with", "correct": true }, { "label": "to", "correct": false }, { "label": "for", "correct": false }], "explanation": "'Compliant with' is the correct, natural collocation." },
-  { "id": "en-0006", "focus": "nuance", "type": "mcq", "prompt": "Which word correctly completes: 'Please ___ me on the best course of action.'", "options": [{ "label": "advise", "correct": true }, { "label": "advice", "correct": false }], "explanation": "'Advise' is the verb; 'advice' is the noun ('I need your advice')." },
-  { "id": "en-0007", "focus": "vocab-idioms", "type": "mcq", "prompt": "In accounting, what does it mean to 'close the books'?", "options": [{ "label": "To finalise the accounting records for a period so that no further entries can be posted to it", "correct": true }, { "label": "To submit the annual tax return to the authorities and archive the supporting paperwork", "correct": false }, { "label": "To stop trading permanently and begin liquidating the company's remaining assets", "correct": false }], "explanation": "'Closing the books' is standard terminology for finalising a period's accounting records - it has nothing to do with tax filing or liquidation." },
-  { "id": "en-0008", "focus": "vocab-idioms", "type": "mcq", "prompt": "In an audit context, what does a 'red flag' refer to?", "options": [{ "label": "A warning sign suggesting a potential risk or issue that needs further investigation", "correct": true }, { "label": "A mandatory checklist item that every engagement team must complete before sign-off", "correct": false }, { "label": "A type of financial instrument used to hedge against currency risk", "correct": false }], "explanation": "'Red flag' is a common audit/business idiom for a warning indicator, not a checklist item or a financial instrument." },
-  { "id": "en-0009", "focus": "vocab-idioms", "type": "mcq", "prompt": "What does it mean to 'rubber-stamp' something in a business context?", "options": [{ "label": "To approve something automatically or without proper scrutiny", "correct": true }, { "label": "To officially certify a document by applying the company's physical seal or stamp", "correct": false }, { "label": "To reject a proposal outright without giving any reason for the decision", "correct": false }], "explanation": "'Rubber-stamp' implies approval without real, critical review - relevant when discussing control weaknesses - not a literal physical stamping process or a rejection." },
-  { "id": "en-0010", "focus": "vocab-idioms", "type": "mcq", "prompt": "In audit terminology, what is a 'walkthrough'?", "options": [{ "label": "Tracing a single transaction through the process end-to-end to confirm the controls in place", "correct": true }, { "label": "A final meeting held to formally sign off and issue the audit opinion to the client", "correct": false }, { "label": "A physical tour of the client's offices and production facilities before fieldwork begins", "correct": false }], "explanation": "A walkthrough is a specific audit procedure used to understand a process and confirm controls are designed as described - not a sign-off meeting or a facilities tour." },
-  { "id": "en-0011", "focus": "vocab-idioms", "type": "mcq", "prompt": "What does the term 'going concern' refer to?", "options": [{ "label": "The assumption that an entity will continue operating for the foreseeable future", "correct": true }, { "label": "A specific reservation the audit committee raises during a board meeting", "correct": false }, { "label": "A type of provision recognised on the balance sheet for a known future liability", "correct": false }], "explanation": "'Going concern' is a fundamental accounting assumption, not a casual worry or a provision - important to get this vocabulary precise." },
-  { "id": "en-0012", "focus": "vocab-idioms", "type": "mcq", "prompt": "What's the key difference between a 'material weakness' and a 'significant deficiency' in internal control?", "options": [{ "label": "A material weakness is more severe - a reasonable possibility that a material misstatement won't be prevented or detected; a significant deficiency is less severe but still merits attention", "correct": true }, { "label": "They are exactly the same thing - just different terms preferred by US versus UK regulators", "correct": false }, { "label": "A significant deficiency is always the more severe of the two, since it affects a broader range of controls", "correct": false }], "explanation": "This severity ranking is core PCAOB/COSO vocabulary in ICFR reporting - the two terms are not interchangeable, and the severity order is the opposite of the second distractor." },
-  { "id": "en-0013", "focus": "writing", "type": "rewrite", "prompt": "Rewrite more formally for a client email: 'I want you to send me the report.'", "modelAnswer": "Could you please send me the report at your earliest convenience?", "explanation": "Adding a hedge ('could you please') and a soft deadline phrase makes the request more polite and client-appropriate." },
-  { "id": "en-0014", "focus": "writing", "type": "rewrite", "prompt": "Write a one-sentence, polite email opener requesting a short extension on a deadline.", "modelAnswer": "I'm writing to ask whether it would be possible to extend the deadline for the file review by two working days.", "explanation": "Notice the indirect framing ('whether it would be possible') rather than a blunt demand." },
-  { "id": "en-0015", "focus": "writing", "type": "rewrite", "prompt": "Rewrite this blunt audit comment more diplomatically for a report: 'You did this wrong.'", "modelAnswer": "We noted an exception in the following area, which we recommend management address.", "explanation": "Audit report language stays neutral and process-focused rather than personal or accusatory." },
-  { "id": "en-0016", "focus": "writing", "type": "rewrite", "prompt": "Write a brief, professional follow-up email opener after a client hasn't responded in 3 days.", "modelAnswer": "I hope this finds you well - I wanted to follow up on my message from earlier this week, as we haven't yet received the requested documents.", "explanation": "Notice the soft, non-confrontational tone even though it's a reminder." },
-  { "id": "en-0017", "focus": "writing", "type": "rewrite", "prompt": "Rewrite this passive, wordy sentence more concisely and actively for a report: 'It was determined by the team that the control was not operating effectively.'", "modelAnswer": "The team determined that the control was not operating effectively.", "explanation": "Active voice is generally clearer and more concise in professional reports; use passive only when the actor is unknown or irrelevant." },
-  { "id": "en-0018", "focus": "writing", "type": "rewrite", "prompt": "Write a one-sentence executive-summary opener for an audit finding about a control gap in the procurement process.", "modelAnswer": "Our review identified a control gap in the procurement approval process that increases the risk of unauthorised purchases.", "explanation": "A strong executive-summary sentence states the finding and its risk/impact concisely, up front." }
+  {
+    "id": "en-0001",
+    "focus": "nuance",
+    "type": "mcq",
+    "prompt": "Your manager asks: 'Do you mind if I join the call?' You're happy for them to join. Most natural reply?",
+    "options": [
+      {
+        "label": "Not at all, go ahead.",
+        "correct": true
+      },
+      {
+        "label": "Yes, of course, join us.",
+        "correct": false
+      },
+      {
+        "label": "Yes, I don't mind it.",
+        "correct": false
+      }
+    ],
+    "explanation": "'Do you mind...?' literally asks if it bothers you, so 'No / Not at all' means 'please do'. Answering 'Yes' technically means you object, which confuses people."
+  },
+  {
+    "id": "en-0002",
+    "focus": "nuance",
+    "type": "mcq",
+    "prompt": "You want to say 'En realidad, el cliente ya ha pagado'. Which is right?",
+    "options": [
+      {
+        "label": "Actually, the client has already paid.",
+        "correct": true
+      },
+      {
+        "label": "Currently, the client has already paid.",
+        "correct": false
+      },
+      {
+        "label": "Actually, the client already paid it.",
+        "correct": false
+      }
+    ],
+    "explanation": "'Actually' means 'en realidad', never 'actualmente' (that's 'currently'). Natives also use 'actually' to softly correct someone. 'Already paid it' adds an unnatural object."
+  },
+  {
+    "id": "en-0003",
+    "focus": "nuance",
+    "type": "mcq",
+    "prompt": "Which sentence sounds natural?",
+    "options": [
+      {
+        "label": "I've been working here for four years.",
+        "correct": true
+      },
+      {
+        "label": "I work here since four years.",
+        "correct": false
+      },
+      {
+        "label": "I'm working here since four years.",
+        "correct": false
+      }
+    ],
+    "explanation": "Something that started in the past and continues now takes the present perfect (continuous): 'I've been working here for four years / since 2022'. Spanish 'trabajo aquí desde hace' leads to the other two."
+  },
+  {
+    "id": "en-0004",
+    "focus": "nuance",
+    "type": "mcq",
+    "prompt": "Which is correct in a client meeting?",
+    "options": [
+      {
+        "label": "Let's discuss the findings.",
+        "correct": true
+      },
+      {
+        "label": "Let's discuss about the findings.",
+        "correct": false
+      },
+      {
+        "label": "Let's discuss on the findings.",
+        "correct": false
+      }
+    ],
+    "explanation": "'Discuss' takes a direct object, with no preposition. You can say 'talk about' or 'have a discussion about', but 'discuss about' is a classic non-native slip."
+  },
+  {
+    "id": "en-0005",
+    "focus": "nuance",
+    "type": "mcq",
+    "prompt": "Which is right?",
+    "options": [
+      {
+        "label": "Could you explain the adjustment to me?",
+        "correct": true
+      },
+      {
+        "label": "Could you explain me the adjustment?",
+        "correct": false
+      },
+      {
+        "label": "Could you explain to me about the adjustment?",
+        "correct": false
+      }
+    ],
+    "explanation": "'Explain' doesn't take the person as a direct object: you explain something TO someone. 'Explain me' is one of the most recognisable non-native errors."
+  },
+  {
+    "id": "en-0006",
+    "focus": "nuance",
+    "type": "mcq",
+    "prompt": "A colleague says your draft is 'quite good' (British speaker). What do they most likely mean?",
+    "options": [
+      {
+        "label": "It's OK, but it needs some work.",
+        "correct": true
+      },
+      {
+        "label": "It's excellent, no changes needed.",
+        "correct": false
+      },
+      {
+        "label": "It's poor and needs a full rewrite.",
+        "correct": false
+      }
+    ],
+    "explanation": "In British English 'quite' before a positive adjective usually softens it: 'quite good' = fairly good, not great. In American English 'quite good' can sound more positive, so context matters."
+  },
+  {
+    "id": "en-0007",
+    "focus": "nuance",
+    "type": "mcq",
+    "prompt": "Which word means 'sensato' (a reasonable, practical decision)?",
+    "options": [
+      {
+        "label": "That's a sensible approach.",
+        "correct": true
+      },
+      {
+        "label": "That's a sensitive approach.",
+        "correct": false
+      },
+      {
+        "label": "That's a sensitivity approach.",
+        "correct": false
+      }
+    ],
+    "explanation": "'Sensible' = sensato. 'Sensitive' = sensible (emotionally or technically), as in 'sensitive data' or 'price-sensitive'."
+  },
+  {
+    "id": "en-0008",
+    "focus": "nuance",
+    "type": "mcq",
+    "prompt": "After a long delay, you finally got the data in March. Which is right?",
+    "options": [
+      {
+        "label": "We eventually got the data in March.",
+        "correct": true
+      },
+      {
+        "label": "We eventually could get the data.",
+        "correct": false
+      },
+      {
+        "label": "We finally could get the data in March.",
+        "correct": false
+      }
+    ],
+    "explanation": "'Eventually' means 'al final / finalmente', not 'eventualmente'. And for a single achievement in the past, natives say 'managed to' or the simple past, not 'could': 'We finally got / managed to get it'."
+  },
+  {
+    "id": "en-0009",
+    "focus": "nuance",
+    "type": "mcq",
+    "prompt": "Which sounds most natural when you disagree politely with a partner?",
+    "options": [
+      {
+        "label": "I see your point, but I'm not sure that works here.",
+        "correct": true
+      },
+      {
+        "label": "I don't agree with you about this point at all.",
+        "correct": false
+      },
+      {
+        "label": "I am not agree with your point of view here.",
+        "correct": false
+      }
+    ],
+    "explanation": "Natives soften disagreement: acknowledge, then use a hedge ('I'm not sure', 'I wonder if'). 'I am not agree' is ungrammatical; the blunt version is correct but sounds confrontational in English business culture."
+  },
+  {
+    "id": "en-0010",
+    "focus": "nuance",
+    "type": "mcq",
+    "prompt": "Which is natural?",
+    "options": [
+      {
+        "label": "I'm used to working late during busy season.",
+        "correct": true
+      },
+      {
+        "label": "I used to working late during busy season.",
+        "correct": false
+      },
+      {
+        "label": "I'm used to work late during busy season.",
+        "correct": false
+      }
+    ],
+    "explanation": "'Be used to + -ing' = estar acostumbrado. 'Used to + infinitive' = solía. 'I'm used to work' mixes the two."
+  },
+  {
+    "id": "en-0011",
+    "focus": "nuance",
+    "type": "mcq",
+    "prompt": "Which reply sounds most native when a colleague thanks you for covering a task?",
+    "options": [
+      {
+        "label": "No worries, happy to help.",
+        "correct": true
+      },
+      {
+        "label": "You're welcome, it was nothing to do.",
+        "correct": false
+      },
+      {
+        "label": "Of nothing, it was a pleasure.",
+        "correct": false
+      }
+    ],
+    "explanation": "'No worries / No problem / Happy to help / Any time' are what people actually say. 'Of nothing' is a literal translation of 'de nada' and doesn't exist."
+  },
+  {
+    "id": "en-0012",
+    "focus": "nuance",
+    "type": "mcq",
+    "prompt": "You want to say you'll attend the meeting. Which is right?",
+    "options": [
+      {
+        "label": "I'll attend the meeting tomorrow.",
+        "correct": true
+      },
+      {
+        "label": "I'll assist the meeting tomorrow.",
+        "correct": false
+      },
+      {
+        "label": "I'll assist to the meeting tomorrow.",
+        "correct": false
+      }
+    ],
+    "explanation": "'Attend' = asistir (be present). 'Assist' = ayudar. 'Assist to the meeting' is a direct Spanish calque."
+  },
+  {
+    "id": "en-0013",
+    "focus": "nuance",
+    "type": "mcq",
+    "prompt": "Which is the most natural way to make a suggestion to your team?",
+    "options": [
+      {
+        "label": "How about we split the testing by area?",
+        "correct": true
+      },
+      {
+        "label": "I suggest you that we split the testing.",
+        "correct": false
+      },
+      {
+        "label": "I propose you to split the testing by area.",
+        "correct": false
+      }
+    ],
+    "explanation": "'Suggest' and 'propose' don't take 'you' + infinitive. Natural options: 'How about we...', 'What if we...', 'I'd suggest we...', 'Why don't we...'."
+  },
+  {
+    "id": "en-0014",
+    "focus": "nuance",
+    "type": "mcq",
+    "prompt": "A client writes: 'With respect, I think you've misunderstood.' What is the tone?",
+    "options": [
+      {
+        "label": "Polite on the surface, but clearly annoyed.",
+        "correct": true
+      },
+      {
+        "label": "Warm and very appreciative of your work.",
+        "correct": false
+      },
+      {
+        "label": "Neutral, simply asking for clarification.",
+        "correct": false
+      }
+    ],
+    "explanation": "'With respect' / 'With all due respect' usually signals strong disagreement or irritation, not respect. Worth noticing when reading client emails."
+  },
+  {
+    "id": "en-0015",
+    "focus": "nuance",
+    "type": "mcq",
+    "prompt": "Which is right?",
+    "options": [
+      {
+        "label": "It depends on the materiality threshold.",
+        "correct": true
+      },
+      {
+        "label": "It depends of the materiality threshold.",
+        "correct": false
+      },
+      {
+        "label": "It's depending of the materiality threshold.",
+        "correct": false
+      }
+    ],
+    "explanation": "'Depend on', never 'depend of' (from 'depende de'). Also 'it depends' is a state, so no continuous form."
+  },
+  {
+    "id": "en-0016",
+    "focus": "vocab-idioms",
+    "type": "mcq",
+    "prompt": "'Can you give me a ballpark figure?' What are they asking for?",
+    "options": [
+      {
+        "label": "A rough estimate",
+        "correct": true
+      },
+      {
+        "label": "The exact final amount",
+        "correct": false
+      },
+      {
+        "label": "Last year's figure",
+        "correct": false
+      }
+    ],
+    "explanation": "A ballpark figure is an approximate number. Very common in meetings: 'Ballpark, how many hours will this take?'"
+  },
+  {
+    "id": "en-0017",
+    "focus": "vocab-idioms",
+    "type": "mcq",
+    "prompt": "'Just a heads-up: the client moved the deadline.' What is a heads-up?",
+    "options": [
+      {
+        "label": "An advance warning",
+        "correct": true
+      },
+      {
+        "label": "A formal complaint",
+        "correct": false
+      },
+      {
+        "label": "A request to hurry",
+        "correct": false
+      }
+    ],
+    "explanation": "A heads-up is a quick advance notice so someone can prepare. 'Thanks for the heads-up' is the standard reply."
+  },
+  {
+    "id": "en-0018",
+    "focus": "vocab-idioms",
+    "type": "mcq",
+    "prompt": "'I'll loop in the tax team.' What will they do?",
+    "options": [
+      {
+        "label": "Add them to the conversation",
+        "correct": true
+      },
+      {
+        "label": "Exclude them from the work",
+        "correct": false
+      },
+      {
+        "label": "Ask them to redo the work",
+        "correct": false
+      }
+    ],
+    "explanation": "To loop someone in = add them to the email thread or discussion so they're informed. 'Keep me in the loop' = keep me updated."
+  },
+  {
+    "id": "en-0019",
+    "focus": "vocab-idioms",
+    "type": "mcq",
+    "prompt": "'Let's not reinvent the wheel.' What does it mean?",
+    "options": [
+      {
+        "label": "Use what already exists",
+        "correct": true
+      },
+      {
+        "label": "Start again from scratch",
+        "correct": false
+      },
+      {
+        "label": "Slow down and be careful",
+        "correct": false
+      }
+    ],
+    "explanation": "Don't waste time creating something that already exists, e.g. reuse last year's template."
+  },
+  {
+    "id": "en-0020",
+    "focus": "vocab-idioms",
+    "type": "mcq",
+    "prompt": "'Can you do a quick sanity check on these numbers?' What is a sanity check?",
+    "options": [
+      {
+        "label": "A quick check that it makes sense",
+        "correct": true
+      },
+      {
+        "label": "A full detailed audit of every line",
+        "correct": false
+      },
+      {
+        "label": "A test of the preparer's stress level",
+        "correct": false
+      }
+    ],
+    "explanation": "A sanity check is a fast high-level review to catch obvious errors. Extremely common in finance teams."
+  },
+  {
+    "id": "en-0021",
+    "focus": "vocab-idioms",
+    "type": "mcq",
+    "prompt": "'That's a judgement call.' What does it mean?",
+    "options": [
+      {
+        "label": "A decision based on your own judgement",
+        "correct": true
+      },
+      {
+        "label": "A decision that a court must make",
+        "correct": false
+      },
+      {
+        "label": "A decision that is clearly wrong",
+        "correct": false
+      }
+    ],
+    "explanation": "There's no clear rule, so someone has to decide using their judgement. Very natural in audit: 'Materiality here is a judgement call'."
+  },
+  {
+    "id": "en-0022",
+    "focus": "vocab-idioms",
+    "type": "mcq",
+    "prompt": "'She really dropped the ball on the inventory count.' Meaning?",
+    "options": [
+      {
+        "label": "She made a mistake or neglected it",
+        "correct": true
+      },
+      {
+        "label": "She did an excellent job on it",
+        "correct": false
+      },
+      {
+        "label": "She handed it over to someone else",
+        "correct": false
+      }
+    ],
+    "explanation": "To drop the ball = to fail to do something you were responsible for."
+  },
+  {
+    "id": "en-0023",
+    "focus": "vocab-idioms",
+    "type": "mcq",
+    "prompt": "'I'll push back on the client's deadline.' What will they do?",
+    "options": [
+      {
+        "label": "Resist it and ask for changes",
+        "correct": true
+      },
+      {
+        "label": "Accept it without any questions",
+        "correct": false
+      },
+      {
+        "label": "Bring the deadline forward",
+        "correct": false
+      }
+    ],
+    "explanation": "To push back (on) = to resist or challenge a request. Different from 'push back the deadline', which means postpone it."
+  },
+  {
+    "id": "en-0024",
+    "focus": "vocab-idioms",
+    "type": "mcq",
+    "prompt": "'Off the top of my head, it's about 2 million.' What does this signal?",
+    "options": [
+      {
+        "label": "Answer from memory, not checked",
+        "correct": true
+      },
+      {
+        "label": "Answer confirmed by documents",
+        "correct": false
+      },
+      {
+        "label": "Answer from the top manager",
+        "correct": false
+      }
+    ],
+    "explanation": "Off the top of my head = without checking or thinking much. A useful hedge when you're not 100% sure."
+  },
+  {
+    "id": "en-0025",
+    "focus": "vocab-idioms",
+    "type": "mcq",
+    "prompt": "'Bear with me a second, I'm pulling up the file.' What are they asking?",
+    "options": [
+      {
+        "label": "To be patient for a moment",
+        "correct": true
+      },
+      {
+        "label": "To agree with what they said",
+        "correct": false
+      },
+      {
+        "label": "To help them find the file",
+        "correct": false
+      }
+    ],
+    "explanation": "Bear with me = please be patient. Extremely common on calls and screen shares."
+  },
+  {
+    "id": "en-0026",
+    "focus": "vocab-idioms",
+    "type": "mcq",
+    "prompt": "'Let's take this offline.' What does it mean in a meeting?",
+    "options": [
+      {
+        "label": "Discuss it separately, later",
+        "correct": true
+      },
+      {
+        "label": "End the call because of a bug",
+        "correct": false
+      },
+      {
+        "label": "Stop using email for this topic",
+        "correct": false
+      }
+    ],
+    "explanation": "Take it offline = discuss it outside this meeting, usually with fewer people, so the meeting can move on."
+  },
+  {
+    "id": "en-0027",
+    "focus": "vocab-idioms",
+    "type": "mcq",
+    "prompt": "'Getting that answer from the client is a long shot.' Meaning?",
+    "options": [
+      {
+        "label": "It's unlikely to happen",
+        "correct": true
+      },
+      {
+        "label": "It will take a long time",
+        "correct": false
+      },
+      {
+        "label": "It's the obvious next step",
+        "correct": false
+      }
+    ],
+    "explanation": "A long shot = something with a low chance of success."
+  },
+  {
+    "id": "en-0028",
+    "focus": "vocab-idioms",
+    "type": "mcq",
+    "prompt": "'We're cutting it fine with this deadline.' Meaning?",
+    "options": [
+      {
+        "label": "There's almost no time left",
+        "correct": true
+      },
+      {
+        "label": "We're cutting costs to meet it",
+        "correct": false
+      },
+      {
+        "label": "The deadline was cancelled",
+        "correct": false
+      }
+    ],
+    "explanation": "Cutting it fine (UK) / cutting it close (US) = leaving very little margin of time."
+  },
+  {
+    "id": "en-0029",
+    "focus": "vocab-idioms",
+    "type": "mcq",
+    "prompt": "'Fair enough.' When do people say it?",
+    "options": [
+      {
+        "label": "To accept a reasonable point",
+        "correct": true
+      },
+      {
+        "label": "To say something is unfair",
+        "correct": false
+      },
+      {
+        "label": "To ask for a fairer split",
+        "correct": false
+      }
+    ],
+    "explanation": "Fair enough = I accept that, it's reasonable. Used constantly in conversation."
+  },
+  {
+    "id": "en-0030",
+    "focus": "vocab-idioms",
+    "type": "mcq",
+    "prompt": "'Can we touch base on Friday?' What are they proposing?",
+    "options": [
+      {
+        "label": "A short catch-up conversation",
+        "correct": true
+      },
+      {
+        "label": "A formal review of your work",
+        "correct": false
+      },
+      {
+        "label": "A visit to the client's site",
+        "correct": false
+      }
+    ],
+    "explanation": "Touch base = briefly reconnect to update each other. Corporate, but genuinely common."
+  },
+  {
+    "id": "en-0031",
+    "focus": "writing",
+    "type": "rewrite",
+    "prompt": "Make it sound native and natural: 'I write you to inform that the report is finished.'",
+    "modelAnswer": "Just a quick note to let you know the report is done.",
+    "explanation": "'I write you to inform' is a calque. Natives open with 'Just a quick note to let you know...' or simply 'The report is done - attached.'"
+  },
+  {
+    "id": "en-0032",
+    "focus": "writing",
+    "type": "rewrite",
+    "prompt": "Shorten and make it natural: 'I would like to know if it would be possible for you to send me the documents.'",
+    "modelAnswer": "Could you send me the documents?",
+    "explanation": "English emails get to the point. 'Could you...' is already polite; stacking 'I would like to know if it would be possible' sounds stiff."
+  },
+  {
+    "id": "en-0033",
+    "focus": "writing",
+    "type": "rewrite",
+    "prompt": "Say it like a native: 'In my opinion, I think that we should review again the provision.'",
+    "modelAnswer": "I think we should take another look at the provision.",
+    "explanation": "'In my opinion, I think' is redundant. 'Review again' also sounds unnatural; 'take another look at' or 'revisit' is what people say."
+  },
+  {
+    "id": "en-0034",
+    "focus": "writing",
+    "type": "rewrite",
+    "prompt": "Soften this for a client: 'You didn't send the bank confirmations.'",
+    "modelAnswer": "We still seem to be missing the bank confirmations. Could you send them over when you get a chance?",
+    "explanation": "'We still seem to be missing' shifts focus from blame to the gap. 'When you get a chance' is a polite, natural nudge."
+  },
+  {
+    "id": "en-0035",
+    "focus": "writing",
+    "type": "rewrite",
+    "prompt": "Make it more natural: 'Please, find attached the file that you asked me.'",
+    "modelAnswer": "Please find attached the file you asked for.",
+    "explanation": "No comma after 'please' in this structure, and it's 'ask for' something. Even more casual: 'Here's the file you asked for.'"
+  },
+  {
+    "id": "en-0036",
+    "focus": "writing",
+    "type": "rewrite",
+    "prompt": "Write a natural one-line reminder to a colleague who hasn't replied for a week.",
+    "modelAnswer": "Just bumping this up - any update on the reconciliation?",
+    "explanation": "'Just bumping this' / 'Just following up on this' is how natives nudge without sounding annoyed."
+  },
+  {
+    "id": "en-0037",
+    "focus": "writing",
+    "type": "rewrite",
+    "prompt": "Make it sound native: 'I am agree with your proposal, but we must to check the figures.'",
+    "modelAnswer": "I agree with your proposal, but we need to check the figures.",
+    "explanation": "'Agree' is a verb, not an adjective ('I am agree' is wrong). 'Must' never takes 'to', and 'need to' sounds more natural than 'must' in everyday speech."
+  },
+  {
+    "id": "en-0038",
+    "focus": "writing",
+    "type": "rewrite",
+    "prompt": "Make it concise: 'Due to the fact that the client has not provided the information, we are not in a position to finalise.'",
+    "modelAnswer": "Since the client hasn't sent the information, we can't finalise yet.",
+    "explanation": "'Due to the fact that' -> 'since/because'. 'Not in a position to' -> 'can't'. Shorter is clearer and sounds more confident."
+  },
+  {
+    "id": "en-0039",
+    "focus": "writing",
+    "type": "rewrite",
+    "prompt": "Say this naturally on a call: 'Can you repeat? I didn't understand you.'",
+    "modelAnswer": "Sorry, could you say that again? I didn't quite catch that.",
+    "explanation": "'I didn't catch that' blames the audio, not the speaker. 'Could you say that again?' is more natural than 'Can you repeat?'"
+  },
+  {
+    "id": "en-0040",
+    "focus": "writing",
+    "type": "rewrite",
+    "prompt": "Make it native: 'We are waiting your answer.'",
+    "modelAnswer": "Looking forward to hearing from you.",
+    "explanation": "'Wait for' needs 'for'. But natives usually close with 'Looking forward to hearing from you' or 'Let me know what you think.' Note: 'look forward to + -ing'."
+  },
+  {
+    "id": "en-0041",
+    "focus": "writing",
+    "type": "rewrite",
+    "prompt": "Rewrite to sound natural and confident: 'Sorry to disturb you, maybe if you have time you could perhaps look at this?'",
+    "modelAnswer": "When you have a minute, could you take a look at this?",
+    "explanation": "Over-apologising and stacking hedges ('maybe... perhaps') sounds insecure. One hedge is enough."
+  },
+  {
+    "id": "en-0042",
+    "focus": "writing",
+    "type": "rewrite",
+    "prompt": "Make it sound native: 'The meeting has been anticipated to Monday.'",
+    "modelAnswer": "The meeting has been brought forward to Monday.",
+    "explanation": "'Anticipar' = bring forward / move up (US). 'Postponed' / 'pushed back' is the opposite. 'Anticipate' means 'expect'."
+  },
+  {
+    "id": "en-0043",
+    "focus": "writing",
+    "type": "rewrite",
+    "prompt": "Rewrite for a status update to your manager: 'The work is almost finish, it lacks only the inventory part.'",
+    "modelAnswer": "We're almost done - just the inventory section left.",
+    "explanation": "'Finish' -> 'finished' or 'done'. 'It lacks' is a calque of 'falta'; natives say 'just X left' or 'only X to go'."
+  },
+  {
+    "id": "en-0044",
+    "focus": "writing",
+    "type": "rewrite",
+    "prompt": "Make it natural: 'I have a doubt about the lease calculation.'",
+    "modelAnswer": "I have a question about the lease calculation.",
+    "explanation": "'Duda' is usually 'question' in English. 'Doubt' implies scepticism ('I have doubts about it' = I'm not convinced)."
+  },
+  {
+    "id": "en-0045",
+    "focus": "writing",
+    "type": "rewrite",
+    "prompt": "Close a client email naturally, offering further help.",
+    "modelAnswer": "Let me know if you have any questions.",
+    "explanation": "Short and standard. Avoid 'Do not hesitate to contact me' overuse; it's fine but sounds formulaic. 'Happy to jump on a call if that's easier' is a natural add-on."
+  }
 ]

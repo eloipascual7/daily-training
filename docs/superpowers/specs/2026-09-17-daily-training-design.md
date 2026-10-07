@@ -139,3 +139,9 @@ Dado que es 100% estático, el banco debe tener suficiente variedad para no repe
 **URL desplegada:** https://daily-training-6l9.pages.dev (Cloudflare Pages, cuenta Unobis — proyecto `daily-training`, desplegado 2026-09-17 a petición explícita del usuario tras confirmar que el token disponible era el de la cuenta de Unobis).
 
 **URL principal (desde 2026-10-05):** https://eloipascual7.github.io/daily-training/ (GitHub Pages, repo público `eloipascual7/daily-training`). Se movió fuera de Cloudflare porque `*.pages.dev` no abría desde el iPhone (bloqueos de IPs de Cloudflare en España). La URL de Cloudflare sigue activa pero ya no se actualiza.
+
+## Cambios 2026-10-07 (feedback tras dos días de uso)
+
+- **Contabilidad:** la sesión pasa a ser 4 preguntas del tema del día (casos y quiz mezclados) + 1 pregunta de repaso general (`data/accounting-review.json`, tipo "qué norma va con qué partida"). Se elimina la rotación caso/quiz por día de la semana. Banco reescrito: 172 preguntas, mínimo 4 por cada uno de los 43 temas, con opciones cortas y de longitud equilibrada; un test impide que la correcta destaque por longitud.
+- **Francés:** cada ejercicio lleva `kind` (`grammar` | `vocab`). Al fallar se marca la correcta; en gramática se explica la regla en español y por qué la opción elegida es incorrecta (`whyWrong`); en vocabulario solo se muestra la respuesta.
+- **Inglés:** banco nuevo de nivel C1-C2 (45 ejercicios): falsos amigos y errores avanzados típicos de hispanohablantes, expresiones de oficina de uso real y reescritura para sonar nativo.

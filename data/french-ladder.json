@@ -5,14 +5,97 @@
     "name": "Passé composé",
     "masteryThreshold": 3,
     "exercises": [
-      { "id": "pc-01", "type": "mcq", "prompt": "Elle ___ partie hier soir. (choisis l'auxiliaire correct)", "options": ["a", "est", "avait"], "correctAnswer": "est", "explanation": "'Partir' est un verbe de mouvement qui se conjugue avec l'auxiliaire être au passé composé, avec accord du participe passé au féminin ('partie')." },
-      { "id": "pc-02", "type": "fill-blank", "prompt": "Nous ___ (manger) au restaurant hier soir.", "correctAnswer": "avons mangé", "explanation": "'Manger' se conjugue avec avoir; 1ère personne du pluriel: avons + participe passé mangé." },
-      { "id": "pc-03", "type": "mcq", "prompt": "Ils sont ___ (arriver) en retard.", "options": ["arrivé", "arrivés", "arrivées"], "correctAnswer": "arrivés", "explanation": "Avec l'auxiliaire être, le participe passé s'accorde en genre et en nombre avec le sujet; 'ils' (masculin pluriel) → arrivés." },
-      { "id": "pc-04", "type": "error-spot", "prompt": "Corrige cette phrase : « Elle a resté à la maison. »", "correctAnswer": "Elle est restée à la maison.", "explanation": "'Rester' se conjugue avec être, pas avoir; accord au féminin: restée." },
-      { "id": "pc-05", "type": "fill-blank", "prompt": "J'ai ___ (finir) mes devoirs avant le dîner.", "correctAnswer": "fini", "explanation": "'Finir' (2e groupe) forme son participe passé en -i: fini." },
-      { "id": "pc-06", "type": "mcq", "prompt": "Vous ___ (voir) ce film la semaine dernière ?", "options": ["avez vu", "avez vue", "êtes vu"], "correctAnswer": "avez vu", "explanation": "'Voir' est irrégulier et se conjugue avec avoir; participe passé: vu." },
-      { "id": "pc-07", "type": "production", "prompt": "Écris une phrase au passé composé pour dire que tu as visité Paris la semaine dernière.", "correctAnswer": "J'ai visité Paris la semaine dernière.", "explanation": "Respuesta modelo - autoevalúa si tu frase usa correctamente avoir + participe passé de 'visiter' (visité)." },
-      { "id": "pc-08", "type": "error-spot", "prompt": "Corrige cette phrase : « Nous avons allé au cinéma. »", "correctAnswer": "Nous sommes allé(e)s au cinéma.", "explanation": "'Aller' se conjugue toujours avec être au passé composé, jamais avec avoir." }
+      {
+        "id": "pc-01",
+        "type": "mcq",
+        "prompt": "Elle ___ partie hier soir. (choisis l'auxiliaire correct)",
+        "options": [
+          "a",
+          "est",
+          "avait"
+        ],
+        "correctAnswer": "est",
+        "explanation": "'Partir' es uno de los verbos de movimiento que forman el passé composé con être (aller, venir, partir, arriver, sortir, entrer, rester, tomber, naître, mourir...). Con être, el participio concuerda con el sujeto: elle -> partie.",
+        "kind": "grammar",
+        "whyWrong": {
+          "a": "'Avoir' es el auxiliar por defecto, pero 'partir' es de los verbos de movimiento que usan être.",
+          "avait": "'Avait' es imperfecto de avoir: formaría el plus-que-parfait ('elle avait...'), y además con el auxiliar equivocado."
+        }
+      },
+      {
+        "id": "pc-02",
+        "type": "fill-blank",
+        "prompt": "Nous ___ (manger) au restaurant hier soir.",
+        "correctAnswer": "avons mangé",
+        "explanation": "'Manger' usa avoir (la mayoría de verbos lo hacen). Estructura: avoir conjugado en presente + participio pasado. Los verbos en -er hacen el participio en -é: mangé. Con 'nous': nous avons mangé.",
+        "kind": "grammar"
+      },
+      {
+        "id": "pc-03",
+        "type": "mcq",
+        "prompt": "Ils sont ___ (arriver) en retard.",
+        "options": [
+          "arrivé",
+          "arrivés",
+          "arrivées"
+        ],
+        "correctAnswer": "arrivés",
+        "explanation": "Con el auxiliar être, el participio concuerda en género y número con el sujeto, como un adjetivo. 'Ils' es masculino plural -> arrivés (+s). Si fuera 'elles', sería arrivées.",
+        "kind": "grammar",
+        "whyWrong": {
+          "arrivé": "Le falta la concordancia: con être el participio concuerda con el sujeto, y 'ils' es plural (+s).",
+          "arrivées": "La terminación -ées es femenino plural; 'ils' es masculino (o grupo mixto), así que es -és."
+        }
+      },
+      {
+        "id": "pc-04",
+        "type": "error-spot",
+        "prompt": "Corrige cette phrase : « Elle a resté à la maison. »",
+        "correctAnswer": "Elle est restée à la maison.",
+        "explanation": "'Rester' se conjuga con être aunque no implique desplazamiento: forma parte de la lista de verbos de être. Por eso: elle est restée (concordancia femenina con -e).",
+        "kind": "grammar"
+      },
+      {
+        "id": "pc-05",
+        "type": "fill-blank",
+        "prompt": "J'ai ___ (finir) mes devoirs avant le dîner.",
+        "correctAnswer": "fini",
+        "explanation": "Verbos en -ir del segundo grupo (finir, choisir, réussir) forman el participio en -i: fini. El auxiliar ya está en la frase (j'ai), solo falta el participio.",
+        "kind": "grammar"
+      },
+      {
+        "id": "pc-06",
+        "type": "mcq",
+        "prompt": "Vous ___ (voir) ce film la semaine dernière ?",
+        "options": [
+          "avez vu",
+          "avez vue",
+          "êtes vu"
+        ],
+        "correctAnswer": "avez vu",
+        "explanation": "Con avoir, el participio NO concuerda con el sujeto. Solo concordaría con un complemento directo colocado antes del verbo ('la vidéo que vous avez vue'). Aquí 'ce film' va detrás, así que: avez vu.",
+        "kind": "grammar",
+        "whyWrong": {
+          "avez vue": "Con avoir no se concuerda con el sujeto. La -e solo aparecería si un complemento directo femenino fuera ANTES del verbo, y aquí 'ce film' va después (y es masculino).",
+          "êtes vu": "'Voir' no es de los verbos que usan être en passé composé; 'vous êtes vu' sería una pasiva (= sois visto)."
+        }
+      },
+      {
+        "id": "pc-07",
+        "type": "production",
+        "prompt": "Écris une phrase au passé composé pour dire que tu as visité Paris la semaine dernière.",
+        "correctAnswer": "J'ai visité Paris la semaine dernière.",
+        "explanation": "Estructura: sujeto + avoir + participio. 'Visiter' usa avoir y hace el participio en -é: j'ai visité. Los marcadores 'la semaine dernière', 'hier', 'il y a deux jours' piden passé composé para una acción puntual y terminada.",
+        "kind": "grammar"
+      },
+      {
+        "id": "pc-08",
+        "type": "error-spot",
+        "prompt": "Corrige cette phrase : « Nous avons allé au cinéma. »",
+        "correctAnswer": "Nous sommes allé(e)s au cinéma.",
+        "explanation": "'Aller' es el verbo de movimiento más típico con être. Con être hay concordancia con 'nous': allés (masculino o grupo mixto) o allées (todas mujeres).",
+        "kind": "grammar"
+      }
     ]
   },
   {
@@ -21,14 +104,97 @@
     "name": "Imparfait",
     "masteryThreshold": 3,
     "exercises": [
-      { "id": "imp-01", "type": "fill-blank", "prompt": "Quand j'étais petit, je ___ (jouer) tous les jours dans le jardin.", "correctAnswer": "jouais", "explanation": "Imparfait, 1ère personne du singulier: radical jou- + terminaison -ais." },
-      { "id": "imp-02", "type": "mcq", "prompt": "Nous ___ (être) très jeunes à cette époque.", "options": ["étions", "étiont", "étaient"], "correctAnswer": "étions", "explanation": "Imparfait de 'être', 1ère personne du pluriel: nous étions." },
-      { "id": "imp-03", "type": "fill-blank", "prompt": "Il ___ (faire) beau tous les jours cet été-là.", "correctAnswer": "faisait", "explanation": "Imparfait de 'faire': radical fais- + terminaison -ait." },
-      { "id": "imp-04", "type": "mcq", "prompt": "Je ___ (manger) une pomme quand le téléphone a sonné. (quel temps pour l'action de fond ?)", "options": ["mangeais", "ai mangé", "mangerai"], "correctAnswer": "mangeais", "explanation": "L'action de fond (manger) se met à l'imparfait; l'action ponctuelle qui l'interrompt se met au passé composé." },
-      { "id": "imp-05", "type": "fill-blank", "prompt": "Nous ___ (habiter) à Paris avant de déménager à Genève.", "correctAnswer": "habitions", "explanation": "Imparfait de 'habiter', 1ère pers. pluriel: habitions." },
-      { "id": "imp-06", "type": "mcq", "prompt": "Enfant, tu ___ (aller) à l'école à pied tous les jours. (habitude passée)", "options": ["allais", "es allé", "iras"], "correctAnswer": "allais", "explanation": "Une habitude répétée dans le passé se décrit à l'imparfait, pas au passé composé." },
-      { "id": "imp-07", "type": "production", "prompt": "Décris une habitude de ton enfance en utilisant l'imparfait.", "correctAnswer": "Quand j'étais enfant, je regardais des dessins animés tous les samedis matin.", "explanation": "Respuesta modelo - vérifie que tu as bien utilisé l'imparfait pour décrire une habitude répétée." },
-      { "id": "imp-08", "type": "error-spot", "prompt": "Corrige cette phrase : « J'ai été fatigué tous les jours cette année-là. »", "correctAnswer": "J'étais fatigué tous les jours cette année-là.", "explanation": "Un état répété/continu dans le passé se décrit à l'imparfait, pas au passé composé." }
+      {
+        "id": "imp-01",
+        "type": "fill-blank",
+        "prompt": "Quand j'étais petit, je ___ (jouer) tous les jours dans le jardin.",
+        "correctAnswer": "jouais",
+        "explanation": "El imparfait expresa hábitos del pasado ('tous les jours', 'quand j'étais petit'). Formación: raíz de 'nous' en presente (nous jouons -> jou-) + -ais, -ais, -ait, -ions, -iez, -aient. Je -> jouais.",
+        "kind": "grammar"
+      },
+      {
+        "id": "imp-02",
+        "type": "mcq",
+        "prompt": "Nous ___ (être) très jeunes à cette époque.",
+        "options": [
+          "étions",
+          "étiont",
+          "étaient"
+        ],
+        "correctAnswer": "étions",
+        "explanation": "'Être' es el único verbo con raíz irregular en el imparfait: ét-. Terminaciones normales: j'étais, tu étais, il était, nous étions, vous étiez, ils étaient.",
+        "kind": "grammar",
+        "whyWrong": {
+          "étiont": "No existe. La terminación de 'nous' en imparfait es siempre -ions: étions.",
+          "étaient": "Es la forma de 'ils/elles'. Con 'nous' la terminación es -ions."
+        }
+      },
+      {
+        "id": "imp-03",
+        "type": "fill-blank",
+        "prompt": "Il ___ (faire) beau tous les jours cet été-là.",
+        "correctAnswer": "faisait",
+        "explanation": "Las descripciones del pasado (tiempo, ambiente, estados) van en imparfait. 'Faire': nous faisons -> fais- + -ait = il faisait. Ojo: se escribe 'fai' pero se pronuncia como 'fe'.",
+        "kind": "grammar"
+      },
+      {
+        "id": "imp-04",
+        "type": "mcq",
+        "prompt": "Je ___ (manger) une pomme quand le téléphone a sonné. (quel temps pour l'action de fond ?)",
+        "options": [
+          "mangeais",
+          "ai mangé",
+          "mangerai"
+        ],
+        "correctAnswer": "mangeais",
+        "explanation": "Contraste clave: imparfait = la acción de fondo que estaba en curso ('je mangeais'); passé composé = la acción puntual que la interrumpe ('le téléphone a sonné'). Ojo con la ortografía: los verbos en -ger mantienen la -e delante de a/o: mangeais.",
+        "kind": "grammar",
+        "whyWrong": {
+          "ai mangé": "El passé composé presenta la acción como puntual y terminada. Aquí comer es el fondo que estaba en curso cuando sonó el teléfono: eso es imparfait.",
+          "mangerai": "Es futuro simple; la frase habla del pasado ('a sonné')."
+        }
+      },
+      {
+        "id": "imp-05",
+        "type": "fill-blank",
+        "prompt": "Nous ___ (habiter) à Paris avant de déménager à Genève.",
+        "correctAnswer": "habitions",
+        "explanation": "Situación que duró en el pasado sin un límite marcado: imparfait. 'Habiter': nous habitons -> habit- + -ions = nous habitions.",
+        "kind": "grammar"
+      },
+      {
+        "id": "imp-06",
+        "type": "mcq",
+        "prompt": "Enfant, tu ___ (aller) à l'école à pied tous les jours. (habitude passée)",
+        "options": [
+          "allais",
+          "es allé",
+          "iras"
+        ],
+        "correctAnswer": "allais",
+        "explanation": "'Tous les jours' + 'enfant' = hábito repetido en el pasado -> imparfait. 'Aller': nous allons -> all- + -ais = tu allais.",
+        "kind": "grammar",
+        "whyWrong": {
+          "es allé": "El passé composé cuenta un hecho puntual ('un día fuiste'). Un hábito repetido durante la infancia va en imparfait.",
+          "iras": "Es futuro simple; la frase describe tu infancia, que es pasado."
+        }
+      },
+      {
+        "id": "imp-07",
+        "type": "production",
+        "prompt": "Décris une habitude de ton enfance en utilisant l'imparfait.",
+        "correctAnswer": "Quand j'étais enfant, je regardais des dessins animés tous les samedis matin.",
+        "explanation": "Para hábitos de la infancia: 'quand j'étais enfant/petit(e)' + imparfait. Marcadores útiles: tous les samedis, souvent, d'habitude, chaque été.",
+        "kind": "grammar"
+      },
+      {
+        "id": "imp-08",
+        "type": "error-spot",
+        "prompt": "Corrige cette phrase : « J'ai été fatigué tous les jours cette année-là. »",
+        "correctAnswer": "J'étais fatigué tous les jours cette année-là.",
+        "explanation": "Un estado que se repetía durante un periodo ('tous les jours cette année-là') se describe en imparfait: j'étais fatigué. 'J'ai été fatigué' presentaría el cansancio como un episodio cerrado.",
+        "kind": "grammar"
+      }
     ]
   },
   {
@@ -37,14 +203,97 @@
     "name": "Futur simple",
     "masteryThreshold": 3,
     "exercises": [
-      { "id": "fut-01", "type": "mcq", "prompt": "Je ___ (aller) à Genève demain.", "options": ["irai", "allerai", "vais"], "correctAnswer": "irai", "explanation": "'Aller' a un radical irrégulier au futur simple: ir- + terminaisons." },
-      { "id": "fut-02", "type": "fill-blank", "prompt": "Demain, nous ___ (finir) le projet.", "correctAnswer": "finirons", "explanation": "Futur simple régulier: infinitif finir + terminaison -ons." },
-      { "id": "fut-03", "type": "mcq", "prompt": "Elle ___ (être) contente du résultat.", "options": ["sera", "serai", "est"], "correctAnswer": "sera", "explanation": "'Être' a un radical irrégulier au futur simple: ser-; 3e pers. sing.: sera." },
-      { "id": "fut-04", "type": "error-spot", "prompt": "Corrige cette phrase : « Je vais partirai demain. »", "correctAnswer": "Je partirai demain.", "explanation": "On ne mélange pas le futur proche (aller + infinitif) et le futur simple dans la même construction." },
-      { "id": "fut-05", "type": "fill-blank", "prompt": "Ils ___ (avoir) une réunion vendredi prochain.", "correctAnswer": "auront", "explanation": "'Avoir' a un radical irrégulier au futur simple: aur-; 3e pers. pluriel: auront." },
-      { "id": "fut-06", "type": "mcq", "prompt": "Quand il ___ (arriver), nous commencerons la réunion.", "options": ["arrivera", "arrive", "arriverait"], "correctAnswer": "arrivera", "explanation": "En français, après 'quand' pour un événement futur, on utilise le futur simple (contrairement à l'anglais 'when he arrives')." },
-      { "id": "fut-07", "type": "production", "prompt": "Écris une phrase au futur simple pour parler d'un projet professionnel futur.", "correctAnswer": "L'année prochaine, je terminerai ma formation d'expert-comptable.", "explanation": "Respuesta modelo - vérifie que ton verbe est bien conjugué au futur simple." },
-      { "id": "fut-08", "type": "error-spot", "prompt": "Corrige cette phrase : « Quand je serai grand, je deviens médecin. »", "correctAnswer": "Quand je serai grand, je deviendrai médecin.", "explanation": "Les deux propositions liées par 'quand' pour un événement futur doivent être au futur simple." }
+      {
+        "id": "fut-01",
+        "type": "mcq",
+        "prompt": "Je ___ (aller) à Genève demain.",
+        "options": [
+          "irai",
+          "allerai",
+          "vais"
+        ],
+        "correctAnswer": "irai",
+        "explanation": "'Aller' tiene raíz irregular en futuro: ir-. Terminaciones del futuro (iguales para todos los verbos): -ai, -as, -a, -ons, -ez, -ont. Je -> irai.",
+        "kind": "grammar",
+        "whyWrong": {
+          "allerai": "Error típico: 'aller' no usa el infinitivo como raíz en futuro, usa la raíz irregular ir-.",
+          "vais": "'Je vais' es presente. 'Je vais aller' sería futuro próximo, pero se pide el futuro simple."
+        }
+      },
+      {
+        "id": "fut-02",
+        "type": "fill-blank",
+        "prompt": "Demain, nous ___ (finir) le projet.",
+        "correctAnswer": "finirons",
+        "explanation": "Futuro de los verbos regulares: infinitivo + terminación. finir + -ons = finirons.",
+        "kind": "grammar"
+      },
+      {
+        "id": "fut-03",
+        "type": "mcq",
+        "prompt": "Elle ___ (être) contente du résultat.",
+        "options": [
+          "sera",
+          "serai",
+          "est"
+        ],
+        "correctAnswer": "sera",
+        "explanation": "'Être' tiene raíz irregular ser- en futuro. Elle -> terminación -a: sera.",
+        "kind": "grammar",
+        "whyWrong": {
+          "serai": "La terminación -ai corresponde a 'je'. Con 'elle' es -a: sera.",
+          "est": "'Est' es presente; la frase habla de un resultado futuro."
+        }
+      },
+      {
+        "id": "fut-04",
+        "type": "error-spot",
+        "prompt": "Corrige cette phrase : « Je vais partirai demain. »",
+        "correctAnswer": "Je partirai demain.",
+        "explanation": "O futuro próximo (aller + infinitivo: je vais partir) o futuro simple (je partirai), pero nunca los dos a la vez. Como se pide futuro simple: je partirai.",
+        "kind": "grammar"
+      },
+      {
+        "id": "fut-05",
+        "type": "fill-blank",
+        "prompt": "Ils ___ (avoir) une réunion vendredi prochain.",
+        "correctAnswer": "auront",
+        "explanation": "'Avoir' tiene raíz irregular aur- en futuro. Ils -> terminación -ont: auront.",
+        "kind": "grammar"
+      },
+      {
+        "id": "fut-06",
+        "type": "mcq",
+        "prompt": "Quand il ___ (arriver), nous commencerons la réunion.",
+        "options": [
+          "arrivera",
+          "arrive",
+          "arriverait"
+        ],
+        "correctAnswer": "arrivera",
+        "explanation": "Diferencia importante con el español: después de 'quand' con sentido futuro, el francés usa FUTURO, no presente. Español: 'cuando llegue' (subjuntivo); francés: 'quand il arrivera'.",
+        "kind": "grammar",
+        "whyWrong": {
+          "arrive": "En español diríamos 'cuando llega/llegue', pero en francés, si la acción es futura, después de 'quand' va futuro: arrivera.",
+          "arriverait": "Es condicional ('llegaría'); se usa en hipótesis, no para una secuencia futura real."
+        }
+      },
+      {
+        "id": "fut-07",
+        "type": "production",
+        "prompt": "Écris une phrase au futur simple pour parler d'un projet professionnel futur.",
+        "correctAnswer": "L'année prochaine, je terminerai ma formation d'expert-comptable.",
+        "explanation": "Para planes profesionales: marcador temporal (l'année prochaine, dans deux ans) + futuro simple. Raíces irregulares frecuentes: être -> ser-, avoir -> aur-, faire -> fer-, aller -> ir-, pouvoir -> pourr-.",
+        "kind": "grammar"
+      },
+      {
+        "id": "fut-08",
+        "type": "error-spot",
+        "prompt": "Corrige cette phrase : « Quand je serai grand, je deviens médecin. »",
+        "correctAnswer": "Quand je serai grand, je deviendrai médecin.",
+        "explanation": "Las dos partes de la frase son futuras, así que las dos van en futuro: quand je serai grand, je deviendrai médecin. 'Devenir' tiene raíz irregular deviendr-.",
+        "kind": "grammar"
+      }
     ]
   }
 ]

@@ -24,6 +24,11 @@ test("every block has >=8 exercises with a valid shape", () => {
       assert.ok(typeof ex.prompt === "string" && ex.prompt.length > 0, `missing prompt on ${ex.id}`);
       assert.ok(typeof ex.correctAnswer === "string" && ex.correctAnswer.length > 0, `missing correctAnswer on ${ex.id}`);
       assert.ok(typeof ex.explanation === "string" && ex.explanation.length > 0, `missing explanation on ${ex.id}`);
+      assert.ok(ex.kind === "grammar" || ex.kind === "vocab", `kind must be grammar or vocab on ${ex.id}`);
+      if (ex.type === "mcq" && ex.kind === "grammar") {
+        const wrong = ex.options.filter((o) => o !== ex.correctAnswer);
+        assert.deepStrictEqual(Object.keys(ex.whyWrong ?? {}).sort(), wrong.sort(), `mcq ${ex.id} must explain every wrong option`);
+      }
       if (ex.type === "mcq") {
         assert.ok(
           Array.isArray(ex.options) && ex.options.includes(ex.correctAnswer),

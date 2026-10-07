@@ -75,6 +75,10 @@ button {
 
 .feedback { margin-top: 16px; }
 .explanation { line-height: 1.5; }
+.verdict { font-weight: 700; line-height: 1.4; }
+.verdict.ok { color: var(--correct); }
+.verdict.ko { color: var(--incorrect); }
+#french-explanation { white-space: pre-line; }
 .source { font-size: 0.85rem; opacity: 0.75; font-style: italic; }
 .next-btn { margin-top: 12px; }
 

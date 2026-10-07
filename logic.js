@@ -59,12 +59,6 @@ export function pushRecent(list, id, maxLen = 15) {
   return next;
 }
 
-export function accountingModeForDate(dateISO) {
-  const day = new Date(`${dateISO}T00:00:00`).getDay(); // 0=Sun..6=Sat
-  const caseDays = new Set([0, 1, 3, 5]); // Sun, Mon, Wed, Fri
-  return caseDays.has(day) ? "case" : "quiz";
-}
-
 export function pickAccountingQuestion(bank, mode, recentIds, randomFn = Math.random) {
   const pool = bank.filter((q) => q.type === mode);
   if (pool.length === 0) throw new Error(`No accounting questions of type "${mode}"`);
@@ -88,28 +82,25 @@ function pickManyExcluding(pool, n, recentIds, excludeIds, randomFn) {
   return shuffle(source, randomFn).slice(0, n);
 }
 
-export function pickAccountingTopic(bank, mode, recentTopics, randomFn = Math.random) {
-  const topics = [...new Set(bank.filter((q) => q.type === mode).map((q) => q.topic))];
+export function pickAccountingTopic(bank, recentTopics, randomFn = Math.random) {
+  const topics = [...new Set(bank.map((q) => q.topic))];
   let candidates = topics.filter((t) => !recentTopics.includes(t));
   if (candidates.length === 0) candidates = topics;
   return candidates[Math.floor(randomFn() * candidates.length)];
 }
 
-export function pickAccountingSession(bank, mode, topic, recentIds, sessionSize = 5, randomFn = Math.random) {
-  const pool = bank.filter((q) => q.type === mode);
-  const topicPool = pool.filter((q) => q.topic === topic);
-  const otherPool = pool.filter((q) => q.topic !== topic);
+// Deep-dive on one topic: up to topicCount questions of that topic (case and quiz mixed).
+export function pickAccountingSession(bank, topic, recentIds, topicCount = 4, randomFn = Math.random) {
+  const topicPool = bank.filter((q) => q.topic === topic);
+  return pickManyExcluding(topicPool, Math.min(topicCount, topicPool.length), recentIds, new Set(), randomFn);
+}
 
-  const excludeIds = new Set();
-  const topicCount = Math.min(Math.ceil(sessionSize / 2), topicPool.length);
-  const topicQuestions = pickManyExcluding(topicPool, topicCount, recentIds, excludeIds, randomFn);
-  topicQuestions.forEach((q) => excludeIds.add(q.id));
-
-  const remaining = sessionSize - topicQuestions.length;
-  const fallbackPool = otherPool.length > 0 ? otherPool : pool;
-  const otherQuestions = pickManyExcluding(fallbackPool, remaining, recentIds, excludeIds, randomFn);
-
-  return [...topicQuestions, ...otherQuestions];
+// One general-review question (any topic) to consolidate what was seen on previous days.
+export function pickReviewQuestion(reviewBank, recentIds, randomFn = Math.random) {
+  if (reviewBank.length === 0) throw new Error("Empty accounting review bank");
+  let candidates = reviewBank.filter((q) => !recentIds.includes(q.id));
+  if (candidates.length === 0) candidates = reviewBank;
+  return candidates[Math.floor(randomFn() * candidates.length)];
 }
 
 export function getBlockById(ladder, id) {

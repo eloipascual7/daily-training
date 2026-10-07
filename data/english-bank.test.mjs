@@ -31,3 +31,17 @@ test("ids are unique and shape is valid per type", () => {
     }
   }
 });
+
+test("bank has at least 15 exercises per focus (higher-level bank)", () => {
+  for (const focus of ["nuance", "vocab-idioms", "writing"]) {
+    assert.ok(bank.filter((e) => e.focus === focus).length >= 15, `focus ${focus} needs >=15`);
+  }
+});
+
+test("mcq: the correct option never stands out by length", () => {
+  for (const e of bank.filter((x) => x.type === "mcq")) {
+    const correct = e.options.find((o) => o.correct).label.length;
+    const wrong = e.options.filter((o) => !o.correct).map((o) => o.label.length);
+    assert.ok(correct <= 1.2 * Math.max(...wrong) && correct >= 0.75 * Math.min(...wrong), `length gives away ${e.id}`);
+  }
+});
