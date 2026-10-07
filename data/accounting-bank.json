@@ -204,8 +204,7 @@
     "type": "quiz",
     "topic": "inventory",
     "frameworks": [
-      "IFRS",
-      "SwissGAAP-FER"
+      "IFRS"
     ],
     "prompt": "Which cost formula does IAS 2 prohibit?",
     "options": [
@@ -280,10 +279,9 @@
     "type": "case",
     "topic": "inventory",
     "frameworks": [
-      "IFRS",
-      "SwissGAAP-FER"
+      "IFRS"
     ],
-    "prompt": "Inventory written down to NRV last year has recovered in value. What do IAS 2 and FER 17 require?",
+    "prompt": "Inventory written down to NRV last year has recovered in value. What does IAS 2 require?",
     "options": [
       {
         "label": "Reverse the write-down, capped at original cost",
@@ -298,8 +296,8 @@
         "correct": false
       }
     ],
-    "explanation": "When the circumstances that caused the write-down no longer exist, the write-down is reversed, but only up to the original cost. Swiss GAAP FER 17 follows the same lower-of-cost-and-NRV logic.",
-    "source": "IAS 2.33; Swiss GAAP FER 17"
+    "explanation": "When the circumstances that caused the write-down no longer exist, the write-down is reversed, but only up to the original cost.",
+    "source": "IAS 2.33"
   },
   {
     "id": "acc-0013",
@@ -484,10 +482,10 @@
       "IFRS",
       "SwissGAAP-FER"
     ],
-    "prompt": "How long is goodwill typically amortised under Swiss GAAP FER if it is capitalised?",
+    "prompt": "If goodwill is capitalised under Swiss GAAP FER 30, how is it amortised?",
     "options": [
       {
-        "label": "Usually 5 years, in justified cases up to 20 years",
+        "label": "Over its useful life, at most 20 years",
         "correct": true
       },
       {
@@ -499,8 +497,8 @@
         "correct": false
       }
     ],
-    "explanation": "Under FER 30 goodwill can be offset against equity or capitalised and amortised, normally over 5 years and in justified cases up to 20 years. IFRS prohibits goodwill amortisation.",
-    "source": "Swiss GAAP FER 30; IAS 36.90"
+    "explanation": "Under FER 30 goodwill can be offset against equity or capitalised and amortised over its useful life, which may not exceed 20 years; if the useful life cannot be determined, over 5 years. IFRS prohibits goodwill amortisation.",
+    "source": "Swiss GAAP FER 30 (goodwill); IAS 36.90"
   },
   {
     "id": "acc-0021",
@@ -1326,7 +1324,7 @@
         "correct": false
       }
     ],
-    "explanation": "A complete set includes the statement of financial position, profit or loss and OCI, changes in equity, cash flows, notes, and comparatives. A management commentary is outside IAS 1.",
+    "explanation": "A complete set includes the statement of financial position, profit or loss and OCI, changes in equity, cash flows, notes, and comparatives. A management commentary is outside IAS 1. Note: IFRS 18 replaces IAS 1 for periods beginning on or after 1 January 2027.",
     "source": "IAS 1.10"
   },
   {
@@ -1351,7 +1349,7 @@
         "correct": false
       }
     ],
-    "explanation": "If a covenant breach makes a liability payable on demand at the reporting date, it is current unless the lender agreed before the reporting date to a grace period of at least 12 months.",
+    "explanation": "If a covenant breach makes a liability payable on demand at the reporting date, it is current unless the lender agreed before the reporting date to a grace period of at least 12 months. Note: IFRS 18 replaces IAS 1 for periods beginning on or after 1 January 2027.",
     "source": "IAS 1.74"
   },
   {
@@ -1376,7 +1374,7 @@
         "correct": false
       }
     ],
-    "explanation": "OCI is split into items that will not be reclassified (e.g. pension remeasurements, revaluation surplus) and items that may be (e.g. translation differences, cash flow hedges).",
+    "explanation": "OCI is split into items that will not be reclassified (e.g. pension remeasurements, revaluation surplus) and items that may be (e.g. translation differences, cash flow hedges). Note: IFRS 18 replaces IAS 1 for periods beginning on or after 1 January 2027.",
     "source": "IAS 1.82A; IAS 19.122"
   },
   {
@@ -1401,7 +1399,7 @@
         "correct": false
       }
     ],
-    "explanation": "Assets and liabilities, and income and expenses, are not offset unless required or permitted by an IFRS.",
+    "explanation": "Assets and liabilities, and income and expenses, are not offset unless required or permitted by an IFRS. Note: IFRS 18 replaces IAS 1 for periods beginning on or after 1 January 2027.",
     "source": "IAS 1.32"
   },
   {
@@ -1498,7 +1496,7 @@
         "correct": false
       },
       {
-        "label": "A five-year corporate bond that is redeemable on demand at par",
+        "label": "A five-year corporate bond bought this month",
         "correct": false
       }
     ],
@@ -1869,7 +1867,7 @@
         "correct": true
       },
       {
-        "label": "Share options that are currently out of the money",
+        "label": "Options granted to employees during the year",
         "correct": false
       },
       {
@@ -2053,7 +2051,7 @@
         "correct": false
       }
     ],
-    "explanation": "FER 16 assesses economic benefits or obligations based on the pension fund's statements prepared under FER 26, rather than an IAS 19 projected unit credit valuation. IFRS reporters often show significant net liabilities for Swiss plans.",
+    "explanation": "FER 16 assesses economic benefits or obligations based on the pension fund's statements prepared under FER 26, rather than an IAS 19 projected unit credit valuation. FER 16 has been revised, with the new version applying from 1 January 2027.",
     "source": "Swiss GAAP FER 16; IAS 19.67"
   },
   {
@@ -2430,7 +2428,7 @@
       }
     ],
     "explanation": "Segments are identified based on internal reports reviewed by the chief operating decision maker.",
-    "source": "IFRS 8.5, IN5"
+    "source": "IFRS 8.5"
   },
   {
     "id": "acc-0098",
@@ -2630,7 +2628,7 @@
       }
     ],
     "explanation": "An integrated audit includes an opinion on ICFR effectiveness as of year end, alongside the financial statement opinion.",
-    "source": "PCAOB AS 2201.3-4"
+    "source": "PCAOB AS 2201 (objective of the integrated audit)"
   },
   {
     "id": "acc-0106",
@@ -2730,7 +2728,7 @@
       }
     ],
     "explanation": "RMM at the assertion level consists of inherent risk and control risk, which ISA 315 (Revised 2019) requires to be assessed separately.",
-    "source": "ISA 315.4, 315.31-34"
+    "source": "ISA 315 (Revised 2019): separate assessment of inherent and control risk"
   },
   {
     "id": "acc-0110",
@@ -2755,7 +2753,7 @@
       }
     ],
     "explanation": "Inherent risk is assessed on a spectrum depending on the likelihood and magnitude of misstatement; significant risks sit at the upper end.",
-    "source": "ISA 315.12(f), 315.31"
+    "source": "ISA 315 (Revised 2019): spectrum of inherent risk"
   },
   {
     "id": "acc-0111",
@@ -2805,7 +2803,7 @@
       }
     ],
     "explanation": "The inherent risk factors are complexity, subjectivity, change, uncertainty, and susceptibility to misstatement due to management bias or fraud.",
-    "source": "ISA 315.12(f), Appendix 2"
+    "source": "ISA 315 (Revised 2019): inherent risk factors, Appendix 2"
   },
   {
     "id": "acc-0113",
@@ -2855,7 +2853,7 @@
       }
     ],
     "explanation": "Inherent limitations (judgement, the nature of evidence, possible collusion or override, timing) mean evidence is persuasive rather than conclusive.",
-    "source": "ISA 200.A53-A55"
+    "source": "ISA 200 (inherent limitations of an audit)"
   },
   {
     "id": "acc-0115",
@@ -2980,7 +2978,7 @@
       }
     ],
     "explanation": "After assembly, the auditor must not delete or discard documentation of any nature before the end of its retention period. Superseded drafts should be removed before assembly is completed.",
-    "source": "ISA 230.15, A4"
+    "source": "ISA 230.15"
   },
   {
     "id": "acc-0120",
@@ -3105,7 +3103,7 @@
       }
     ],
     "explanation": "ISA 240 and ISA 315 require a team discussion on how and where the financial statements may be susceptible to material misstatement due to fraud.",
-    "source": "ISA 240.16; ISA 315.17"
+    "source": "ISA 240.16; ISA 315 (Revised 2019): engagement team discussion"
   },
   {
     "id": "acc-0125",
@@ -3164,10 +3162,10 @@
     "frameworks": [
       "ISA"
     ],
-    "prompt": "Does the absolute size of a misstatement found determine whether a deficiency is significant?",
+    "prompt": "Is a control deficiency significant only if it has actually caused a misstatement?",
     "options": [
       {
-        "label": "No: what matters is what could happen, not what did",
+        "label": "No: the potential misstatement also counts",
         "correct": true
       },
       {
@@ -3179,8 +3177,8 @@
         "correct": false
       }
     ],
-    "explanation": "Significance depends on the potential for misstatement, not on whether a misstatement actually occurred.",
-    "source": "ISA 265.A5-A7"
+    "explanation": "The significance of a deficiency depends not only on whether a misstatement actually occurred, but also on the likelihood that one could occur and its potential magnitude.",
+    "source": "ISA 265 (application material on significant deficiencies)"
   },
   {
     "id": "acc-0128",
@@ -3255,7 +3253,7 @@
       }
     ],
     "explanation": "Specific materiality levels may be set for items where misstatements of lesser amounts could reasonably influence users, such as related party transactions or key management pay.",
-    "source": "ISA 320.10, A10"
+    "source": "ISA 320.10"
   },
   {
     "id": "acc-0131",
@@ -3305,7 +3303,7 @@
       }
     ],
     "explanation": "The auditor accumulates misstatements identified during the audit, other than those that are clearly trivial.",
-    "source": "ISA 450.5, A2"
+    "source": "ISA 450.5"
   },
   {
     "id": "acc-0133",
@@ -3330,7 +3328,7 @@
       }
     ],
     "explanation": "Evidence from independent external sources, obtained directly by the auditor and in documentary original form, is generally more reliable than internally generated or indirect evidence.",
-    "source": "ISA 500.A31"
+    "source": "ISA 500 (reliability of audit evidence)"
   },
   {
     "id": "acc-0134",
@@ -3355,7 +3353,7 @@
       }
     ],
     "explanation": "Inquiry alone is not sufficient to test operating effectiveness; it must be combined with observation, inspection or reperformance.",
-    "source": "ISA 330.10(a); ISA 500.A2"
+    "source": "ISA 330.10(a)"
   },
   {
     "id": "acc-0135",
@@ -3380,7 +3378,7 @@
       }
     ],
     "explanation": "External confirmations from customers give direct third-party evidence that the receivable exists.",
-    "source": "ISA 505.2-3; ISA 500.A31"
+    "source": "ISA 505; ISA 500 (reliability of external evidence)"
   },
   {
     "id": "acc-0136",
@@ -3480,7 +3478,7 @@
       }
     ],
     "explanation": "Tracing from source documents into the records tests completeness; vouching from records to supporting documents tests occurrence or existence.",
-    "source": "ISA 500.A10 (assertions and direction of testing)"
+    "source": "ISA 315 (Revised 2019): assertions (completeness)"
   },
   {
     "id": "acc-0140",
@@ -3530,7 +3528,7 @@
       }
     ],
     "explanation": "ISA 520 requires analytical procedures near the end of the audit to form an overall conclusion; ISA 315 also requires them at risk assessment.",
-    "source": "ISA 520.6; ISA 315.14(b)"
+    "source": "ISA 520.6; ISA 315 (Revised 2019): risk assessment procedures"
   },
   {
     "id": "acc-0142",
@@ -3580,7 +3578,7 @@
       }
     ],
     "explanation": "Reliability increases with disaggregated data, data from independent sources, and data subject to effective controls.",
-    "source": "ISA 520.A12-A13"
+    "source": "ISA 520 (application material on reliability of data)"
   },
   {
     "id": "acc-0144",
@@ -3679,7 +3677,7 @@
         "correct": false
       }
     ],
-    "explanation": "Random selection (e.g. with random number generators) gives each sampling unit a known chance of selection. Haphazard and block selection do not meet that standard as cleanly.",
+    "explanation": "Random selection (e.g. with random number generators) gives each sampling unit an equal chance of selection. Block and judgemental selection do not.",
     "source": "ISA 530 Appendix 4"
   },
   {
@@ -3755,7 +3753,7 @@
       }
     ],
     "explanation": "The retrospective review helps identify management bias and the effectiveness of past estimation; it is not meant to question judgements made on information available at the time.",
-    "source": "ISA 540.14, A55"
+    "source": "ISA 540.14"
   },
   {
     "id": "acc-0151",
@@ -3805,7 +3803,7 @@
       }
     ],
     "explanation": "Indicators of possible management bias, even if individual estimates are reasonable, must be evaluated, including their effect on the audit and fraud risk.",
-    "source": "ISA 540.32; ISA 240.32(b)"
+    "source": "ISA 540 (indicators of possible management bias); ISA 240.32(b)"
   },
   {
     "id": "acc-0153",
@@ -3830,7 +3828,7 @@
       }
     ],
     "explanation": "Related party relationships may present greater risk of material misstatement, including through fraud, because they can be complex and not at arm's length.",
-    "source": "ISA 550.2-6"
+    "source": "ISA 550 (introduction: nature of related party risks)"
   },
   {
     "id": "acc-0154",
@@ -4155,7 +4153,7 @@
       }
     ],
     "explanation": "KAMs are required for audits of complete sets of general purpose financial statements of listed entities, and where required by law or chosen voluntarily.",
-    "source": "ISA 700.30; ISA 701.5"
+    "source": "ISA 701.5"
   },
   {
     "id": "acc-0167",
@@ -4255,7 +4253,7 @@
       }
     ],
     "explanation": "The engagement partner takes overall responsibility for managing and achieving quality on the engagement, with sufficient and appropriate involvement throughout.",
-    "source": "ISA 220.13"
+    "source": "ISA 220 (Revised): engagement partner responsibility"
   },
   {
     "id": "acc-0171",
@@ -4305,6 +4303,6 @@
       }
     ],
     "explanation": "ISQM 2 requires firms to set a cooling-off period (for a listed entity audit, two years) before a former engagement partner can act as engagement quality reviewer.",
-    "source": "ISQM 2.18, A5"
+    "source": "ISQM 2 (cooling-off period)"
   }
 ]

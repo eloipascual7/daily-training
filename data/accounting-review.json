@@ -181,7 +181,7 @@
     "frameworks": [
       "IFRS"
     ],
-    "prompt": "A warranty provision is governed by which standard?",
+    "prompt": "A provision for an assurance-type warranty falls under which standard?",
     "options": [
       {
         "label": "IAS 37",
@@ -196,7 +196,7 @@
         "correct": false
       }
     ],
-    "explanation": "IAS 37 covers provisions, contingent liabilities and contingent assets. Service-type warranties sold separately fall under IFRS 15.",
+    "explanation": "Assurance-type warranties are provided for under IAS 37. Service-type warranties are a separate performance obligation under IFRS 15.",
     "source": "IAS 37.1; IFRS 15.B28-B33"
   },
   {

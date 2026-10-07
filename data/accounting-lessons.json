@@ -2,8 +2,8 @@
   {
     "topic": "revenue-recognition",
     "title": "Revenue recognition",
-    "lesson": "IFRS 15 requires revenue to be recognised using a 5-step model: identify the contract, identify the performance obligations, determine the transaction price, allocate it to the obligations, and recognise revenue as/when each obligation is satisfied - over time if one of the over-time criteria (§35) is met, otherwise at a point in time. Swiss GAAP FER has no equivalent standalone revenue standard; practice instead follows the general prudence/realisation principle in FER 2.",
-    "source": "IFRS 15 (5-step model, §35 over-time criteria); Swiss GAAP FER 2"
+    "lesson": "IFRS 15 requires revenue to be recognised using a 5-step model: identify the contract, identify the performance obligations, determine the transaction price, allocate it to the obligations, and recognise revenue as/when each obligation is satisfied - over time if one of the over-time criteria (§35) is met, otherwise at a point in time. Swiss GAAP FER has no separate revenue standard: since 1 January 2016 its revenue recognition rules sit in the FER Framework, FER 3 (presentation) and FER 6 (notes), with no IFRS 15-style five-step model.",
+    "source": "IFRS 15 (5-step model, §35 over-time criteria); Swiss GAAP FER Framework, FER 3, FER 6 (revenue recognition, effective 2016)"
   },
   {
     "topic": "held-for-sale",
@@ -38,8 +38,8 @@
   {
     "topic": "impairment",
     "title": "Impairment of assets",
-    "lesson": "IAS 36 requires testing a cash-generating unit's recoverable amount (the higher of fair value less costs of disposal and value in use) against its carrying amount whenever there is an indicator of impairment - except goodwill and indefinite-life intangibles, which must be tested at least annually regardless of indicators (§12). Swiss GAAP FER 20 requires similar write-downs but with less prescriptive guidance on how to calculate the recoverable amount.",
-    "source": "IAS 36 §12; Swiss GAAP FER 20"
+    "lesson": "IAS 36 requires testing a cash-generating unit's recoverable amount (the higher of fair value less costs of disposal and value in use) against its carrying amount whenever there is an indicator of impairment - except goodwill and indefinite-life intangibles, which must be tested at least annually regardless of indicators (§10). Swiss GAAP FER 20 requires similar write-downs but with less prescriptive guidance on how to calculate the recoverable amount.",
+    "source": "IAS 36 §10; Swiss GAAP FER 20"
   },
   {
     "topic": "financial-instruments",
@@ -104,8 +104,8 @@
   {
     "topic": "events-after-reporting-period",
     "title": "Events after the reporting period",
-    "lesson": "IAS 10 distinguishes adjusting events (which provide further evidence of conditions that already existed at the reporting date, and require the financial statements to be adjusted) from non-adjusting events (which relate to conditions arising after the reporting date, and only require disclosure if material). Going concern is a special case: if management decides after year-end that it must liquidate, this is treated as an adjusting event so fundamental that the going concern basis itself is abandoned.",
-    "source": "IAS 10 (adjusting vs non-adjusting events, going concern)"
+    "lesson": "IAS 10 distinguishes adjusting events (which provide further evidence of conditions that already existed at the reporting date, and require the financial statements to be adjusted) from non-adjusting events (which relate to conditions arising after the reporting date, and only require disclosure if material). Going concern is a special case: if management decides after year-end to liquidate or cease trading, the statements must not be prepared on a going concern basis - IAS 10 treats this as a fundamental change in the basis of accounting rather than an adjustment of amounts (§§14-15).",
+    "source": "IAS 10 (adjusting vs non-adjusting events; going concern §§14-15)"
   },
   {
     "topic": "government-grants",
@@ -134,7 +134,7 @@
   {
     "topic": "employee-benefits",
     "title": "Employee benefits (pensions)",
-    "lesson": "IAS 19 splits the change in a defined benefit pension's net liability/asset into two very differently-treated pieces: service cost and net interest go through profit or loss, while remeasurements (actuarial gains/losses, and the difference between actual and expected return on plan assets) go to other comprehensive income and are never recycled to profit or loss afterwards. Net interest is calculated by applying the discount rate used to measure the obligation to the net defined benefit liability or asset.",
+    "lesson": "IAS 19 splits the change in a defined benefit pension's net liability/asset into two very differently-treated pieces: service cost and net interest go through profit or loss, while remeasurements (actuarial gains/losses, and the return on plan assets excluding amounts included in net interest) go to other comprehensive income and are never recycled to profit or loss afterwards. Net interest is calculated by applying the discount rate used to measure the obligation to the net defined benefit liability or asset.",
     "source": "IAS 19 (service cost, net interest, remeasurements in OCI)"
   },
   {
